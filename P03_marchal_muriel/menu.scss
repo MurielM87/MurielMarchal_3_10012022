@@ -1,0 +1,587 @@
+@mixin flex-center-column {
+  display : flex ;
+  flex-direction : column ; 
+  justify-content : center ; 
+}
+@mixin flex-center-row {
+  display : flex ; 
+  flex-direction : row ; 
+  justify-content : center ; 
+}
+
+$primary-color : #9356DC ; 
+$secondary_color : #FF79DA ; 
+$third_color : #99E2D0 ; 
+
+.container {
+  width : 1394px ; 
+  margin : auto ; 
+  @media (max-width : 767px) {
+    width : 100% ; ; 
+  }
+  @media (min-width : 767px) and (max-width : 1000px) {
+    width : 100% ; 
+  }
+}
+  
+body {
+  font-size : 15px ;
+  font-family: 'Roboto', sans-serif ;
+  line-height : 12px ;
+}
+
+i {
+  color : black ;
+}
+
+/*header*/
+header {
+  display : flex ; 
+  flex-direction : column ; 
+  justify-content : space-around ;
+  align-items : center ; 
+  margin-bottom : 20px ; 
+
+  .container {
+    margin-top : 10px ; 
+    background-color : #ffffff ; 
+    @media (max-width : 767px) {
+      width : 100% ; 
+      overflow-x : hidden; 
+    }
+    @media (min-width : 767px) and (max-width : 1000px) {
+      width : 100% ;
+      overflow-x : hidden; 
+    }
+  }
+  
+  .fa-arrow-left {
+    position : absolute ; 
+    font-size : 17px ; 
+    margin : 0px 15px 25px 25px ;
+  }
+
+  #logo_header {
+    width : 30% ;
+    margin : 0.5% 35% ; 
+    @media (max_width : 767px) {
+      width : 35% ; 
+      margin : 2% 30% ; 
+    }
+    @media (min-width : 767px) and (max-width : 1000px) {
+      width : 35% ; 
+      margin : 2% 30% ; 
+    }
+  }
+    
+  #photo_header {
+    object-fit : cover ;
+    position : relative ; 
+    width : 33%; 
+    height : 300px ; 
+    margin : 0% 30% auto ;
+    z-index : 1 ;
+    @media (max-width : 767px) {
+      width : 100% ;
+      margin : 0px ;
+    }
+    @media (min-width : 767px) and (max-width : 1000px) {
+      width : 100% ;
+      margin : 0px ; 
+    }
+  }
+  
+  .restaurant_nom {
+    width : 22% ; 
+    background-color : #ffffff ; 
+    display : flex ; 
+    flex-direction : row ;
+    justify-content : space-between ; 
+    border-radius : 30px ; 
+    position : absolute ;
+    padding-top : 10px ; 
+    z-index : 2 ;
+    margin-left : 415px ; 
+    margin-top : -35px ; 
+    @media (max-width : 767px) {
+      width : 100% ;
+      background-color : #f6f6f6 ; 
+      height : 50px ; 
+      margin-left : 0px ; 
+      border-radius : 30px 30px 0px 0px ; 
+    }
+    @media (min-width : 767px) and (max-width : 1000px) {
+      width : 100% ;
+      background-color : #f6f6f6 ; 
+      height : 50px ; 
+      margin-left : 0px ; 
+      border-radius : 30px 30px 0px 0px ; 
+    }
+
+    h1 {
+      padding-left : 10px ; 
+      font-family: 'Shrikhand', 'cursive' ;
+      font-size : 25px ; 
+      font-weight : bold ; 
+      letter-spacing : 1.5px ; 
+      @media (max-width : 767px) {
+        text-align : left ;
+        font-size : 28px ; 
+        line-height : 0px ; 
+        width : 80% ;
+        margin-left : 15px ; 
+      } 
+      @media (min-width : 767px) and (max-width : 1000px) {
+        text-align: center ;
+        line-height: 20px ;
+        width : 70% ;
+      }
+    }
+  
+      .fa-heart {
+      font-size : 30px ; 
+      color : #000000 ; 
+      margin-right : 20px ; 
+    }
+  }
+}
+main .container {
+  @media (max-width : 767px) {
+    background-color : #f6f6f6 ; 
+    width : 100% ; 
+    overflow-x : hidden; 
+  }  
+  @media (min-width : 767px) and (max-width : 1000px) {
+    background-color : #f6f6f6 ;
+    width : 100% ; 
+    overflow-x : hidden; 
+  }
+} 
+
+#menus {
+  background-color: #f6f6f6 ;
+  @include flex-center-row ; 
+  border-radius : 10px ; 
+  width : 100% ;
+  margin-top : 30px ; 
+  padding-bottom : 15px ; 
+  @media (max-width : 767px) {
+    @include flex-center-column ;
+      margin : 0 auto ; 
+      border : 0px ; 
+  }
+  @media (min-width : 767px) and (max-width : 1000px) {
+    @include flex-center-column ;
+    margin : 0 auto ; 
+    border : 0px ;  
+  }
+  
+  #entrees, #plats, #desserts {
+    display : flex ; 
+    flex-direction : column ;
+    width : 30% ; 
+    padding: 10px 15px ;  
+    @media (max-width : 767px) {
+      width : 90% ; 
+      justify-content: center ;
+    }
+    @media (min-width : 767px) and (max-width : 1000px) {
+      width : 70% ; 
+      justify-content : center ;
+    }
+    
+    h2 {
+      margin-left : 3.5px ; 
+      font-size : 22px ;  
+      width : 60px ; 
+      border-bottom : solid 3px $third_color ;
+      padding-bottom : 10px ; 
+    }
+    
+    .entrees, .plats, .desserts {
+      background-color: #ffffff;
+      display : flex ; 
+      flex-direction : row ;
+      justify-content : space-between ;
+      width : 96% ;
+      height : 60px ;
+      margin : 8px ;   
+      border : solid 1px ; 
+      border-radius : 10px ; 
+      @media (max-width : 767px) {
+        @include flex-center-row ;
+        padding : 0px ; 
+        border : 0px ; 
+      }
+      @media (min-width : 767px) and (max-width : 1000px) {
+        @include flex-center-row ;
+        border : 0px ; 
+      }
+      
+      .menu {
+        display : flex ; 
+        flex-direction : column ; 
+        justify-content : space-between ;
+        width : 100% ; 
+        height : 65px ; 
+        padding-left : 5px ; 
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: '...';
+        @media (max-width : 767px) {
+          padding : 0px ; 
+        }
+        
+  
+        h3 {
+          font-family : 'Roboto', sans-serif ; 
+          font-size : 20px ;
+          font-weight : bold ; 
+          margin : 10px 10px 0px 10px; 
+          overflow : hidden ; 
+          text-overflow : '...' ;
+          padding : 2px 0px 17px 0px ; 
+        }
+            
+        .informations {
+          display : flex ; 
+          flex-direction : row ;
+          justify-content : space-between ;
+          margin : 0px 10px 10px 10px ; 
+           
+          .supplement {
+            font-size : 18px ; 
+            padding : 2px 0px 4px 0px ; 
+            margin-bottom : 3px ;
+            font-weight : normal ; 
+            overflow : hidden ; 
+            text-overflow : '...' ;
+          }
+    
+          .prix {
+            font-size : 20px ; 
+            font-weight : bold ; 
+            margin-right : 5px ;
+          }
+        }
+      }
+      
+      .fa-check-circle {
+        color : #ffffff ;          
+      }    
+    }
+  }
+}
+
+
+.commander {
+  color : #ffffff ; 
+  background : linear-gradient(to right bottom, $secondary_color, $primary_color) ; 
+  font-size : 15px ; 
+  font-weight : bold ; 
+  border : 1px solid ; 
+  border-radius : 30px ; 
+  margin : 6% 45% ; 
+  padding : 10px 20px ; 
+  @media (max-width : 767px) {
+    margin : 4% 34% 8% ; 
+  }
+  @media (min-width : 767px) and (max-width : 1000px) {
+    margin : 4% 34% 8% ; 
+  }
+
+  &:hover {
+    cursor : pointer ; 
+    background : lighten($primary_color, 10%) ;
+    border-radius : 30px ; 
+  }
+}
+  
+/*footer*/
+footer {
+  font-size : 22px ; 
+  line-height : 25px ; 
+  color : #ffffff ; 
+  background-color : #000000 ;
+  padding : 10px 0px ; 
+
+  .container {
+    display : flex ; 
+    flex-direction : column ; 
+    justify-content : center ; 
+    align-items : center ;
+    line-height : 35px ; 
+    @media (max-width : 767px) {
+      width : 97% ;
+      align-items : flex-start ; 
+      margin-left : 10px ; 
+      overflow-x : hidden; 
+    }
+    
+    h4 {
+      font-family : 'shrikhand', 'cursive' ;
+      font-size : 25px ; 
+      color : #ffffff ; 
+      margin-bottom : 10px ; 
+    }
+
+    .footer_liste {
+      font-weight : bold ; 
+         
+      .fa-utensils, .fa-hands-helping {
+        color : #ffffff ; 
+      }
+ 
+    }
+      
+    a {
+        color : #ffffff ; 
+        text-decoration : none ; 
+    }
+  }
+} 
+
+/*animations*/ 
+.entrees, .plats, .desserts {
+    -moz-transition: all 1s ease-in ;
+    -webkit-transition: all 1s ease-in;
+	transition: all 1s ease-in;
+  &:hover {
+    cursor : pointer ;
+    .fa-check-circle {
+      visibility : visible ; 
+      font-size : 30px ; 
+      padding : 15px ; 
+      border-radius : 0px 10px 10px 0px ;
+      background-color : $third_color; 
+    	  -moz-transform: rotate(360deg);
+	      -webkit-transform: rotate(360deg);
+	    transform: rotate(360deg);
+    }
+  }
+}
+
+#entrees {
+    -moz-animation-duration : 4s ;
+    -webkit-animation-duration : 4s ;
+  animation-duration : 4s ;
+    -moz-animation-iteration-count : 1 ;
+    -webkit-animation-iteration-count : 1 ;
+  animation-iteration-count : 1 ;
+    -moz-animation-direction : normal ;
+    -webkit-animation-direction : normal ;
+  animation-direction : normal ;
+    -moz-animation-name : entrees ;
+    -webkit-animation-name : entrees ;
+  animation-name : entrees ;
+    -moz-transition-property : bottom, top ;
+    -webkit-transition-property : bottom, top ;
+  transition-property : bottom, top ;
+    -moz-animation-timing-function : ease-in ;
+    -webkit-animation-timing-function : ease-in ;
+  animation-timing-function : ease-in ;
+    -moz-animation-fill-mode : both ;
+    -webkit-animation-fill-mode : both ;
+  animation-fill-mode : both ;
+
+  @keyframes entrees {
+    from {
+      margin-top : 100%;
+      opacity : 0 ;
+    }
+    to {
+      margin-top : 0% ; 
+      opacity : 1 ; 
+    }
+  }
+}
+
+.entrees {
+    -moz-animation-duration : 4s ;
+    -webkit-animation-duration : 4s ;
+  animation-duration : 4s ;
+    -moz-animation-iteration-count : 1 ;
+    -webkit-animation-iteration-count : 1 ;
+  animation-iteration-count : 1 ;
+    -moz-animation-direction : normal ;
+    -webkit-animation-direction : normal ;
+  animation-direction : normal ;
+    -moz-animation-name : entrees_contenu ;
+    -webkit-animation-name : entrees_contenu ;
+  animation-name : entrees_contenu ;
+    -moz-transition-property : bottom, top ;
+    -webkit-transition-property : bottom, top ;
+  transition-property : bottom, top ;
+    -moz-animation-timing-function : ease-in ;
+    -webkit-animation-timing-function : ease-in ;
+  animation-timing-function : ease-in ;
+    -moz-animation-fill-mode : both ;
+    -webkit-animation-fill-mode : both ;
+  animation-fill-mode : both ;
+    -moz-animation-delay : 1s ; 
+    -webkit-animation-delay : 1s ; 
+  animation-delay : 1s ; 
+
+  @keyframes entrees_contenu {
+    from {
+      margin-top : 100%;
+      opacity : 0 ; 
+    }
+    to {
+      margin-top : 0% ; 
+      opacity : 1 ; 
+    }
+  }
+}
+
+#plats {
+    -moz-animation-duration : 4s ;
+    -webkit-animation-duration : 4s ;
+  animation-duration : 4s ;
+    -moz-animation-iteration-count : 1 ;
+    -webkit-animation-iteration-count : 1 ;
+  animation-iteration-count : 1 ;
+    -moz-animation-direction : normal ;
+    -webkit-animation-direction : normal ;
+  animation-direction : normal ;
+    -moz-animation-name : plats ;
+    -webkit-animation-name : plats ;
+  animation-name : plats ;
+    -moz-transition-property : bottom, top ;
+    -webkit-transition-property : bottom, top ;
+  transition-property : bottom, top ;
+    -moz-animation-timing-function : ease-in ;
+    -webkit-animation-timing-function : ease-in ;
+  animation-timing-function : ease-in ;
+    -moz-animation-fill-mode : both ;
+    -webkit-animation-fill-mode : both ;
+  animation-fill-mode : both ;
+    -moz-animation-delay : 4s ; 
+    -webkit-animation-delay : 4s ; 
+  animation-delay : 4s ; 
+
+  @keyframes plats {
+    from {
+      margin-top : 100%;
+      opacity : 0 ; 
+    }
+    to {
+      margin-top : 0% ; 
+      opacity : 1 ; 
+    }
+  }
+}
+
+.plats {
+    -moz-animation-duration : 4s ;
+    -webkit-animation-duration : 4s ;
+  animation-duration : 4s ;
+    -moz-animation-iteration-count : 1 ;
+    -webkit-animation-iteration-count : 1 ;
+  animation-iteration-count : 1 ;
+    -moz-animation-direction : normal ;
+    -webkit-animation-direction : normal ;
+  animation-direction : normal ;
+    -moz-animation-name : plats_contenu ;
+    -webkit-animation-name : plats-contenu ;
+  animation-name : plats_contenu ;
+    -moz-transition-property : bottom, top ;
+    -webkit-transition-property : bottom, top ;
+  transition-property : bottom, top ;
+    -moz-animation-timing-function : ease-in ;
+    -webkit-animation-timing-function : ease-in ;
+  animation-timing-function : ease-in ;
+    -moz-animation-fill-mode : both ;
+    -webkit-animation-fill-mode : both ;
+  animation-fill-mode : both ;
+    -moz-animation-delay : 5s ; 
+    -webkit-animation-delay : 5s ; 
+  animation-delay : 5s ; 
+  
+  @keyframes plats_contenu {
+    from {
+      margin-top : 100%;
+      opacity : 0 ; 
+    }
+    to {
+      margin-top : 0% ; 
+      opacity : 1 ; 
+    }
+  }
+}
+
+#desserts { 
+    -moz-animation-duration : 4s ;
+    -webkit-animation-duration : 4s ;
+  animation-duration : 4s ;
+    -moz-animation-iteration-count : 1 ;
+    -webkit-animation-iteration-count : 1 ;
+  animation-iteration-count : 1 ;
+    -moz-animation-direction : normal ;
+    -webkit-animation-direction : normal ;
+  animation-direction : normal ;
+    -moz-animation-name : desserts ;
+    -webkit-animation-name : desserts ;
+  animation-name : desserts ;
+    -moz-transition-property : bottom, top ;
+    -webkit-transition-property : bottom, top ;
+  transition-property : bottom, top ;
+    -moz-animation-timing-function : ease-in ;
+    -webkit-animation-timing-function : ease-in ;
+  animation-timing-function : ease-in ;
+    -moz-animation-fill-mode : both ;
+    -webkit-animation-fill-mode : both ;
+  animation-fill-mode : both ;
+    -moz-animation-delay : 8s ; 
+    -webkit-animation-delay : 8s ; 
+  animation-delay : 8s ; 
+  
+  @keyframes desserts {
+    from {
+      margin-top : 100%;
+      opacity : 0 ;
+    }
+    to {
+      margin-top : 0% ;
+      opacity : 1 ;  
+    }
+  }
+}
+
+.desserts {
+    -moz-animation-duration : 4s ;
+    -webkit-animation-duration : 4s ;
+  animation-duration : 4s ;
+    -moz-animation-iteration-count : 1 ;
+    -webkit-animation-iteration-count : 1 ;
+  animation-iteration-count : 1 ;
+    -moz-animation-direction : normal ;
+    -webkit-animation-direction : normal ;
+  animation-direction : normal ;
+    -moz-animation-name : desserts_contenu ;
+    -webkit-animation-name : desserts_contenu ;
+  animation-name : desserts_contenu ;
+    -moz-transition-property : bottom, top ;
+    -webkit-transition-property : bottom, top ;
+  transition-property : bottom, top ;
+    -moz-animation-timing-function : ease-in ;
+    -webkit-animation-timing-function : ease-in ;
+  animation-timing-function : ease-in ;
+    -moz-animation-fill-mode : both ;
+    -webkit-animation-fill-mode : both ;
+  animation-fill-mode : both ;
+    -moz-animation-delay : 9s ; 
+    -webkit-animation-delay : 9s ; 
+  animation-delay : 9s ; 
+
+  @keyframes desserts_contenu {
+    from {
+      margin-top : 100%;
+      opacity : 0 ; 
+    }
+    to {
+      margin-top : 0% ; 
+      opacity : 1 ; 
+    }
+  }
+}
