@@ -1,0 +1,112 @@
+header {
+    display : flex ; 
+    flex-direction : column ; 
+    justify-content : space-around ;
+    align-items : center ; 
+    margin-bottom : 20px ; 
+  
+    .container {
+      margin-top : 10px ; 
+      background-color : #ffffff ; 
+      @media screen and (max-width: map-get($breakpoints, tablette)) {
+        width : 100% ;
+        margin : 0 ; 
+      }
+      @media (max-width: map-get($breakpoints, mobile)) {
+        width : 100% ;  
+        margin : 0 ; 
+      }
+    }
+    
+    .fa-arrow-left {
+      position : absolute ; 
+      color : #000000 ; 
+      font-size : 25px ; 
+      margin : 10px 15px 25px 25px ;
+    }
+  
+    #logo_header {
+      width : 30% ;
+      margin : 0.5% 32% ; 
+      @media screen and (max-width: map-get($breakpoints, tablette)) {
+        width : 35% ; 
+        margin : 2% 30% ; 
+      }
+      @media (max-width: map-get($breakpoints, mobile)) {
+        width : 35% ; 
+        margin : 2% 30% ; 
+      }
+    }
+      
+    #photo_header {
+      object-fit : cover ;
+      position : relative ; 
+      width : 33%; 
+      height : 300px ; 
+      margin : 0% 30% auto ;
+      z-index : 1 ;
+      @media screen and (max-width: map-get($breakpoints, tablette)) {
+        width : 100% ;
+        margin : 0px ; 
+      }
+      @media (max-width: map-get($breakpoints, mobile)) {
+        width : 100% ;
+        margin : 0px ;
+      }
+    }
+    
+    .restaurant_nom {
+      width : 466px ; 
+      background-color : #ffffff ; 
+      display : flex ; 
+      flex-direction : row ;
+      justify-content : space-between ; 
+      border-radius : 30px ; 
+      position : absolute ;
+      padding-top : 10px ; 
+      z-index : 2 ;
+      margin-left : 415px ; 
+      margin-top : -35px ; 
+      @media screen and (max-width: map-get($breakpoints, tablette)) {
+        width : 100% ;
+        background-color : #f6f6f6 ; 
+        height : 50px ; 
+        margin-left : 0px ; 
+        border-radius : 30px 30px 0px 0px ; 
+      }
+      @media (max-width: map-get($breakpoints, mobile)) {
+        width : 100% ;
+        background-color : #f6f6f6 ; 
+        height : 50px ; 
+        margin-left : 0px ; 
+        border-radius : 30px 30px 0px 0px ; 
+      }
+  
+      h1 {
+        padding-left : 10px ; 
+        font-family: 'Shrikhand', 'cursive' ;
+        font-size : 25px ; 
+        font-weight : bold ; 
+        letter-spacing : 1.5px ; 
+        @media screen and (max-width: map-get($breakpoints, tablette)) {
+          text-align: center ;
+          line-height: 20px ;
+          width : 70% ;
+        }
+        @media (max-width: map-get($breakpoints, mobile)) {
+          text-align : left ;
+          font-size : 28px ; 
+          line-height : 0px ; 
+          width : 80% ;
+          margin-left : 15px ; 
+        } 
+      }
+    
+        .fa-heart {
+        font-size : 30px ; 
+        color : #000000 ; 
+        padding-right : 30px ; 
+      }
+    }
+  }
+  

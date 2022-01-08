@@ -1,0 +1,107 @@
+#fonctionnement {
+  @include flex-center-column ;
+  align-items : center ; 
+  margin : auto ; 
+  padding-top : 10px ; 
+  @media screen and (max-width: map-get($breakpoints, tablette)) {
+    width : 90% ; 
+    align-items : flex-start ; 
+    margin-top : 15px ; 
+  }
+  @media (max-width: map-get($breakpoints, mobile)) {
+    width : 90% ; 
+    align-items : flex-start ; 
+    margin-top : 15px ; 
+  }
+    
+  h2 {
+    font-family: 'Roboto', sans-serif ; 
+    font-size : 20px ; 
+    font-weight : bold ; 
+    color : #000000 ; 
+  }
+  
+  .fonctionnement {
+    @include flex-center-row ;
+    width : 100% ; 
+    @media screen and (max-width: map-get($breakpoints, tablette)) {
+      @include flex-center-column ;
+    }
+    @media (max-width: map-get($breakpoints, mobile)) {
+      @include flex-center-column ; 
+    }
+  } 
+    
+  .categorie { 
+    font-weight : bold ;
+    display : flex ; 
+    flex-direction : row ;
+    align-items : center ; 
+    width : 35% ;
+    @media screen and (max-width: map-get($breakpoints, tablette)) {
+      width : 100% ; 
+    }
+    @media (max-width: map-get($breakpoints, mobile)) {
+      width : 100% ; 
+    }
+  
+    .nombre {
+      background-color: $primary_color;
+      color : #ffffff ; 
+      clip-path: circle(40%);
+      padding : 15px ; 
+      position : absolute ; 
+      z-index : 1 ;
+      margin-left : 4% ; 
+      @media screen and (max-width: map-get($breakpoints, tablette)) {
+        margin-left : 16% ; 
+      }
+      @media (max-width: map-get($breakpoints, mobile)) {
+        margin-left : 1% ;
+      }
+    }
+  
+    .fa-mobile-alt, .fa-list-ul, .fa-store {
+      position : absolute ;
+      z-index : 1 ; 
+      margin-left : 7% ; 
+      color : #333131 ;       
+      @media screen and (max-width: map-get($breakpoints, tablette)) {
+        margin-left : 25% ; 
+      }
+      @media (max-width: map-get($breakpoints, mobile)) {
+        margin-left : 15% ;
+      }
+      &:hover {
+        cursor : pointer ; 
+        color: darken($primary-color, 15%);
+      }    
+    }
+     
+    .fonctionnement_description {
+      position : relative ;
+      font-weight : bold ; 
+      background-color : #F6F6F6 ; 
+      display : flex ;
+      flex-direction: row ;
+      justify-content : flex-start ; 
+      box-shadow: 2px 3px 7px #e0dede;
+      border-radius : 25px ;
+      width : 60% ;
+      margin : 4% 20% ; 
+      padding : 5% 0% 5% 15% ;
+      z-index : 0 ;  
+      @media (max-width: map-get($breakpoints, mobile)) {
+        width : 80% ;
+        margin : 4% ;  
+        padding : 8% 0% 8% 22% ;      
+      }
+      &:hover {
+        cursor : pointer ;
+        background-color: lighten($primary-color, 35%) ;
+        color : #000000 ; 
+      }
+    }  
+  }
+}
+

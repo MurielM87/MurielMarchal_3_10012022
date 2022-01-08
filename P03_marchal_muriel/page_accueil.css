@@ -9,16 +9,30 @@ body {
   color: #000000;
 }
 
+.container {
+  width: 1394px;
+  margin: auto;
+}
+@media screen and (max-width: 1000px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    width: 100%;
+  }
+}
+
 /*loading spinner*/
 body #loading_spinner {
   background-color: #000000;
   width: 100%;
-  height: 1345px;
   position: absolute;
   z-index: 2;
-  -moz-animation-duration: 2s;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
+  -moz-animation-duration: 2.5s;
+  -webkit-animation-duration: 2.5s;
+  animation-duration: 2.5s;
   -moz-animation-iteration-count: 1;
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
@@ -95,7 +109,7 @@ body #loading_spinner {
   #loading_spinner .arc {
     width: 200px;
     height: 200px;
-    margin: 30% 40%;
+    margin: 20% 40%;
   }
 }
 @media (max-width: 767px) {
@@ -106,39 +120,87 @@ body #loading_spinner {
   }
 }
 #loading_spinner .arc:nth-child(1) {
+  -moz-animation-name: rotate1;
+  -webkit-animation-name: rotate1;
   animation-name: rotate1;
+  -moz-animation-duration: 0.5s;
+  -webkit-animation-duration: 0.5s;
   animation-duration: 0.5s;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
   animation-timing-function: linear;
+  -webkit-animation-iteration-count: 4;
+  -moz-animation-iteration-count: 4;
   animation-iteration-count: 4;
+  -webkit-animation-direction: normal;
+  -moz-animation-direction: normal;
   animation-direction: normal;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
   animation-fill-mode: both;
+  -webkit-animation-play-state: running;
+  -moz-animation-play-state: running;
   animation-play-state: running;
 }
 #loading_spinner .arc:nth-child(2) {
+  -moz-animation-name: rotate2;
+  -webkit-animation-name: rotate2;
   animation-name: rotate2;
+  -moz-animation-duration: 0.5s;
+  -webkit-animation-duration: 0.5s;
   animation-duration: 0.5s;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
   animation-timing-function: linear;
+  -webkit-animation-iteration-count: 4;
+  -moz-animation-iteration-count: 4;
   animation-iteration-count: 4;
+  -webkit-animation-direction: normal;
+  -moz-animation-direction: normal;
   animation-direction: normal;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
   animation-fill-mode: both;
+  -webkit-animation-play-state: running;
+  -moz-animation-play-state: running;
   animation-play-state: running;
 }
 #loading_spinner .arc:nth-child(3) {
+  -moz-animation-name: rotate3;
+  -webkit-animation-name: rotate3;
   animation-name: rotate3;
+  -moz-animation-duration: 0.5s;
+  -webkit-animation-duration: 0.5s;
   animation-duration: 0.5s;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
   animation-timing-function: linear;
+  -webkit-animation-iteration-count: 4;
+  -moz-animation-iteration-count: 4;
   animation-iteration-count: 4;
+  -webkit-animation-direction: normal;
+  -moz-animation-direction: normal;
   animation-direction: normal;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
   animation-fill-mode: both;
+  -webkit-animation-play-state: running;
+  -moz-animation-play-state: running;
   animation-play-state: running;
 }
 #loading_spinner .arc:nth-child(1) {
+  -webkit-animation-delay: -0.8s;
+  -moz-animation-delay: -0.8s;
   animation-delay: -0.8s;
 }
 #loading_spinner .arc:nth-child(2) {
+  -webkit-animation-delay: -0.4s;
+  -moz-animation-delay: -0.4s;
   animation-delay: -0.4s;
 }
 #loading_spinner .arc:nth-child(3) {
+  -webkit-animation-delay: 0s;
+  -moz-animation-delay: 0s;
   animation-delay: 0s;
 }
 
@@ -172,22 +234,70 @@ body #loading_spinner {
     opacity: 0;
   }
 }
-.container {
-  width: 1394px;
-  margin: auto;
+.ohmyfood {
+  filter: invert(100%);
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  width: 25%;
+  margin: 15% 40%;
+  -moz-animation-duration: 0.3s;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -moz-animation-iteration-count: 1;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -moz-animation-direction: normal;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+  -moz-animation-name: logo;
+  -webkit-animation-name: logo;
+  animation-name: logo;
+  -moz-transition-property: top, bottom;
+  -webkit-transition-property: top, bottom;
+  transition-property: top, bottom;
+  -moz-animation-timing-function: ease-in;
+  -webkit-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
+  -moz-animation-fill-mode: none;
+  -webkit-animation-fill-mode: none;
+  animation-fill-mode: none;
+  -webkit-animation-delay: 2.75s;
+  -moz-animation-delay: 2.75s;
+  animation-delay: 2.75s;
 }
 @media screen and (max-width: 1000px) {
-  .container {
-    width: 100%;
+  .ohmyfood {
+    width: 40%;
+    margin: 25% 30%;
   }
 }
 @media (max-width: 767px) {
-  .container {
-    width: 100%;
+  .ohmyfood {
+    width: 50%;
+    margin: 40% 25%;
+  }
+}
+@keyframes logo {
+  0% {
+    margin-top: 0%;
+    opacity: 0;
+  }
+  10% {
+    margin-top: 100%;
+    opacity: 1;
+  }
+  90% {
+    margin-top: 100%;
+    opacity: 1;
+  }
+  100% {
+    margin-top: 0%;
+    opacity: 0;
   }
 }
 
-/*header*/
 header {
   display: flex;
   flex-direction: column;
@@ -199,7 +309,6 @@ header .logo_ohmyfood {
   padding: 20px 0px;
 }
 
-/*accueil haut de page*/
 #accueil {
   display: flex;
   flex-direction: column;
@@ -260,13 +369,13 @@ header .logo_ohmyfood {
   }
 }
 
-.explorer {
+.btn_explorer {
   color: #ffffff;
   text-align: center;
   -webkit-background: linear-gradient(to right bottom, #FF79DA, #9356DC);
   -moz-background: linear-gradient(to right bottom, #FF79DA, #9356DC);
   background: linear-gradient(to right bottom, #FF79DA, #9356DC);
-  font-size: 20px;
+  font-size: 17px;
   width: 270px;
   font-weight: bold;
   border: none;
@@ -277,19 +386,19 @@ header .logo_ohmyfood {
   position: relative;
 }
 @media screen and (max-width: 1000px) {
-  .explorer {
+  .btn_explorer {
     margin: 4% 45% 8%;
   }
 }
 @media (max-width: 767px) {
-  .explorer {
+  .btn_explorer {
     margin: 4% 30% 8%;
   }
 }
-.explorer:hover {
+.btn_explorer:hover {
   cursor: pointer;
 }
-.explorer:hover::before {
+.btn_explorer:hover::before {
   content: "";
   position: absolute;
   top: 0;
@@ -303,12 +412,12 @@ header .logo_ohmyfood {
   -moz-transform-origin: left;
   transform-origin: left;
 }
-.explorer span {
+.btn_explorer span {
   position: relative;
   z-index: 1;
 }
 
-.explorer::before {
+.btn_explorer::before {
   content: "";
   position: absolute;
   top: 0;
@@ -331,7 +440,6 @@ header .logo_ohmyfood {
   transition: transform 0.1s;
 }
 
-/*fonctinnement*/
 #fonctionnement {
   display: flex;
   flex-direction: column;
@@ -416,38 +524,53 @@ header .logo_ohmyfood {
     margin-left: 1%;
   }
 }
+#fonctionnement .categorie .fa-mobile-alt, #fonctionnement .categorie .fa-list-ul, #fonctionnement .categorie .fa-store {
+  position: absolute;
+  z-index: 1;
+  margin-left: 7%;
+  color: #333131;
+}
+@media screen and (max-width: 1000px) {
+  #fonctionnement .categorie .fa-mobile-alt, #fonctionnement .categorie .fa-list-ul, #fonctionnement .categorie .fa-store {
+    margin-left: 25%;
+  }
+}
+@media (max-width: 767px) {
+  #fonctionnement .categorie .fa-mobile-alt, #fonctionnement .categorie .fa-list-ul, #fonctionnement .categorie .fa-store {
+    margin-left: 15%;
+  }
+}
+#fonctionnement .categorie .fa-mobile-alt:hover, #fonctionnement .categorie .fa-list-ul:hover, #fonctionnement .categorie .fa-store:hover {
+  cursor: pointer;
+  color: #6c27be;
+}
 #fonctionnement .categorie .fonctionnement_description {
+  position: relative;
   font-weight: bold;
   background-color: #F6F6F6;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: flex-start;
   box-shadow: 2px 3px 7px #e0dede;
   border-radius: 25px;
   width: 60%;
   margin: 4% 20%;
-  padding: 30px;
+  padding: 5% 0% 5% 15%;
   z-index: 0;
 }
 @media (max-width: 767px) {
   #fonctionnement .categorie .fonctionnement_description {
     width: 80%;
     margin: 4%;
+    padding: 8% 0% 8% 22%;
   }
-}
-#fonctionnement .categorie .fonctionnement_description .fa-mobile-alt, #fonctionnement .categorie .fonctionnement_description .fa-list-ul, #fonctionnement .categorie .fonctionnement_description .fa-store {
-  color: #333131;
-}
-#fonctionnement .categorie .fonctionnement_description .fa-mobile-alt:hover, #fonctionnement .categorie .fonctionnement_description .fa-list-ul:hover, #fonctionnement .categorie .fonctionnement_description .fa-store:hover {
-  cursor: pointer;
-  color: #6023a9;
 }
 #fonctionnement .categorie .fonctionnement_description:hover {
   cursor: pointer;
   background-color: #f2eafb;
+  color: #000000;
 }
 
-/*restaurants*/
 #restaurants {
   display: flex;
   flex-direction: column;
@@ -482,7 +605,7 @@ header .logo_ohmyfood {
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
-  width: 80%;
+  width: 90%;
   padding: 10px 0px;
 }
 @media screen and (max-width: 1000px) {
@@ -507,22 +630,17 @@ header .logo_ohmyfood {
   flex-direction: column;
   border-radius: 20px;
   margin: 10px;
-  padding: 5px;
-  width: 40%;
+  width: 250px;
   height: 250px;
   box-shadow: 2px 2px 3px #f6f6f6;
 }
 @media screen and (max-width: 1000px) {
   #restaurants .liste_restaurants .restaurant {
-    width: 250px;
-    height: 160px;
     margin: 10px 0px;
   }
 }
 @media (max-width: 767px) {
   #restaurants .liste_restaurants .restaurant {
-    width: 250px;
-    height: 160px;
     margin: 10px 0px;
   }
 }
@@ -537,16 +655,6 @@ header .logo_ohmyfood {
   position: relative;
   z-index: 0;
 }
-@media screen and (max-width: 1000px) {
-  #restaurants .liste_restaurants .restaurant .restaurant_photo {
-    height: 110px;
-  }
-}
-@media (max-width: 767px) {
-  #restaurants .liste_restaurants .restaurant .restaurant_photo {
-    height: 110px;
-  }
-}
 #restaurants .liste_restaurants .restaurant .nouveau {
   color: #278870;
   background-color: #99E2D0;
@@ -555,24 +663,15 @@ header .logo_ohmyfood {
   position: absolute;
   padding: 5px;
   z-index: 1;
-  margin-left: 340px;
+  margin-left: 167px;
   margin-top: 17px;
-}
-@media screen and (max-width: 1000px) {
-  #restaurants .liste_restaurants .restaurant .nouveau {
-    margin-left: 167px;
-  }
-}
-@media (max-width: 767px) {
-  #restaurants .liste_restaurants .restaurant .nouveau {
-    margin-left: 167px;
-  }
 }
 #restaurants .liste_restaurants .restaurant .description {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding-top: 4%;
 }
 #restaurants .liste_restaurants .restaurant .description .informations {
   display: flex;
@@ -590,31 +689,36 @@ header .logo_ohmyfood {
 #restaurants .liste_restaurants .restaurant .description .informations .lieu {
   font-size: 17px;
 }
-#restaurants .liste_restaurants .restaurant .description i.empty {
+#restaurants .icon-heart:before {
+  content: "\f004";
+}
+
+i.empty {
   position: absolute;
   z-index: 1;
-  margin-left: 380px;
+  margin-left: 210px;
   font-size: 30px;
   padding: 5px;
   color: #000000;
 }
 @media screen and (max-width: 1000px) {
-  #restaurants .liste_restaurants .restaurant .description i.empty {
+  i.empty {
     margin-left: 210px;
   }
 }
 @media (max-width: 767px) {
-  #restaurants .liste_restaurants .restaurant .description i.empty {
+  i.empty {
     margin-left: 210px;
   }
 }
-#restaurants .liste_restaurants .restaurant .description i.empty:hover {
+i.empty:hover {
   cursor: pointer;
   display: none;
   position: relative;
   z-index: 0;
 }
-#restaurants .liste_restaurants .restaurant .description i.full {
+
+i.full {
   position: relative;
   z-index: 0;
   font-size: 32px;
@@ -622,12 +726,12 @@ header .logo_ohmyfood {
   color: #ffffff;
   opacity: 0;
 }
-#restaurants .liste_restaurants .restaurant .description i.full:hover {
+i.full:hover {
   cursor: pointer;
   position: absolute;
   opacity: 1;
   z-index: 1;
-  margin-left: 379px;
+  margin-left: 209px;
   margin-top: 0px;
   font-weight: bold;
   background: -webkit-gradient(linear, left bottom, right top, from(#FF79DA), to(#9356DC));
@@ -639,20 +743,9 @@ header .logo_ohmyfood {
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
   color: transparent;
-  transition: opacity 0.4s ease-in-out;
-}
-@media screen and (max-width: 1000px) {
-  #restaurants .liste_restaurants .restaurant .description i.full:hover {
-    margin-left: 209px;
-  }
-}
-@media (max-width: 767px) {
-  #restaurants .liste_restaurants .restaurant .description i.full:hover {
-    margin-left: 209px;
-  }
+  transition: opacity 2s ease-in-out;
 }
 
-/*footer*/
 footer {
   font-size: 22px;
   line-height: 25px;
@@ -674,11 +767,13 @@ footer .container {
     margin-left: 10px;
   }
 }
-footer .container h4 {
-  font-family: "shrikhand", "cursive";
-  font-size: 25px;
-  color: #ffffff;
-  margin-bottom: 10px;
+footer .container div {
+  margin-left: 3%;
+}
+footer .container .ohmyfood_footer {
+  filter: invert(100%);
+  width: 30%;
+  margin: 3%;
 }
 footer .container .footer_liste {
   font-weight: bold;

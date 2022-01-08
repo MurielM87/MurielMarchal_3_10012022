@@ -1,0 +1,23 @@
+
+* {margin : 0;}
+  
+body {
+  font-size : 15px ;
+  font-family: 'Roboto', sans-serif ;
+  line-height : 12px ; 
+  color : #000000 ;
+}
+
+.container {
+  width : 1394px ; 
+  margin : auto ; 
+  @media screen and (max-width: map-get($breakpoints, tablette)) {
+    width : 100% ;
+  }
+  @media (max-width: map-get($breakpoints, mobile)) {
+    width : 100% ; 
+  }
+}
+
+
+  
