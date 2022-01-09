@@ -1,0 +1,50 @@
+footer {
+    font-size : 22px ; 
+    line-height : 25px ; 
+    color : #ffffff ; 
+    background-color : #353535 ;
+    padding : 10px 0px ; 
+  
+    .container {
+      display : flex ; 
+      flex-direction : column ; 
+      justify-content : center ; 
+      align-items : center ;
+      line-height : 35px ; 
+      @media (max-width: map-get($breakpoints, mobile)) {
+        width : 97% ;
+        align-items : flex-start ; 
+        margin-left : 10px ; 
+      }
+      
+      div {
+        margin-left : 3% ; 
+      }
+  
+      .ohmyfood_footer {
+        filter: invert(100%); 
+        width : 30% ;
+        margin : 3% ; 
+      }
+  
+      .footer_liste {
+        font-weight : bold ; 
+           
+        .fa-utensils {
+          color : #ffffff ; 
+          font-size : 20px ; 
+        }
+        
+        .fa-hands-helping {
+          color : #ffffff ; 
+          font-size : 13px ; 
+        }
+   
+      }
+        
+      a {
+          color : #ffffff ; 
+          text-decoration : none ; 
+      }
+    }
+}

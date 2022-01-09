@@ -1,0 +1,54 @@
+i.empty {
+    position : absolute ;
+    z-index : 1 ;
+    margin-left : 14% ;
+    font-size : 30px ;
+    padding : 5px ; 
+    color : #000000 ; 
+    @media screen and (max-width: map-get($breakpoints, tablette)) {
+      margin-left : 33% ; 
+    }
+    @media (max-width: map-get($breakpoints, mobile)) {
+      margin-left : 62% ; 
+    }
+    &:hover {
+      cursor : pointer ;
+      display : none ;
+      position : relative ;
+      z-index : 0 ;
+    }
+  }
+
+  i.full {
+    position : relative ;
+    z-index : 0 ;
+    font-size : 32px ;
+    padding : 5px ; 
+    color : #ffffff ; 
+    opacity : 0 ; 
+    &:hover {
+      cursor : pointer ; 
+      position : absolute ;
+      opacity : 1 ; 
+      z-index : 1 ; 
+      margin-left : 14% ; 
+      margin-top : 0px ; 
+      @media screen and (max-width: map-get($breakpoints, tablette)) {
+        margin-left : 33% ; 
+      }
+      @media (max-width: map-get($breakpoints, mobile)) {
+        margin-left : 62% ; 
+      }
+      font-weight : bold ; 
+        background : -webkit-gradient(linear, left bottom, right top, from($secondary_color), to($primary_color));
+        background : -moz-gradient(linear, left bottom, right top, from($secondary_color), to($primary_color));
+      background : gradient(linear, left bottom, right top, from($secondary_color), to($primary_color));
+        -webkit-background-clip : text ; 
+        -moz-background-clip : text ;
+      background-clip : text ;
+          -webkit-text-fill-color : transparent ; 
+        -moz-text-fill-color : transparent ; 
+      color : transparent ; 
+      transition: opacity 2s ease-in-out;
+    }  
+  }
