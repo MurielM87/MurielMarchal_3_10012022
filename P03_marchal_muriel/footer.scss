@@ -1,0 +1,62 @@
+footer {
+    font-size : 18px ; 
+    color : #ffffff ; 
+    background-color : #353535 ;
+    padding : 10px 0px ; 
+    @media (min-width: map-get($breakpoints, tablette)) {
+      font-size : 22px ; 
+    }
+  
+    .container {
+      display : flex ; 
+      flex-direction : column ; 
+      justify-content : center ; 
+      width : 97% ;
+      align-items : flex-start ; 
+      margin-left : 10px ; 
+      line-height : 30px ; 
+      @media (min-width: map-get($breakpoints, tablette)) {
+        width : 100% ; 
+        align-items : center ; 
+        line-height : 35px ; 
+        margin-left : 0 ; 
+      }
+      
+      div {
+        margin-left : 3% ; 
+        @media screen and (min-width: map-get($breakpoints, desktop)) {
+          margin : 0 ; 
+        }
+      }
+  
+      .ohmyfood_footer {
+        filter: invert(100%); 
+        width : 30% ;
+        margin : 3% ; 
+        @media screen and (min-width: map-get($breakpoints, desktop)) {
+          width : 15% ;
+          margin : 1%  auto ;
+        }
+      }
+  
+      .footer_liste {
+        font-weight : bold ; 
+           
+        .fa-utensils {
+          color : #ffffff ; 
+          font-size : 15px ; 
+        }
+        
+        .fa-hands-helping {
+          color : #ffffff ; 
+          font-size : 10px ; 
+        }
+   
+      }
+        
+      a {
+          color : #ffffff ; 
+          text-decoration : none ; 
+      }
+    }
+}

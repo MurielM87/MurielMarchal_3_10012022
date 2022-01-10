@@ -1,0 +1,65 @@
+header {
+    @include flex-center-column ;
+     
+    .logo_ohmyfood {
+      width : 40% ;
+      margin : 0 auto ; 
+      padding : 20px 0px ; 
+    }
+  }
+   
+#accueil {
+  @include flex-center-column ;
+  background-color: #F6F6F6;
+  align-items : center ; 
+  width : 100% ;
+  margin : 0 auto ; 
+  padding-bottom : 20px ; 
+  border-top : solid 3px darken(#EAEAEA, 10%) ; 
+      
+  .localisation {
+    background-color: #EAEAEA;
+    font-size : 18px ; 
+    font-weight : bold ;
+    width : 100% ; 
+    text-align : center ; 
+    padding : 10px 0px ; 
+  
+    .fa-map-marker-alt {
+      color : #000000 ; 
+      margin-right : 15px ; 
+    }
+  }
+    
+  h1 {
+    font-family: 'Roboto', sans-serif ; 
+    font-size : 26px ; 
+    font-weight : bold ; 
+    color : #000000 ; 
+    text-align : center ;
+    line-height : 30px ; 
+    width : 70% ;
+    padding : 7% 15% 0% 15% ;
+    @media (min-width: map-get($breakpoints, tablette)) {
+      line-height: 20px ;
+      width : 70% ;
+      padding-top : 2% ; 
+    }
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
+      padding : 0 ; 
+    }
+  }
+   
+  p {
+    font-size : 20px ; 
+    width : 90% ; 
+    text-align: center;
+    line-height : 20px ; 
+    @media (min-width: map-get($breakpoints, tablette)) {
+      width : 70% ;
+    }  
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
+      width : 30% ;
+    }
+  }
+}  

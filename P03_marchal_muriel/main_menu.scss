@@ -1,0 +1,123 @@
+#menus {
+    background-color: #f6f6f6 ;
+    @include flex-center-column ;
+    width : 100% ;
+    border-radius : 10px ; 
+    margin : 0 auto ; 
+    padding-top : 5% ; 
+    padding-bottom : 15px ; 
+    @media (min-width: map-get($breakpoints, tablette)) {
+      @include flex-center-column ;
+      padding-top : 3% ; 
+    }
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
+      @include flex-center-row ; 
+      margin-top : 30px ; 
+    }
+    
+    #entrees, #plats, #desserts {
+      display : flex ; 
+      flex-direction : column ;
+      width : 90% ; 
+      justify-content: center ;
+      margin : 4% auto ;
+      padding : 0 ; 
+      @media (min-width: map-get($breakpoints, tablette)) {
+        width : 70% ; 
+        justify-content : center ;
+        margin : 2% 5% ;
+        padding : 0 ;
+      }
+      @media screen and (min-width: map-get($breakpoints, desktop)) {
+        width : 30% ; 
+        justify-content : space-around ; 
+        margin : 0 auto ;
+        padding: 10px 15px ;  
+      }
+      
+      h2 {
+        margin-left : 3.5px ; 
+        font-size : 22px ;  
+        width : 60px ; 
+        border-bottom : solid 3px $third_color ;
+        padding-bottom : 10px ; 
+        margin-bottom : 3% ; 
+      }
+      
+      .entrees, .plats, .desserts {
+        background-color: #ffffff;
+        display : flex ; 
+        @include flex-center-row ;
+        padding : 0px ; 
+        margin : 8px auto ; 
+        height : 60px ;
+        border-radius : 10px ; 
+        width : 90% ; 
+        @media screen and (min-width: map-get($breakpoints, desktop)) {
+          width : 100% ;
+          flex-direction : row ;
+          justify-content : space-between ;
+          box-shadow : 4px 3px 5px #635d5d ; 
+          margin : 8px ;   
+        }
+        
+        .menu {
+          display : flex ; 
+          flex-direction : column ; 
+          justify-content : space-between ;
+          width : 100% ; 
+          height : 65px ; 
+          padding : 0px ; 
+          white-space: nowrap;
+          overflow: hidden;
+            -webkit-text-overflow : '....' ; 
+            -moz-text-overflow : '...' ; 
+          text-overflow: '...';
+          @media screen and (min-width: map-get($breakpoints, desktop)) {
+            padding-left : 5px ; 
+          }
+    
+          h3 {
+            font-family : 'Roboto', sans-serif ; 
+            font-size : 20px ;
+            font-weight : bold ; 
+            margin : 10px 10px 0px 10px; 
+            overflow : hidden ; 
+              -webkit-text-overflow : '...' ; 
+              -moz-text-overflow : '...' ;
+            text-overflow : '...' ;
+            padding : 2px 0px 17px 0px ; 
+          }
+              
+          .informations {
+            display : flex ; 
+            flex-direction : row ;
+            justify-content : space-between ;
+            margin : 0px 10px 10px 10px ; 
+             
+            .supplement {
+              font-size : 18px ; 
+              padding : 2px 0px 4px 0px ; 
+              margin-bottom : 3px ;
+              font-weight : normal ; 
+              overflow : hidden ; 
+                -webkit-text-overflow : '...' ; 
+                -moz-text-overflow : '...' ;
+              text-overflow : '...' ;
+            }
+      
+            .prix {
+              font-size : 20px ; 
+              font-weight : bold ; 
+              margin-right : 5px ;
+            }
+          }
+        }
+        
+        .fa-check-circle {
+          color : #ffffff ;          
+        }    
+      }
+    }
+  }
+  
