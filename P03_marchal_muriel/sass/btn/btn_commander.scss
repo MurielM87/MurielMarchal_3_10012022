@@ -8,14 +8,14 @@
     font-weight : bold ; 
     border-radius : 30px ; 
     box-shadow : 3px 3px 3px #e4dede ; 
-    margin : 3% 45% ; 
+    margin : 4% 34% 8% ; 
     padding : 10px 20px ; 
     position : relative ; 
-    @media screen and (max-width: map-get($breakpoints, tablette)) {
+    @media (min-width: map-get($breakpoints, tablette)) {
       margin : 4% 40% 8% ; 
     }
-    @media (max-width: map-get($breakpoints, mobile)) {
-      margin : 4% 30% 8% ; 
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
+      margin : 3% 45% ; 
     }
     
     &:hover {

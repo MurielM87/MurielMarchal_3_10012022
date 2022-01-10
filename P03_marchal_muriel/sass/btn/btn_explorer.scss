@@ -5,19 +5,19 @@
       -moz-background : linear-gradient(to right bottom, $secondary_color, $primary_color) ; 
     background : linear-gradient(to right bottom, $secondary_color, $primary_color) ; 
     font-size : 17px ; 
-    width : 270px ; 
+    width : 230px ; 
     font-weight : bold ; 
     border : none ;
     box-shadow : 3px 3px 3px #e4dede ; 
     border-radius : 30px ; 
-    padding : 10px 20px ; 
-    margin : 3% 45% ; 
+    padding : 17px 0px ; 
+    margin : 4% 30% 8% ; 
     position : relative ;
-    @media screen and (max-width: map-get($breakpoints, tablette)) {
-      margin : 4% 45% 8% ; 
+    @media (min-width: map-get($breakpoints, tablette)) {
+      margin : 4% 45% ; 
     } 
-    @media (max-width: map-get($breakpoints, mobile)) {
-      margin : 4% 30% 8% ; 
+    @media screen and (min-width:map-get($breakpoints, desktop)) {
+      margin : 3% 45% ; 
     }
     
     &:hover {

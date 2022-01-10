@@ -15,6 +15,7 @@ header {
   width : 100% ;
   margin : 0 auto ; 
   padding-bottom : 20px ; 
+  border-top : solid 3px darken(#EAEAEA, 10%) ; 
       
   .localisation {
     background-color: #EAEAEA;
@@ -32,32 +33,33 @@ header {
     
   h1 {
     font-family: 'Roboto', sans-serif ; 
-    font-size : 24px ; 
+    font-size : 26px ; 
     font-weight : bold ; 
     color : #000000 ; 
-    @media screen and (max-width: map-get($breakpoints, tablette)) {
-      text-align: center ;
+    text-align : center ;
+    line-height : 30px ; 
+    width : 70% ;
+    padding : 7% 15% 0% 15% ;
+    @media (min-width: map-get($breakpoints, tablette)) {
       line-height: 20px ;
       width : 70% ;
+      padding-top : 2% ; 
     }
-    @media (max-width: map-get($breakpoints, mobile)) {
-      text-align : center ;
-      line-height : 20px ; 
-      width : 70% ;
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
+      padding : 0 ; 
     }
   }
    
   p {
-    font-size : 17px ; 
-    @media screen and (max-width: map-get($breakpoints, tablette)) {
+    font-size : 20px ; 
+    width : 90% ; 
+    text-align: center;
+    line-height : 20px ; 
+    @media (min-width: map-get($breakpoints, tablette)) {
       width : 70% ;
-      text-align : center ; 
-      line-height : 20px ; 
-    }
-    @media (max-width: map-get($breakpoints, mobile)) {
-      width : 70% ; 
-      text-align: center;
-      line-height : 20px ; 
+    }  
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
+      width : 30% ;
     }
   }
 }  
