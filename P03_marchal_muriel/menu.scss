@@ -1,7 +1,8 @@
-@import "sass/normes/responsive.scss" ; 
-@import "sass/normes/margin.scss" ; 
-@import "sass/normes/variables.scss" ;
-@import "sass/normes/body.scss" ; 
+@import "sass/layout/responsive.scss" ; 
+@import "sass/layout/margin.scss" ; 
+@import "sass/layout/variables.scss" ;
+
+@import "sass/layout/body_menu.scss" ; 
 
 @import "sass/header/header_menu.scss" ;
 
