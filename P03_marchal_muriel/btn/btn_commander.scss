@@ -4,20 +4,20 @@
       -webkit-background : linear-gradient(to right bottom, $secondary_color, $primary_color) ; 
       -moz-background : linear-gradient(to right bottom, $secondary_color, $primary_color) ; 
     background : linear-gradient(to right bottom, $secondary_color, $primary_color) ; 
-    font-size : 20px ; 
+    font-size : 15px ; 
     font-weight : bold ; 
     border-radius : 30px ; 
     box-shadow : 3px 3px 3px #e4dede ; 
-    margin : 4% 37% 8% ; 
-    padding : 10px 20px ; 
+    margin : 1% 26% 20% 26% ; 
+    padding : 15px 50px ; 
     position : relative ; 
     @media (min-width: map-get($breakpoints, tablette)) {
-      margin : 4% 41% 8% ; 
+      margin : 1% 40% 10% 40% ; 
     }
     @media screen and (min-width: map-get($breakpoints, desktop)) {
       margin : 3% 45% ; 
     }
-    
+
     &:hover {
       cursor : pointer ; 
     }
