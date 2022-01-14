@@ -95,6 +95,9 @@
         margin-left : -10% ; 
         margin-top : -1% ;
         color : #7d7d7d ;  
+        @media screen and (min-width : map-get($breakpoints, desktop)) {
+          margin-left : -12% ; 
+        }
       }
     }  
   }

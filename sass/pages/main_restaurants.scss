@@ -91,17 +91,18 @@
         flex-direction : row ;
         justify-content : space-between ; 
         align-items : center ; 
-        padding-top : 4% ;
 
         .informations {
           display : flex ; 
           flex-direction : column ; 
-          flex-wrap : no-wrap ; 
+          flex-wrap : nowrap ; 
+          margin : 2% ; 
+          width : 80% ; 
               
           h3, .lieu {
             margin : 5px ;
             font-family : 'Roboto', sans-serif ; 
-            color : #000000 ; 
+            color : $black_color ; 
           }
             
           h3 {
@@ -113,6 +114,11 @@
             font-size : 17px ; 
           }
 
+        }
+
+        .favori {
+          width : 20% ; 
+          margin-bottom : 30px ; 
         }
       }
     }
