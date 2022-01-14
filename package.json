@@ -1,0 +1,20 @@
+{
+  "name": "p03_marchal_muriel",
+  "version": "1.0.0",
+  "description": "page web Ohmyfood",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./main.scss:style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MurielM87/Ohmyfood.git"
+  },
+  "author": "Muriel MARCHAL",
+  "license": "ISC",
+  "browserslist": "last 4 versions",
+  "bugs": {
+    "url": "https://github.com/MurielM87/Ohmyfood/issues"
+  },
+  "homepage": "https://github.com/MurielM87/Ohmyfood#readme"
+}

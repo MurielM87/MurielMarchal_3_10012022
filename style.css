@@ -1,0 +1,1762 @@
+* {
+  margin: 0;
+}
+
+body {
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  line-height: 12px;
+  color: #000000;
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+  background-color: #f6f6f6;
+}
+@media screen and (min-width: 1000px) {
+  .container {
+    width: 1394px;
+    background-color: #ffffff;
+  }
+}
+
+.btn_explorer {
+  color: #ffffff;
+  text-align: center;
+  -webkit-background: linear-gradient(to right bottom, #FF79DA, #9356DC);
+  -moz-background: linear-gradient(to right bottom, #FF79DA, #9356DC);
+  background: linear-gradient(to right bottom, #FF79DA, #9356DC);
+  font-size: 17px;
+  width: 230px;
+  font-weight: bold;
+  border: none;
+  box-shadow: 3px 3px 3px #e4dede;
+  border-radius: 30px;
+  padding: 17px 0px;
+  margin: 4% 30% 8%;
+  position: relative;
+}
+@media (min-width: 767px) {
+  .btn_explorer {
+    margin: 4% 45%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .btn_explorer {
+    margin: 3% 45%;
+  }
+}
+.btn_explorer:hover {
+  cursor: pointer;
+}
+.btn_explorer:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scaleX(1);
+  -moz-transform: scaleX(1);
+  transform: scaleX(1);
+  -webkit-transform-origin: left;
+  -moz-transform-origin: left;
+  transform-origin: left;
+}
+.btn_explorer span {
+  position: relative;
+  z-index: 1;
+}
+.btn_explorer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  background: -webkit-gradient(linear, left bottom, right top, from(#fface8), to(#ae80e5));
+  background: -moz-gradient(linear, left bottom, right top, from(#fface8), to(#ae80e5));
+  background: gradient(linear, left bottom, right top, from(#fface8), to(#ae80e5));
+  box-shadow: 3px 3px 3px #947c7c;
+  -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: right;
+  -moz-transform-origin: right;
+  transform-origin: right;
+  -webkit-transition: transform, 0.1s;
+  -moz-transition: transform, 0.1s;
+  transition: transform 0.1s;
+}
+
+i.empty {
+  position: absolute;
+  z-index: 1;
+  margin-left: -1%;
+  font-size: 200%;
+  color: #000000;
+}
+@media (min-width: 767px) {
+  i.empty {
+    margin-left: 0%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  i.empty {
+    margin-left: 0%;
+  }
+}
+i.empty:hover {
+  cursor: pointer;
+  display: none;
+}
+
+i.full {
+  position: relative;
+  z-index: 1;
+  font-size: 200%;
+  opacity: 0;
+}
+i.full:hover {
+  cursor: pointer;
+  opacity: 1;
+  z-index: 1;
+  margin-left: -20%;
+  margin-top: -5%;
+  font-weight: bold;
+  background: -webkit-gradient(linear, left bottom, right top, from(#FF79DA), to(#9356DC));
+  background: -moz-gradient(linear, left bottom, right top, from(#FF79DA), to(#9356DC));
+  background: gradient(linear, left bottom, right top, from(#FF79DA), to(#9356DC));
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  color: transparent;
+  transition: opacity 2s ease-in-out;
+}
+@media (min-width: 767px) {
+  i.full:hover {
+    margin-left: 0%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  i.full:hover {
+    margin-left: 0%;
+  }
+}
+
+.btn_commander {
+  color: #ffffff;
+  text-align: center;
+  -webkit-background: linear-gradient(to right bottom, #FF79DA, #9356DC);
+  -moz-background: linear-gradient(to right bottom, #FF79DA, #9356DC);
+  background: linear-gradient(to right bottom, #FF79DA, #9356DC);
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 30px;
+  box-shadow: 3px 3px 3px #e4dede;
+  margin: 1% 26% 20% 26%;
+  padding: 15px 50px;
+  position: relative;
+}
+@media (min-width: 767px) {
+  .btn_commander {
+    margin: 1% 40% 10% 40%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .btn_commander {
+    margin: 3% 45%;
+  }
+}
+.btn_commander:hover {
+  cursor: pointer;
+}
+.btn_commander:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scaleX(1);
+  -moz-transform: scaleX(1);
+  transform: scaleX(1);
+  -webkit-transform-origin: left;
+  -moz-transform-origin: left;
+  transform-origin: left;
+}
+.btn_commander span {
+  position: relative;
+  z-index: 1;
+}
+.btn_commander::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  background: -webkit-gradient(linear, left bottom, right top, from(#fface8), to(#ae80e5));
+  background: -moz-gradient(linear, left bottom, right top, from(#fface8), to(#ae80e5));
+  background: gradient(linear, left bottom, right top, from(#fface8), to(#ae80e5));
+  box-shadow: 3px 3px 3px #947c7c;
+  -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: right;
+  -moz-transform-origin: right;
+  transform-origin: right;
+  -webkit-transition: transform, 0.1s;
+  -moz-transition: transform, 0.1s;
+  transition: transform 0.1s;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ffffff;
+}
+header .container {
+  width: 100%;
+  margin: 0;
+  background-color: #ffffff;
+}
+@media screen and (min-width: 1000px) {
+  header .container {
+    width: 1394px;
+    margin-top: 10px;
+  }
+}
+header .fa-arrow-left {
+  position: absolute;
+  color: #000000;
+  font-size: 20px;
+  margin: 10px 15px 25px 25px;
+}
+header #logo_header {
+  width: 40%;
+  margin: 3% 30%;
+}
+@media screen and (min-width: 1000px) {
+  header #logo_header {
+    width: 30%;
+    margin: 0.5% 32%;
+  }
+}
+header #photo_header {
+  object-fit: cover;
+  position: relative;
+  width: 100%;
+  height: 250px;
+  margin: 0px;
+  z-index: 1;
+}
+@media screen and (min-width: 1000px) {
+  header #photo_header {
+    width: 33%;
+    margin: 0% 30% auto;
+  }
+}
+header .restaurant_nom {
+  width: 100%;
+  height: 75px;
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 30px 30px 0px 0px;
+  position: absolute;
+  padding-top: 30px;
+  z-index: 2;
+  margin-left: 0px;
+  margin-top: -35px;
+}
+@media screen and (min-width: 1000px) {
+  header .restaurant_nom {
+    width: 466px;
+    background-color: #ffffff;
+    margin-left: 415px;
+    border-radius: 30px;
+  }
+}
+header .restaurant_nom h1 {
+  width: 80%;
+  padding-left: 10px;
+  font-family: "Shrikhand", "cursive";
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  text-align: left;
+  line-height: 0px;
+  margin-left: 15px;
+}
+@media (min-width: 767px) {
+  header .restaurant_nom h1 {
+    text-align: center;
+    line-height: 20px;
+    width: 70%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  header .restaurant_nom h1 {
+    width: 40%;
+    font-size: 25px;
+    text-align: center;
+    line-height: 25px;
+  }
+}
+header .restaurant_nom .fa-heart {
+  font-size: 30px;
+  color: #000000;
+  padding-right: 30px;
+}
+
+footer {
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #353535;
+  padding: 10px 0px;
+}
+@media (min-width: 767px) {
+  footer {
+    font-size: 22px;
+  }
+}
+footer .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 97%;
+  align-items: flex-start;
+  background-color: #353535;
+  margin-left: 10px;
+  line-height: 30px;
+}
+@media (min-width: 767px) {
+  footer .container {
+    width: 100%;
+    align-items: center;
+    line-height: 35px;
+    margin-left: 0;
+  }
+}
+footer .container div {
+  margin-left: 3%;
+}
+@media screen and (min-width: 1000px) {
+  footer .container div {
+    margin: 0;
+  }
+}
+footer .container .ohmyfood_footer {
+  filter: invert(100%);
+  width: 30%;
+  margin: 3%;
+}
+@media screen and (min-width: 1000px) {
+  footer .container .ohmyfood_footer {
+    width: 15%;
+    margin: 1% auto;
+  }
+}
+footer .container .footer_liste {
+  font-weight: bold;
+}
+footer .container .footer_liste .fa-utensils {
+  color: #ffffff;
+  font-size: 15px;
+}
+footer .container .footer_liste .fa-hands-helping {
+  color: #ffffff;
+  font-size: 10px;
+}
+footer .container a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#fonctionnement {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  background-color: #ffffff;
+  align-items: flex-start;
+  margin-top: 15px;
+}
+@media (min-width: 767px) {
+  #fonctionnement {
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1000px) {
+  #fonctionnement {
+    align-items: center;
+    margin: 1% 0%;
+  }
+}
+#fonctionnement h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 3%;
+}
+@media screen and (min-width: 1000px) {
+  #fonctionnement h2 {
+    margin: 0;
+  }
+}
+#fonctionnement .fonctionnement {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 1000px) {
+  #fonctionnement .fonctionnement {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+}
+#fonctionnement .categorie {
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+@media screen and (min-width: 1000px) {
+  #fonctionnement .categorie {
+    width: 35%;
+  }
+}
+#fonctionnement .categorie .nombre {
+  background-color: #9356DC;
+  color: #ffffff;
+  clip-path: circle(40%);
+  padding: 15px;
+  position: absolute;
+  z-index: 1;
+}
+@media (min-width: 767px) {
+  #fonctionnement .categorie .nombre {
+    margin-left: 16%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  #fonctionnement .categorie .nombre {
+    margin-left: 4%;
+  }
+}
+#fonctionnement .categorie .fonctionnement_description {
+  position: relative;
+  font-weight: bold;
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  box-shadow: 2px 3px 7px #e0dede;
+  border-radius: 25px;
+  width: 80%;
+  margin: 4%;
+  padding: 8% 0% 8% 20%;
+  z-index: 0;
+}
+@media (min-width: 767px) {
+  #fonctionnement .categorie .fonctionnement_description {
+    width: 60%;
+    margin: 2% 20%;
+    padding: 5% 0% 5% 15%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  #fonctionnement .categorie .fonctionnement_description {
+    width: 60%;
+    margin: 4% 20%;
+    padding: 5% 0% 5% 15%;
+  }
+}
+#fonctionnement .categorie .fonctionnement_description:hover {
+  cursor: pointer;
+  background-color: #f2eafb;
+  color: #000000;
+}
+#fonctionnement .categorie .fonctionnement_description:hover .fa-mobile-alt, #fonctionnement .categorie .fonctionnement_description:hover .fa-list-ul, #fonctionnement .categorie .fonctionnement_description:hover .fa-store {
+  color: #6c27be;
+}
+#fonctionnement .categorie .fonctionnement_description .fa-mobile-alt, #fonctionnement .categorie .fonctionnement_description .fa-list-ul, #fonctionnement .categorie .fonctionnement_description .fa-store {
+  position: absolute;
+  z-index: 1;
+  font-size: 20px;
+  margin-left: -10%;
+  margin-top: -1%;
+  color: #7d7d7d;
+}
+
+#accueil {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f6f6f6;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  border-top: solid 3px #d1d1d1;
+}
+#accueil .localisation {
+  background-color: #EAEAEA;
+  font-size: 18px;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  padding: 4% 0%;
+}
+#accueil .localisation .fa-map-marker-alt {
+  color: #000000;
+  margin-right: 15px;
+}
+#accueil h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 30px;
+  width: 70%;
+  padding: 7% 15% 0% 15%;
+}
+@media (min-width: 767px) {
+  #accueil h1 {
+    line-height: 20px;
+    width: 70%;
+    padding-top: 2%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  #accueil h1 {
+    padding: 0;
+  }
+}
+#accueil p {
+  font-size: 20px;
+  width: 90%;
+  text-align: center;
+  line-height: 25px;
+}
+@media (min-width: 767px) {
+  #accueil p {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  #accueil p {
+    width: 30%;
+  }
+}
+
+#restaurants {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f6f6f6;
+  align-items: flex-start;
+  padding: 20px;
+}
+@media screen and (min-width: 1000px) {
+  #restaurants {
+    align-items: center;
+    border-radius: 20px;
+    margin-bottom: 15px;
+  }
+}
+#restaurants h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+#restaurants .liste_restaurants {
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  width: 100%;
+}
+@media (min-width: 767px) {
+  #restaurants .liste_restaurants {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px 0px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  #restaurants .liste_restaurants {
+    flex-wrap: nowrap;
+  }
+}
+#restaurants .liste_restaurants .restaurant {
+  background-color: #ffffff;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  border-radius: 20px;
+  margin: 10px auto;
+  width: 100%;
+  height: 270px;
+  box-shadow: 2px 2px 3px #f6f6f6;
+}
+@media (min-width: 767px) {
+  #restaurants .liste_restaurants .restaurant {
+    margin: 10px auto;
+    width: 45%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  #restaurants .liste_restaurants .restaurant {
+    margin: 10px;
+    width: 30%;
+  }
+}
+#restaurants .liste_restaurants .restaurant a {
+  text-decoration: none;
+}
+@media screen and (min-width: 767px) {
+  #restaurants .liste_restaurants .restaurant a:hover {
+    box-shadow: 2px 2px 5px #aaaaaa;
+    border-radius: 20px;
+    padding-bottom: 10px;
+  }
+}
+#restaurants .liste_restaurants .restaurant .restaurant_photo {
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+  border-radius: 20px 20px 0px 0px;
+  position: relative;
+  z-index: 0;
+}
+#restaurants .liste_restaurants .restaurant .nouveau {
+  color: #278870;
+  background-color: #99E2D0;
+  font-weight: bold;
+  text-align: center;
+  position: absolute;
+  padding: 5px;
+  z-index: 1;
+  margin-left: 70%;
+  margin-top: 3%;
+}
+@media (min-width: 767px) {
+  #restaurants .liste_restaurants .restaurant .nouveau {
+    margin-left: 12%;
+    margin-top: 1%;
+  }
+}
+#restaurants .liste_restaurants .restaurant .description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 4%;
+}
+#restaurants .liste_restaurants .restaurant .description .informations {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: no-wrap;
+}
+#restaurants .liste_restaurants .restaurant .description .informations h3, #restaurants .liste_restaurants .restaurant .description .informations .lieu {
+  margin: 5px;
+  font-family: "Roboto", sans-serif;
+  color: #000000;
+}
+#restaurants .liste_restaurants .restaurant .description .informations h3 {
+  font-size: 19px;
+  font-weight: bold;
+}
+#restaurants .liste_restaurants .restaurant .description .informations .lieu {
+  font-size: 17px;
+}
+
+#menus {
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding-top: 18%;
+}
+@media (min-width: 767px) {
+  #menus {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 3%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  #menus {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+  }
+}
+#menus #entrees, #menus #plats, #menus #desserts {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  justify-content: center;
+  margin: 10% auto;
+}
+@media (min-width: 767px) {
+  #menus #entrees, #menus #plats, #menus #desserts {
+    width: 70%;
+    justify-content: center;
+    margin: 0% 5%;
+    padding-top: 5%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  #menus #entrees, #menus #plats, #menus #desserts {
+    width: 30%;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 10px 15px;
+  }
+}
+#menus #entrees h2, #menus #plats h2, #menus #desserts h2 {
+  margin-left: 5%;
+  font-size: 22px;
+  width: 60px;
+  border-bottom: solid 3px #99E2D0;
+  padding-bottom: 12px;
+  margin-bottom: 5%;
+}
+#menus #entrees .entrees, #menus #entrees .plats, #menus #entrees .desserts, #menus #plats .entrees, #menus #plats .plats, #menus #plats .desserts, #menus #desserts .entrees, #menus #desserts .plats, #menus #desserts .desserts {
+  background-color: #ffffff;
+  display: flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 4% auto;
+  height: 60px;
+  border-radius: 10px;
+  width: 90%;
+}
+@media screen and (min-width: 1000px) {
+  #menus #entrees .entrees, #menus #entrees .plats, #menus #entrees .desserts, #menus #plats .entrees, #menus #plats .plats, #menus #plats .desserts, #menus #desserts .entrees, #menus #desserts .plats, #menus #desserts .desserts {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 4px 3px 5px #635d5d;
+    margin: 8px;
+  }
+}
+#menus #entrees .entrees .menu, #menus #entrees .plats .menu, #menus #entrees .desserts .menu, #menus #plats .entrees .menu, #menus #plats .plats .menu, #menus #plats .desserts .menu, #menus #desserts .entrees .menu, #menus #desserts .plats .menu, #menus #desserts .desserts .menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 65px;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-text-overflow: "....";
+  -moz-text-overflow: "...";
+  text-overflow: "...";
+}
+@media screen and (min-width: 1000px) {
+  #menus #entrees .entrees .menu, #menus #entrees .plats .menu, #menus #entrees .desserts .menu, #menus #plats .entrees .menu, #menus #plats .plats .menu, #menus #plats .desserts .menu, #menus #desserts .entrees .menu, #menus #desserts .plats .menu, #menus #desserts .desserts .menu {
+    padding-left: 5px;
+  }
+}
+#menus #entrees .entrees .menu h3, #menus #entrees .plats .menu h3, #menus #entrees .desserts .menu h3, #menus #plats .entrees .menu h3, #menus #plats .plats .menu h3, #menus #plats .desserts .menu h3, #menus #desserts .entrees .menu h3, #menus #desserts .plats .menu h3, #menus #desserts .desserts .menu h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 10px 0px 10px;
+  overflow: hidden;
+  -webkit-text-overflow: "...";
+  -moz-text-overflow: "...";
+  text-overflow: "...";
+  padding: 2px 0px 17px 0px;
+}
+#menus #entrees .entrees .menu .informations, #menus #entrees .plats .menu .informations, #menus #entrees .desserts .menu .informations, #menus #plats .entrees .menu .informations, #menus #plats .plats .menu .informations, #menus #plats .desserts .menu .informations, #menus #desserts .entrees .menu .informations, #menus #desserts .plats .menu .informations, #menus #desserts .desserts .menu .informations {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0px 10px 10px 10px;
+}
+#menus #entrees .entrees .menu .informations .supplement, #menus #entrees .plats .menu .informations .supplement, #menus #entrees .desserts .menu .informations .supplement, #menus #plats .entrees .menu .informations .supplement, #menus #plats .plats .menu .informations .supplement, #menus #plats .desserts .menu .informations .supplement, #menus #desserts .entrees .menu .informations .supplement, #menus #desserts .plats .menu .informations .supplement, #menus #desserts .desserts .menu .informations .supplement {
+  font-size: 18px;
+  padding: 2px 0px 4px 0px;
+  margin-bottom: 3px;
+  font-weight: normal;
+  overflow: hidden;
+  -webkit-text-overflow: "...";
+  -moz-text-overflow: "...";
+  text-overflow: "...";
+}
+#menus #entrees .entrees .menu .informations .prix, #menus #entrees .plats .menu .informations .prix, #menus #entrees .desserts .menu .informations .prix, #menus #plats .entrees .menu .informations .prix, #menus #plats .plats .menu .informations .prix, #menus #plats .desserts .menu .informations .prix, #menus #desserts .entrees .menu .informations .prix, #menus #desserts .plats .menu .informations .prix, #menus #desserts .desserts .menu .informations .prix {
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 5px;
+}
+#menus #entrees .entrees .fa-check-circle, #menus #entrees .plats .fa-check-circle, #menus #entrees .desserts .fa-check-circle, #menus #plats .entrees .fa-check-circle, #menus #plats .plats .fa-check-circle, #menus #plats .desserts .fa-check-circle, #menus #desserts .entrees .fa-check-circle, #menus #desserts .plats .fa-check-circle, #menus #desserts .desserts .fa-check-circle {
+  color: #ffffff;
+}
+
+body #loading_spinner {
+  background-color: #000000;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  -moz-animation-duration: 2.5s;
+  -webkit-animation-duration: 2.5s;
+  animation-duration: 2.5s;
+  -moz-animation-iteration-count: 1;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -moz-animation-direction: normal;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+  -moz-animation-name: loading_spinner;
+  -webkit-animation-name: loading_spinner;
+  animation-name: loading_spinner;
+  -moz-transition-property: none;
+  -webkit-transition-property: none;
+  transition-property: none;
+  -moz-animation-timing-function: ease-in;
+  -webkit-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
+  -moz-animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@keyframes loading_spinner {
+  0% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#loading_spinner {
+  position: absolute;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  perspective: 800px;
+  pointer-events: none;
+}
+#loading_spinner .primary {
+  border-bottom: 7px solid #9356DC;
+}
+#loading_spinner .secondary {
+  border-bottom: 7px solid #FF79DA;
+}
+#loading_spinner .third {
+  border-bottom: 7px solid #99E2D0;
+}
+#loading_spinner .arc {
+  position: absolute;
+  z-index: 4;
+  top: 0;
+  left: 0;
+  width: 164px;
+  height: 164px;
+  margin: 30%;
+  border-radius: 50%;
+}
+@media (min-width: 767px) {
+  #loading_spinner .arc {
+    width: 200px;
+    height: 200px;
+    margin: 20% 40%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  #loading_spinner .arc {
+    width: 350px;
+    height: 350px;
+    margin: 7% 40%;
+  }
+}
+#loading_spinner .arc:nth-child(1) {
+  -moz-animation-name: rotate1;
+  -webkit-animation-name: rotate1;
+  animation-name: rotate1;
+  -moz-animation-duration: 0.5s;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 4;
+  -moz-animation-iteration-count: 4;
+  animation-iteration-count: 4;
+  -webkit-animation-direction: normal;
+  -moz-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-play-state: running;
+  -moz-animation-play-state: running;
+  animation-play-state: running;
+}
+#loading_spinner .arc:nth-child(2) {
+  -moz-animation-name: rotate2;
+  -webkit-animation-name: rotate2;
+  animation-name: rotate2;
+  -moz-animation-duration: 0.5s;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 4;
+  -moz-animation-iteration-count: 4;
+  animation-iteration-count: 4;
+  -webkit-animation-direction: normal;
+  -moz-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-play-state: running;
+  -moz-animation-play-state: running;
+  animation-play-state: running;
+}
+#loading_spinner .arc:nth-child(3) {
+  -moz-animation-name: rotate3;
+  -webkit-animation-name: rotate3;
+  animation-name: rotate3;
+  -moz-animation-duration: 0.5s;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 4;
+  -moz-animation-iteration-count: 4;
+  animation-iteration-count: 4;
+  -webkit-animation-direction: normal;
+  -moz-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-play-state: running;
+  -moz-animation-play-state: running;
+  animation-play-state: running;
+}
+#loading_spinner .arc:nth-child(1) {
+  -webkit-animation-delay: -0.8s;
+  -moz-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+#loading_spinner .arc:nth-child(2) {
+  -webkit-animation-delay: -0.4s;
+  -moz-animation-delay: -0.4s;
+  animation-delay: -0.4s;
+}
+#loading_spinner .arc:nth-child(3) {
+  -webkit-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+@keyframes rotate1 {
+  from {
+    transform: rotateX(35deg) rotateY(-45deg) rotateZ(0);
+    opacity: 1;
+  }
+  to {
+    transform: rotateX(35deg) rotateY(-45deg) rotateZ(1turn);
+    opacity: 0;
+  }
+}
+@keyframes rotate2 {
+  from {
+    transform: rotateX(50deg) rotateY(10deg) rotateZ(0);
+    opacity: 1;
+  }
+  to {
+    transform: rotateX(50deg) rotateY(10deg) rotateZ(1turn);
+    opacity: 0;
+  }
+}
+@keyframes rotate3 {
+  from {
+    transform: rotateX(35deg) rotateY(55deg) rotateZ(0);
+    opacity: 1;
+  }
+  to {
+    transform: rotateX(35deg) rotateY(55deg) rotateZ(1turn);
+    opacity: 0;
+  }
+}
+.ohmyfood {
+  filter: invert(100%);
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  width: 50%;
+  margin: 40% 25%;
+  -moz-animation-duration: 0.3s;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -moz-animation-iteration-count: 1;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -moz-animation-direction: normal;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+  -moz-animation-name: logo;
+  -webkit-animation-name: logo;
+  animation-name: logo;
+  -moz-transition-property: top, bottom;
+  -webkit-transition-property: top, bottom;
+  transition-property: top, bottom;
+  -moz-animation-timing-function: ease-in;
+  -webkit-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
+  -moz-animation-fill-mode: none;
+  -webkit-animation-fill-mode: none;
+  animation-fill-mode: none;
+  -webkit-animation-delay: 2.75s;
+  -moz-animation-delay: 2.75s;
+  animation-delay: 2.75s;
+}
+@media (min-width: 767px) {
+  .ohmyfood {
+    width: 40%;
+    margin: 25% 30%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .ohmyfood {
+    width: 25%;
+    margin: 15% 40%;
+  }
+}
+@keyframes logo {
+  0% {
+    margin-top: 0%;
+    opacity: 0;
+  }
+  10% {
+    margin-top: 100%;
+    opacity: 1;
+  }
+  90% {
+    margin-top: 100%;
+    opacity: 1;
+  }
+  100% {
+    margin-top: 0%;
+    opacity: 0;
+  }
+}
+
+#entrees {
+  -moz-animation-duration: 4s;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  -moz-animation-iteration-count: 1;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -moz-animation-direction: normal;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+  -moz-animation-name: entrees;
+  -webkit-animation-name: entrees;
+  animation-name: entrees;
+  -moz-transition-property: bottom, top;
+  -webkit-transition-property: bottom, top;
+  transition-property: bottom, top;
+  -moz-animation-timing-function: ease-in;
+  -webkit-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
+  -moz-animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@keyframes entrees {
+  from {
+    margin-top: 100%;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0%;
+    opacity: 1;
+  }
+}
+
+.entrees {
+  -moz-animation-duration: 4s;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  -moz-animation-iteration-count: 1;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -moz-animation-direction: normal;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+  -moz-animation-name: entrees_contenu;
+  -webkit-animation-name: entrees_contenu;
+  animation-name: entrees_contenu;
+  -moz-transition-property: bottom, top;
+  -webkit-transition-property: bottom, top;
+  transition-property: bottom, top;
+  -moz-animation-timing-function: ease-in;
+  -webkit-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
+  -moz-animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -moz-animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+@keyframes entrees_contenu {
+  from {
+    margin-top: 100%;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0%;
+    opacity: 1;
+  }
+}
+
+#plats {
+  -moz-animation-duration: 4s;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  -moz-animation-iteration-count: 1;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -moz-animation-direction: normal;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+  -moz-animation-name: plats;
+  -webkit-animation-name: plats;
+  animation-name: plats;
+  -moz-transition-property: bottom, top;
+  -webkit-transition-property: bottom, top;
+  transition-property: bottom, top;
+  -moz-animation-timing-function: ease-in;
+  -webkit-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
+  -moz-animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -moz-animation-delay: 4s;
+  -webkit-animation-delay: 4s;
+  animation-delay: 4s;
+}
+@keyframes plats {
+  from {
+    margin-top: 100%;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0%;
+    opacity: 1;
+  }
+}
+
+.plats {
+  -moz-animation-duration: 4s;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  -moz-animation-iteration-count: 1;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -moz-animation-direction: normal;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+  -moz-animation-name: plats_contenu;
+  -webkit-animation-name: plats-contenu;
+  animation-name: plats_contenu;
+  -moz-transition-property: bottom, top;
+  -webkit-transition-property: bottom, top;
+  transition-property: bottom, top;
+  -moz-animation-timing-function: ease-in;
+  -webkit-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
+  -moz-animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -moz-animation-delay: 5s;
+  -webkit-animation-delay: 5s;
+  animation-delay: 5s;
+}
+@keyframes plats_contenu {
+  from {
+    margin-top: 100%;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0%;
+    opacity: 1;
+  }
+}
+
+#desserts {
+  -moz-animation-duration: 4s;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  -moz-animation-iteration-count: 1;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -moz-animation-direction: normal;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+  -moz-animation-name: desserts;
+  -webkit-animation-name: desserts;
+  animation-name: desserts;
+  -moz-transition-property: bottom, top;
+  -webkit-transition-property: bottom, top;
+  transition-property: bottom, top;
+  -moz-animation-timing-function: ease-in;
+  -webkit-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
+  -moz-animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -moz-animation-delay: 8s;
+  -webkit-animation-delay: 8s;
+  animation-delay: 8s;
+}
+@keyframes desserts {
+  from {
+    margin-top: 100%;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0%;
+    opacity: 1;
+  }
+}
+
+.desserts {
+  -moz-animation-duration: 4s;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  -moz-animation-iteration-count: 1;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -moz-animation-direction: normal;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+  -moz-animation-name: desserts_contenu;
+  -webkit-animation-name: desserts_contenu;
+  animation-name: desserts_contenu;
+  -moz-transition-property: bottom, top;
+  -webkit-transition-property: bottom, top;
+  transition-property: bottom, top;
+  -moz-animation-timing-function: ease-in;
+  -webkit-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
+  -moz-animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -moz-animation-delay: 9s;
+  -webkit-animation-delay: 9s;
+  animation-delay: 9s;
+}
+@keyframes desserts_contenu {
+  from {
+    margin-top: 100%;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0%;
+    opacity: 1;
+  }
+}
+
+@media (min-width: 767px) {
+  #entrees {
+    -moz-animation-duration: 4s;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -moz-animation-iteration-count: 1;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -moz-animation-direction: normal;
+    -webkit-animation-direction: normal;
+    animation-direction: normal;
+    -moz-animation-name: entrees;
+    -webkit-animation-name: entrees;
+    animation-name: entrees;
+    -moz-transition-property: bottom, top;
+    -webkit-transition-property: bottom, top;
+    transition-property: bottom, top;
+    -moz-animation-timing-function: ease-in;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    -moz-animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  @keyframes entrees {
+    from {
+      margin-top: 100%;
+      opacity: 0;
+    }
+    to {
+      margin-top: 0%;
+      opacity: 1;
+    }
+  }
+
+  .entrees {
+    -moz-animation-duration: 4s;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -moz-animation-iteration-count: 1;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -moz-animation-direction: normal;
+    -webkit-animation-direction: normal;
+    animation-direction: normal;
+    -moz-animation-name: entrees_contenu;
+    -webkit-animation-name: entrees_contenu;
+    animation-name: entrees_contenu;
+    -moz-transition-property: bottom, top;
+    -webkit-transition-property: bottom, top;
+    transition-property: bottom, top;
+    -moz-animation-timing-function: ease-in;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    -moz-animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -moz-animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+  }
+  @keyframes entrees_contenu {
+    from {
+      margin-top: 100%;
+      opacity: 0;
+    }
+    to {
+      margin-top: 0%;
+      opacity: 1;
+    }
+  }
+
+  #plats {
+    -moz-animation-duration: 4s;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -moz-animation-iteration-count: 1;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -moz-animation-direction: normal;
+    -webkit-animation-direction: normal;
+    animation-direction: normal;
+    -moz-animation-name: plats;
+    -webkit-animation-name: plats;
+    animation-name: plats;
+    -moz-transition-property: bottom, top;
+    -webkit-transition-property: bottom, top;
+    transition-property: bottom, top;
+    -moz-animation-timing-function: ease-in;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    -moz-animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -moz-animation-delay: 4s;
+    -webkit-animation-delay: 4s;
+    animation-delay: 4s;
+  }
+  @keyframes plats {
+    from {
+      margin-top: 100%;
+      opacity: 0;
+    }
+    to {
+      margin-top: 0%;
+      opacity: 1;
+    }
+  }
+
+  .plats {
+    -moz-animation-duration: 4s;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -moz-animation-iteration-count: 1;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -moz-animation-direction: normal;
+    -webkit-animation-direction: normal;
+    animation-direction: normal;
+    -moz-animation-name: plats_contenu;
+    -webkit-animation-name: plats-contenu;
+    animation-name: plats_contenu;
+    -moz-transition-property: bottom, top;
+    -webkit-transition-property: bottom, top;
+    transition-property: bottom, top;
+    -moz-animation-timing-function: ease-in;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    -moz-animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -moz-animation-delay: 5s;
+    -webkit-animation-delay: 5s;
+    animation-delay: 5s;
+  }
+  @keyframes plats_contenu {
+    from {
+      margin-top: 100%;
+      opacity: 0;
+    }
+    to {
+      margin-top: 0%;
+      opacity: 1;
+    }
+  }
+
+  #desserts {
+    -moz-animation-duration: 4s;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -moz-animation-iteration-count: 1;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -moz-animation-direction: normal;
+    -webkit-animation-direction: normal;
+    animation-direction: normal;
+    -moz-animation-name: desserts;
+    -webkit-animation-name: desserts;
+    animation-name: desserts;
+    -moz-transition-property: bottom, top;
+    -webkit-transition-property: bottom, top;
+    transition-property: bottom, top;
+    -moz-animation-timing-function: ease-in;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    -moz-animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -moz-animation-delay: 8s;
+    -webkit-animation-delay: 8s;
+    animation-delay: 8s;
+  }
+  @keyframes desserts {
+    from {
+      margin-top: 100%;
+      opacity: 0;
+    }
+    to {
+      margin-top: 0%;
+      opacity: 1;
+    }
+  }
+
+  .desserts {
+    -moz-animation-duration: 4s;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -moz-animation-iteration-count: 1;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -moz-animation-direction: normal;
+    -webkit-animation-direction: normal;
+    animation-direction: normal;
+    -moz-animation-name: desserts_contenu;
+    -webkit-animation-name: desserts_contenu;
+    animation-name: desserts_contenu;
+    -moz-transition-property: bottom, top;
+    -webkit-transition-property: bottom, top;
+    transition-property: bottom, top;
+    -moz-animation-timing-function: ease-in;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    -moz-animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -moz-animation-delay: 9s;
+    -webkit-animation-delay: 9s;
+    animation-delay: 9s;
+  }
+  @keyframes desserts_contenu {
+    from {
+      margin-top: 100%;
+      opacity: 0;
+    }
+    to {
+      margin-top: 0%;
+      opacity: 1;
+    }
+  }
+}
+@media screen and (min-width: 1000px) {
+  #entrees {
+    -moz-animation-duration: 4s;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -moz-animation-iteration-count: 1;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -moz-animation-direction: normal;
+    -webkit-animation-direction: normal;
+    animation-direction: normal;
+    -moz-animation-name: entrees;
+    -webkit-animation-name: entrees;
+    animation-name: entrees;
+    -moz-transition-property: bottom, top;
+    -webkit-transition-property: bottom, top;
+    transition-property: bottom, top;
+    -moz-animation-timing-function: ease-in;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    -moz-animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  @keyframes entrees {
+    from {
+      margin-top: 100%;
+      opacity: 0;
+    }
+    to {
+      margin-top: 0%;
+      opacity: 1;
+    }
+  }
+
+  .entrees {
+    -moz-animation-duration: 4s;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -moz-animation-iteration-count: 1;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -moz-animation-direction: normal;
+    -webkit-animation-direction: normal;
+    animation-direction: normal;
+    -moz-animation-name: entrees_contenu;
+    -webkit-animation-name: entrees_contenu;
+    animation-name: entrees_contenu;
+    -moz-transition-property: bottom, top;
+    -webkit-transition-property: bottom, top;
+    transition-property: bottom, top;
+    -moz-animation-timing-function: ease-in;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    -moz-animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -moz-animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+  }
+  @keyframes entrees_contenu {
+    from {
+      margin-top: 100%;
+      opacity: 0;
+    }
+    to {
+      margin-top: 0%;
+      opacity: 1;
+    }
+  }
+
+  #plats {
+    -moz-animation-duration: 4s;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -moz-animation-iteration-count: 1;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -moz-animation-direction: normal;
+    -webkit-animation-direction: normal;
+    animation-direction: normal;
+    -moz-animation-name: plats;
+    -webkit-animation-name: plats;
+    animation-name: plats;
+    -moz-transition-property: bottom, top;
+    -webkit-transition-property: bottom, top;
+    transition-property: bottom, top;
+    -moz-animation-timing-function: ease-in;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    -moz-animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -moz-animation-delay: 2s;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+  }
+  @keyframes plats {
+    from {
+      margin-top: 100%;
+      opacity: 0;
+    }
+    to {
+      margin-top: 0%;
+      opacity: 1;
+    }
+  }
+
+  .plats {
+    -moz-animation-duration: 4s;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -moz-animation-iteration-count: 1;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -moz-animation-direction: normal;
+    -webkit-animation-direction: normal;
+    animation-direction: normal;
+    -moz-animation-name: plats_contenu;
+    -webkit-animation-name: plats-contenu;
+    animation-name: plats_contenu;
+    -moz-transition-property: bottom, top;
+    -webkit-transition-property: bottom, top;
+    transition-property: bottom, top;
+    -moz-animation-timing-function: ease-in;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    -moz-animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -moz-animation-delay: 3s;
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s;
+  }
+  @keyframes plats_contenu {
+    from {
+      margin-top: 100%;
+      opacity: 0;
+    }
+    to {
+      margin-top: 0%;
+      opacity: 1;
+    }
+  }
+
+  #desserts {
+    -moz-animation-duration: 4s;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -moz-animation-iteration-count: 1;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -moz-animation-direction: normal;
+    -webkit-animation-direction: normal;
+    animation-direction: normal;
+    -moz-animation-name: desserts;
+    -webkit-animation-name: desserts;
+    animation-name: desserts;
+    -moz-transition-property: bottom, top;
+    -webkit-transition-property: bottom, top;
+    transition-property: bottom, top;
+    -moz-animation-timing-function: ease-in;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    -moz-animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -moz-animation-delay: 4s;
+    -webkit-animation-delay: 4s;
+    animation-delay: 4s;
+  }
+  @keyframes desserts {
+    from {
+      margin-top: 100%;
+      opacity: 0;
+    }
+    to {
+      margin-top: 0%;
+      opacity: 1;
+    }
+  }
+
+  .desserts {
+    -moz-animation-duration: 4s;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -moz-animation-iteration-count: 1;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -moz-animation-direction: normal;
+    -webkit-animation-direction: normal;
+    animation-direction: normal;
+    -moz-animation-name: desserts_contenu;
+    -webkit-animation-name: desserts_contenu;
+    animation-name: desserts_contenu;
+    -moz-transition-property: bottom, top;
+    -webkit-transition-property: bottom, top;
+    transition-property: bottom, top;
+    -moz-animation-timing-function: ease-in;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    -moz-animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -moz-animation-delay: 5s;
+    -webkit-animation-delay: 5s;
+    animation-delay: 5s;
+  }
+  @keyframes desserts_contenu {
+    from {
+      margin-top: 100%;
+      opacity: 0;
+    }
+    to {
+      margin-top: 0%;
+      opacity: 1;
+    }
+  }
+}
+.entrees, .plats, .desserts {
+  -moz-transition: all 1s ease-in;
+  -webkit-transition: all 1s ease-in;
+  transition: all 1s ease-in;
+}
+.entrees:hover, .plats:hover, .desserts:hover {
+  cursor: pointer;
+}
+.entrees:hover .fa-check-circle, .plats:hover .fa-check-circle, .desserts:hover .fa-check-circle {
+  visibility: visible;
+  font-size: 30px;
+  padding: 15px;
+  border-radius: 0px 10px 10px 0px;
+  background-color: #99E2D0;
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+/*# sourceMappingURL=style.css.map */
