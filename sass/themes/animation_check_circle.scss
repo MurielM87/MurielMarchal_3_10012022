@@ -1,0 +1,18 @@
+.entrees, .plats, .desserts {
+    -moz-transition: all 1s ease-in ;
+    -webkit-transition: all 1s ease-in;
+	transition: all 1s ease-in;
+  &:hover {
+    cursor : pointer ;
+    .fa-check-circle {
+      visibility : visible ; 
+      font-size : 30px ; 
+      padding : 15px ; 
+      border-radius : 0px 10px 10px 0px ;
+      background-color : $third_color; 
+    	  -moz-transform: rotate(360deg);
+	      -webkit-transform: rotate(360deg);
+	    transform: rotate(360deg);
+    }
+  }
+}

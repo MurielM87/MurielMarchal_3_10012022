@@ -1,0 +1,217 @@
+body #loading_spinner {
+  background-color: #000000 ;
+  width : 100% ; 
+  position: absolute ;
+  z-index : 2 ;
+    -moz-animation-duration : 2.5s ;
+    -webkit-animation-duration : 2.5s ;
+  animation-duration : 2.5s ;
+    -moz-animation-iteration-count : 1 ;
+    -webkit-animation-iteration-count : 1 ;
+  animation-iteration-count : 1 ;
+    -moz-animation-direction : normal ;
+    -webkit-animation-direction : normal ;
+  animation-direction : normal ;
+    -moz-animation-name : loading_spinner ;
+    -webkit-animation-name : loading_spinner ;
+  animation-name : loading_spinner ;
+    -moz-transition-property : none ;
+    -webkit-transition-property : none ;
+  transition-property : none ;
+    -moz-animation-timing-function : ease-in ;
+    -webkit-animation-timing-function : ease-in ;
+  animation-timing-function : ease-in ;
+    -moz-animation-fill-mode : both ;
+    -webkit-animation-fill-mode : both ;
+  animation-fill-mode : both ;
+ 
+  @keyframes loading_spinner {
+    0% {
+      opacity : 1 ;
+    }
+    95% {
+      opacity : 1 ;
+    }
+    100% {
+      opacity : 0 ; 
+    }
+  }
+}
+  
+#loading_spinner {
+  position : absolute ; 
+  z-index : 3 ;
+  display: flex;
+  justify-content: center;
+  align-items: center;    
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  perspective: 800px;
+  pointer-events: none ; 
+  .primary {
+    border-bottom: 7px solid $primary_color ;
+  }
+  .secondary {
+    border-bottom: 7px solid $secondary_color ;
+  }
+  .third {
+    border-bottom: 7px solid $third_color ;
+  }
+    
+  .arc {
+    position: absolute ;
+    z-index : 4 ; 
+    top: 0;
+    left: 0;
+    width : 164px ; 
+    height : 164px ; 
+    margin : 30% ; 
+    border-radius: 50%;
+    @media (min-width: map-get($breakpoints, tablette)) {
+      width : 200px ; 
+      height : 200px ; 
+      margin : 20% 40%;
+    }
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
+      width: 350px;
+      height: 350px;
+      margin : 7% 40% ;
+    }
+  
+    @for $i from 1 through 3 {
+      &:nth-child(#{$i}) {
+          -moz-animation-name : rotate#{$i} ;
+          -webkit-animation-name : rotate#{$i} ;
+        animation-name : rotate#{$i} ;
+          -moz-animation-duration : 0.5s ;
+          -webkit-animation-duration : 0.5s ;
+        animation-duration : 0.5s ;
+          -webkit-animation-timing-function : linear ;
+          -moz-animation-timing-function : linear ;
+        animation-timing-function : linear ;
+          -webkit-animation-iteration-count : 4 ;
+          -moz-animation-iteration-count : 4 ;
+        animation-iteration-count : 4 ;
+          -webkit-animation-direction : normal ;
+          -moz-animation-direction : normal ;
+        animation-direction : normal ;
+          -webkit-animation-fill-mode : both ;
+          -moz-animation-fill-mode : both ;
+        animation-fill-mode : both ;
+          -webkit-animation-play-state : running ;
+          -moz-animation-play-state : running ;
+        animation-play-state : running ;
+      }
+    }
+    &:nth-child(1) {
+        -webkit-animation-delay : -0.8s ;
+        -moz-animation-delay : -0.8s ;
+      animation-delay : -0.8s ;
+    }
+    &:nth-child(2) {
+        -webkit-animation-delay : -0.4s ; 
+        -moz-animation-delay : -0.4s ; 
+      animation-delay : -0.4s ;
+    }
+    &:nth-child(3) {
+        -webkit-animation-delay : 0s ;
+        -moz-animation-delay : 0s ;
+      animation-delay : 0s ;
+    }
+  }
+}
+  
+@keyframes rotate1 {
+  from {
+    transform: rotateX(35deg) rotateY(-45deg) rotateZ(0);
+    opacity : 1 ;
+  }
+  to {
+    transform: rotateX(35deg) rotateY(-45deg) rotateZ(1turn);
+    opacity : 0 ;
+  }
+}
+  
+@keyframes rotate2 {
+  from {
+    transform: rotateX(50deg) rotateY(10deg) rotateZ(0);
+    opacity : 1 ;
+  }
+  to {
+    transform: rotateX(50deg) rotateY(10deg) rotateZ(1turn);
+    opacity : 0 ; 
+  }
+}
+  
+@keyframes rotate3 {
+  from {
+    transform: rotateX(35deg) rotateY(55deg) rotateZ(0);
+    opacity : 1 ; 
+  }
+  to {
+    transform: rotateX(35deg) rotateY(55deg) rotateZ(1turn);
+    opacity : 0 ; 
+  }
+}
+  
+.ohmyfood {
+  filter: invert(100%); 
+  position : absolute ;
+  z-index : 5 ;
+  top: 0;
+  left: 0;
+  width : 50% ; 
+  margin : 40% 25% ;
+  @media (min-width: map-get($breakpoints, tablette)) {
+    width : 40% ; 
+    margin : 25% 30%;
+  }
+  @media screen and (min-width: map-get($breakpoints, desktop)) {
+    width : 25% ;
+    margin : 15% 40% ;
+  }
+    -moz-animation-duration : 0.3s ;
+    -webkit-animation-duration : 0.3s ;
+  animation-duration : 0.3s ;
+    -moz-animation-iteration-count : 1 ;
+    -webkit-animation-iteration-count : 1 ;
+  animation-iteration-count : 1 ;
+    -moz-animation-direction : normal ;
+    -webkit-animation-direction : normal ;
+  animation-direction : normal ;
+    -moz-animation-name : logo ;
+    -webkit-animation-name : logo ;
+  animation-name : logo ;
+    -moz-transition-property : top, bottom ;
+    -webkit-transition-property : top, bottom ;
+  transition-property : top, bottom ;
+    -moz-animation-timing-function : ease-in ;
+    -webkit-animation-timing-function : ease-in ;
+  animation-timing-function : ease-in ;
+    -moz-animation-fill-mode : none ;
+    -webkit-animation-fill-mode : none ;
+  animation-fill-mode : none ;
+    -webkit-animation-delay : 2.75s ; 
+    -moz-animation-delay : 2.75s ; 
+  animation-delay : 2.75s ;
+  
+  @keyframes logo {
+    0% {
+      margin-top : 0%;
+      opacity : 0 ;
+    }
+    10% {
+      margin-top : 100% ;
+      opacity : 1 ; 
+    }
+    90% {
+      margin-top : 100% ;
+      opacity : 1 ;
+    }
+    100% {
+      margin-top : 0% ; 
+      opacity : 0 ; 
+    }
+  }
+}
