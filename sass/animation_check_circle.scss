@@ -1,0 +1,36 @@
+.check-circle {
+  display : flex ; 
+    -moz-transition : all 2s ease-out ;
+    -webkit-transition : all 2s ease-out;
+  transition : all 2s ease-out;
+  &:hover {
+    cursor : pointer ;
+      -moz-transform : translate (0px 0px) ; 
+      -webkit-transform : translate (0px 0px) ;
+    transform : translate(0px 0px) ;
+      -moz-transition : transform 2s ease-out ;
+      -webkit-transition : transform 2s ease-out ; 
+    transition : transform 2s ease-out ;
+    background-color: $third_color ;
+    border-radius : 0px 10px 10px 0px ; 
+    .fa-check-circle {
+      font-size : 30px ; 
+      padding : 15px ; 
+      -webkit-background-clip : text ; 
+      -moz-background-clip : text ;
+    background-clip : text ;
+      -moz-transform : rotateZ(2turn) ;
+      -webkit-transform : rotateZ(2turn) ;
+    transform : rotateZ(2turn) ;
+      -moz-transition : transform 2s ease-out ; 
+      -webkit-transition : transform 2s ease-out ;
+    transition : transform 2s ease-out ; 
+    }
+  }
+}
+
+.fa-check-circle:before {
+  display : flex ; 
+  justify-content : center ; 
+  color : $white_color ; 
+}
