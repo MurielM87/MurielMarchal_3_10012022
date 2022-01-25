@@ -1,8 +1,12 @@
 
-* {margin : 0;}
+* {
+  margin : 0;
+  padding : 0 ;
+  box-sizing : border-box ; 
+}
   
 body {
-  font-size : 15px ;
+  font-size : $font-size4 ;
   font-family: 'Roboto', sans-serif ;
   line-height : 12px ; 
   color : $black_color ;
@@ -17,6 +21,3 @@ body {
     background-color : $primary_background ;
   }
 }
-
-
-  

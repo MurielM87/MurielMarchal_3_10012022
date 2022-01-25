@@ -2,21 +2,19 @@
   @include flex-center-column ;
   background-color : $secondary_background;
   align-items : flex-start ;  
-  padding : 20px ;   
+  padding : $padding-l ;   
   @media screen and (min-width: map-get($breakpoints, desktop)) {
     align-items : center ; 
     border-radius : 20px ;
     margin-bottom : 15px ; 
   }
     
-  h2 {
-    font-family: 'Roboto', sans-serif ; 
-    font-size : 20px ; 
+  h2 { 
+    font-size : $font-size2 ; 
     font-weight : bold ; 
   }
 
   .liste_restaurants {
-    display : flex ; 
     @include flex-center-column ;
     margin : auto ; 
     width : 100% ; 
@@ -45,7 +43,7 @@
         width : 45%
       }
       @media screen and (min-width: map-get($breakpoints, desktop)) {
-        margin : 10px ; 
+        margin : $margin-m ; 
         width : 30% ; 
       }
        
@@ -55,7 +53,7 @@
           &:hover {
             box-shadow : 2px 2px 5px darken(#f6f6f6, 30%) ;
             border-radius : 20px ; 
-            padding-bottom : 10px ; 
+            padding-bottom : $padding-m ; 
           }
         }
       }
@@ -81,6 +79,10 @@
         margin-left : 70% ;
         margin-top : 3% ; 
         @media (min-width: map-get($breakpoints, tablette)) {
+          margin-left : 32% ; 
+          margin-top : 2% ; 
+        }
+        @media screen and (min-width: map-get($breakpoints, desktop)) {
           margin-left : 12% ; 
           margin-top : 1% ;
         } 
@@ -116,10 +118,6 @@
 
         }
 
-        .favori {
-          width : 20% ; 
-          margin-bottom : 30px ; 
-        }
       }
     }
   }  

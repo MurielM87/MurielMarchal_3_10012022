@@ -1,0 +1,54 @@
+.favori {
+  position : absolute ; 
+  margin-top : 30px ;
+  margin-left : 80% ; 
+  height : 30px ; 
+  width : 30px ; 
+  transform : translateY(-50%) ; 
+  @media (min-width: map-get($breakpoints, tablette)) {
+    margin-left : 38% ; 
+  }
+  @media screen and (min-width: map-get($breakpoints, desktop)) {
+    margin-left : 280px ;
+  }
+
+  .fa-heart {
+    color : transparent ; 
+    position : absolute ; 
+    inset : 0px ; 
+    font-size : 30px ; 
+    text-align : center ; 
+    &:hover {
+      cursor : pointer ; 
+    }
+  }
+
+  .empty {
+    transition : all 1.5s linear ; 
+    z-index : 10 ; 
+    background : $black_color ; 
+    -webkit-background-clip : text ;
+    -webkit-text-fill-color : transparent ; 
+  }
+
+  .full {
+    transition : 1s ease-in-out ; 
+    font-size : 30px ;
+    background : linear-gradient($primary_color, $secondary_color) ; 
+    -webkit-background-clip : text ; 
+    -webkit-text-fill-color : transparent ; 
+    transform-origin : bottom ; 
+    transform : scale(0) ; 
+    z-index : 1 ; 
+  }
+
+  &:hover .full {
+    transform : scale(1) ; 
+  }
+
+  &:hover .empty {
+    background : transparent ; 
+    -webkit-background-clip : text ; 
+    -webkit-text-fill-color : transparent ; 
+  }
+}
