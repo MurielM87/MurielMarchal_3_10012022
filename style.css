@@ -1,5 +1,9 @@
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap");
 * {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -27,7 +31,7 @@ body {
   -webkit-background: linear-gradient(to right bottom, #FF79DA, #9356DC);
   -moz-background: linear-gradient(to right bottom, #FF79DA, #9356DC);
   background: linear-gradient(to right bottom, #FF79DA, #9356DC);
-  font-size: 17px;
+  font-size: 18px;
   width: 230px;
   font-weight: bold;
   border: none;
@@ -86,66 +90,63 @@ body {
   -webkit-transform-origin: right;
   -moz-transform-origin: right;
   transform-origin: right;
-  -webkit-transition: transform, 0.1s;
-  -moz-transition: transform, 0.1s;
-  transition: transform 0.1s;
+  -webkit-transition: transform, 0.05s;
+  -moz-transition: transform, 0.05s;
+  transition: transform 0.05s;
 }
 
-i.empty {
+.favori {
   position: absolute;
-  z-index: 1;
-  margin-left: -1%;
-  font-size: 200%;
-  color: #000000;
+  margin-top: 30px;
+  margin-left: 80%;
+  height: 30px;
+  width: 30px;
+  transform: translateY(-50%);
 }
 @media (min-width: 767px) {
-  i.empty {
-    margin-left: 0%;
+  .favori {
+    margin-left: 38%;
   }
 }
 @media screen and (min-width: 1000px) {
-  i.empty {
-    margin-left: 0%;
+  .favori {
+    margin-left: 280px;
   }
 }
-i.empty:hover {
-  cursor: pointer;
-  display: none;
-}
-
-i.full {
-  position: relative;
-  z-index: 1;
-  font-size: 200%;
-  opacity: 0;
-}
-i.full:hover {
-  cursor: pointer;
-  opacity: 1;
-  z-index: 1;
-  margin-left: -20%;
-  margin-top: -5%;
-  font-weight: bold;
-  background: -webkit-gradient(linear, left bottom, right top, from(#FF79DA), to(#9356DC));
-  background: -moz-gradient(linear, left bottom, right top, from(#FF79DA), to(#9356DC));
-  background: gradient(linear, left bottom, right top, from(#FF79DA), to(#9356DC));
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+.favori .fa-heart {
   color: transparent;
-  transition: opacity 2s ease-in-out;
+  position: absolute;
+  inset: 0px;
+  font-size: 30px;
+  text-align: center;
 }
-@media (min-width: 767px) {
-  i.full:hover {
-    margin-left: 0%;
-  }
+.favori .fa-heart:hover {
+  cursor: pointer;
 }
-@media screen and (min-width: 1000px) {
-  i.full:hover {
-    margin-left: 0%;
-  }
+.favori .empty {
+  transition: all 1.5s linear;
+  z-index: 10;
+  background: #000000;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.favori .full {
+  transition: 1s ease-in-out;
+  font-size: 30px;
+  background: linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform-origin: bottom;
+  transform: scale(0);
+  z-index: 1;
+}
+.favori:hover .full {
+  transform: scale(1);
+}
+.favori:hover .empty {
+  background: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .btn_commander {
@@ -154,7 +155,7 @@ i.full:hover {
   -webkit-background: linear-gradient(to right bottom, #FF79DA, #9356DC);
   -moz-background: linear-gradient(to right bottom, #FF79DA, #9356DC);
   background: linear-gradient(to right bottom, #FF79DA, #9356DC);
-  font-size: 15px;
+  font-size: 18px;
   font-weight: bold;
   border-radius: 30px;
   box-shadow: 3px 3px 3px #e4dede;
@@ -211,9 +212,9 @@ i.full:hover {
   -webkit-transform-origin: right;
   -moz-transform-origin: right;
   transform-origin: right;
-  -webkit-transition: transform, 0.1s;
-  -moz-transition: transform, 0.1s;
-  transition: transform 0.1s;
+  -webkit-transition: transform, 0.01s;
+  -moz-transition: transform, 0.01s;
+  transition: transform 0.01s;
 }
 
 header {
@@ -238,7 +239,7 @@ header .fa-arrow-left {
   position: absolute;
   color: #000000;
   font-size: 20px;
-  margin: 10px 15px 25px 25px;
+  margin: 20px;
 }
 header #logo_header {
   width: 40%;
@@ -247,7 +248,7 @@ header #logo_header {
 @media screen and (min-width: 1000px) {
   header #logo_header {
     width: 30%;
-    margin: 0.5% 32%;
+    margin: 0% 35%;
   }
 }
 header #photo_header {
@@ -255,47 +256,45 @@ header #photo_header {
   position: relative;
   width: 100%;
   height: 250px;
-  margin: 0px;
+  margin: 0;
   z-index: 1;
 }
 @media screen and (min-width: 1000px) {
   header #photo_header {
-    width: 33%;
-    margin: 0% 30% auto;
+    height: 300px;
   }
 }
 header .restaurant_nom {
   width: 100%;
-  height: 75px;
   background-color: #f6f6f6;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  align-items: center;
   border-radius: 30px 30px 0px 0px;
-  position: absolute;
-  padding-top: 30px;
+  position: relative;
+  padding-top: 20px;
   z-index: 2;
   margin-left: 0px;
   margin-top: -35px;
 }
 @media screen and (min-width: 1000px) {
   header .restaurant_nom {
-    width: 466px;
     background-color: #ffffff;
-    margin-left: 415px;
     border-radius: 30px;
+    width: 40%;
+    margin-left: 30%;
   }
 }
 header .restaurant_nom h1 {
   width: 80%;
   padding-left: 10px;
   font-family: "Shrikhand", "cursive";
-  font-size: 28px;
+  font-size: 25px;
   font-weight: bold;
   letter-spacing: 1.5px;
   text-align: left;
   line-height: 0px;
-  margin-left: 15px;
+  margin-left: 10px;
 }
 @media (min-width: 767px) {
   header .restaurant_nom h1 {
@@ -306,27 +305,27 @@ header .restaurant_nom h1 {
 }
 @media screen and (min-width: 1000px) {
   header .restaurant_nom h1 {
-    width: 40%;
-    font-size: 25px;
-    text-align: center;
-    line-height: 25px;
+    width: 80%;
+    text-align: left;
+    margin-left: 20px;
+    font-size: 30px;
   }
 }
-header .restaurant_nom .fa-heart {
-  font-size: 30px;
-  color: #000000;
-  padding-right: 30px;
+@media (min-width: 767px) {
+  header .restaurant_nom .favori {
+    margin-left: 80%;
+  }
 }
 
 footer {
   font-size: 18px;
   color: #ffffff;
   background-color: #353535;
-  padding: 10px 0px;
+  padding: 10px 0;
 }
 @media (min-width: 767px) {
   footer {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 footer .container {
@@ -348,7 +347,7 @@ footer .container {
   }
 }
 footer .container div {
-  margin-left: 3%;
+  margin-left: 10px;
 }
 @media screen and (min-width: 1000px) {
   footer .container div {
@@ -358,7 +357,7 @@ footer .container div {
 footer .container .ohmyfood_footer {
   filter: invert(100%);
   width: 30%;
-  margin: 3%;
+  margin: 10px;
 }
 @media screen and (min-width: 1000px) {
   footer .container .ohmyfood_footer {
@@ -389,28 +388,27 @@ footer .container a {
   width: 100%;
   background-color: #ffffff;
   align-items: flex-start;
-  margin-top: 15px;
+  margin: 15px 0px;
 }
 @media (min-width: 767px) {
   #fonctionnement {
-    margin: 0 auto;
+    margin: 0 0 20px;
   }
 }
 @media screen and (min-width: 1000px) {
   #fonctionnement {
     align-items: center;
-    margin: 1% 0%;
+    margin: 10px;
   }
 }
 #fonctionnement h2 {
-  font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: bold;
-  margin: 3%;
+  margin: 10px 20px;
 }
 @media screen and (min-width: 1000px) {
   #fonctionnement h2 {
-    margin: 0;
+    margin: 10px;
   }
 }
 #fonctionnement .fonctionnement {
@@ -429,9 +427,9 @@ footer .container a {
   }
 }
 #fonctionnement .categorie {
-  font-weight: bold;
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
   width: 100%;
 }
@@ -447,15 +445,16 @@ footer .container a {
   padding: 15px;
   position: absolute;
   z-index: 1;
+  margin-left: -73%;
 }
 @media (min-width: 767px) {
   #fonctionnement .categorie .nombre {
-    margin-left: 16%;
+    margin-left: -55%;
   }
 }
 @media screen and (min-width: 1000px) {
   #fonctionnement .categorie .nombre {
-    margin-left: 4%;
+    margin-left: -280px;
   }
 }
 #fonctionnement .categorie .fonctionnement_description {
@@ -468,22 +467,19 @@ footer .container a {
   box-shadow: 2px 3px 7px #e0dede;
   border-radius: 25px;
   width: 80%;
-  margin: 4%;
-  padding: 8% 0% 8% 20%;
+  margin: 10px;
+  padding: 30px 0px 30px 90px;
   z-index: 0;
 }
 @media (min-width: 767px) {
   #fonctionnement .categorie .fonctionnement_description {
     width: 60%;
-    margin: 2% 20%;
-    padding: 5% 0% 5% 15%;
+    margin: 10px 20px;
   }
 }
 @media screen and (min-width: 1000px) {
   #fonctionnement .categorie .fonctionnement_description {
-    width: 60%;
-    margin: 4% 20%;
-    padding: 5% 0% 5% 15%;
+    padding: 20px 0px 20px 80px;
   }
 }
 #fonctionnement .categorie .fonctionnement_description:hover {
@@ -498,9 +494,15 @@ footer .container a {
   position: absolute;
   z-index: 1;
   font-size: 20px;
-  margin-left: -10%;
-  margin-top: -1%;
+  left: 45px;
+  top: 25px;
   color: #7d7d7d;
+}
+@media screen and (min-width: 1000px) {
+  #fonctionnement .categorie .fonctionnement_description .fa-mobile-alt, #fonctionnement .categorie .fonctionnement_description .fa-list-ul, #fonctionnement .categorie .fonctionnement_description .fa-store {
+    left: 35px;
+    top: 16px;
+  }
 }
 
 #accueil {
@@ -520,20 +522,29 @@ footer .container a {
   font-weight: bold;
   width: 100%;
   text-align: center;
-  padding: 4% 0%;
+  padding: 20px;
 }
 #accueil .localisation .fa-map-marker-alt {
   color: #000000;
-  margin-right: 15px;
+  margin-right: 10px;
+  margin-left: 80px;
+}
+#accueil .localisation #search {
+  background-color: #EAEAEA;
+  color: #000000;
+  font-weight: bold;
+  border: none;
+}
+#accueil .localisation #search:focus-visible {
+  outline: none;
 }
 #accueil h1 {
-  font-family: "Roboto", sans-serif;
-  font-size: 26px;
+  font-size: 25px;
   font-weight: bold;
   text-align: center;
   line-height: 30px;
   width: 70%;
-  padding: 7% 15% 0% 15%;
+  padding: 20px;
 }
 @media (min-width: 767px) {
   #accueil h1 {
@@ -580,12 +591,10 @@ footer .container a {
   }
 }
 #restaurants h2 {
-  font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: bold;
 }
 #restaurants .liste_restaurants {
-  display: flex;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -659,6 +668,12 @@ footer .container a {
 }
 @media (min-width: 767px) {
   #restaurants .liste_restaurants .restaurant .nouveau {
+    margin-left: 32%;
+    margin-top: 2%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  #restaurants .liste_restaurants .restaurant .nouveau {
     margin-left: 12%;
     margin-top: 1%;
   }
@@ -668,12 +683,13 @@ footer .container a {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding-top: 4%;
 }
 #restaurants .liste_restaurants .restaurant .description .informations {
   display: flex;
   flex-direction: column;
-  flex-wrap: no-wrap;
+  flex-wrap: nowrap;
+  margin: 2%;
+  width: 80%;
 }
 #restaurants .liste_restaurants .restaurant .description .informations h3, #restaurants .liste_restaurants .restaurant .description .informations .lieu {
   margin: 5px;
@@ -696,14 +712,15 @@ footer .container a {
   width: 100%;
   border-radius: 10px;
   margin: 0 auto;
-  padding-top: 18%;
+  padding-top: 40px;
 }
 @media (min-width: 767px) {
   #menus {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    padding-top: 3%;
+    flex-wrap: wrap;
+    padding-top: 10px;
   }
 }
 @media screen and (min-width: 1000px) {
@@ -711,7 +728,7 @@ footer .container a {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 40px;
   }
 }
 #menus #entrees, #menus #plats, #menus #desserts {
@@ -719,31 +736,29 @@ footer .container a {
   flex-direction: column;
   width: 90%;
   justify-content: center;
-  margin: 10% auto;
+  margin: 20px;
 }
 @media (min-width: 767px) {
   #menus #entrees, #menus #plats, #menus #desserts {
-    width: 70%;
-    justify-content: center;
-    margin: 0% 5%;
-    padding-top: 5%;
+    width: 45%;
+    margin: 10px;
   }
 }
 @media screen and (min-width: 1000px) {
   #menus #entrees, #menus #plats, #menus #desserts {
     width: 30%;
-    justify-content: space-around;
+    justify-content: flex-start;
     margin: 0 auto;
     padding: 10px 15px;
   }
 }
 #menus #entrees h2, #menus #plats h2, #menus #desserts h2 {
-  margin-left: 5%;
-  font-size: 22px;
+  margin-left: 10px;
+  font-size: 25px;
   width: 60px;
   border-bottom: solid 3px #99E2D0;
-  padding-bottom: 12px;
-  margin-bottom: 5%;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
 }
 #menus #entrees .entrees, #menus #entrees .plats, #menus #entrees .desserts, #menus #plats .entrees, #menus #plats .plats, #menus #plats .desserts, #menus #desserts .entrees, #menus #desserts .plats, #menus #desserts .desserts {
   background-color: #ffffff;
@@ -751,18 +766,21 @@ footer .container a {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 4% auto;
+  margin: 10px;
   height: 60px;
   border-radius: 10px;
   width: 90%;
 }
+@media (min-width: 767px) {
+  #menus #entrees .entrees, #menus #entrees .plats, #menus #entrees .desserts, #menus #plats .entrees, #menus #plats .plats, #menus #plats .desserts, #menus #desserts .entrees, #menus #desserts .plats, #menus #desserts .desserts {
+    margin: 10px auto;
+    width: 100%;
+  }
+}
 @media screen and (min-width: 1000px) {
   #menus #entrees .entrees, #menus #entrees .plats, #menus #entrees .desserts, #menus #plats .entrees, #menus #plats .plats, #menus #plats .desserts, #menus #desserts .entrees, #menus #desserts .plats, #menus #desserts .desserts {
-    width: 100%;
-    flex-direction: row;
     justify-content: space-between;
     box-shadow: 4px 3px 5px #635d5d;
-    margin: 8px;
   }
 }
 #menus #entrees .entrees .menu, #menus #entrees .plats .menu, #menus #entrees .desserts .menu, #menus #plats .entrees .menu, #menus #plats .plats .menu, #menus #plats .desserts .menu, #menus #desserts .entrees .menu, #menus #desserts .plats .menu, #menus #desserts .desserts .menu {
@@ -779,12 +797,11 @@ footer .container a {
 }
 @media screen and (min-width: 1000px) {
   #menus #entrees .entrees .menu, #menus #entrees .plats .menu, #menus #entrees .desserts .menu, #menus #plats .entrees .menu, #menus #plats .plats .menu, #menus #plats .desserts .menu, #menus #desserts .entrees .menu, #menus #desserts .plats .menu, #menus #desserts .desserts .menu {
-    padding-left: 5px;
+    padding-left: 10px;
   }
 }
 #menus #entrees .entrees .menu h3, #menus #entrees .plats .menu h3, #menus #entrees .desserts .menu h3, #menus #plats .entrees .menu h3, #menus #plats .plats .menu h3, #menus #plats .desserts .menu h3, #menus #desserts .entrees .menu h3, #menus #desserts .plats .menu h3, #menus #desserts .desserts .menu h3 {
-  font-family: "Roboto", sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   margin: 10px 10px 0px 10px;
   overflow: hidden;
@@ -797,7 +814,7 @@ footer .container a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 0px 10px 10px 10px;
+  margin: 10px;
 }
 #menus #entrees .entrees .menu .informations .supplement, #menus #entrees .plats .menu .informations .supplement, #menus #entrees .desserts .menu .informations .supplement, #menus #plats .entrees .menu .informations .supplement, #menus #plats .plats .menu .informations .supplement, #menus #plats .desserts .menu .informations .supplement, #menus #desserts .entrees .menu .informations .supplement, #menus #desserts .plats .menu .informations .supplement, #menus #desserts .desserts .menu .informations .supplement {
   font-size: 18px;
@@ -812,10 +829,7 @@ footer .container a {
 #menus #entrees .entrees .menu .informations .prix, #menus #entrees .plats .menu .informations .prix, #menus #entrees .desserts .menu .informations .prix, #menus #plats .entrees .menu .informations .prix, #menus #plats .plats .menu .informations .prix, #menus #plats .desserts .menu .informations .prix, #menus #desserts .entrees .menu .informations .prix, #menus #desserts .plats .menu .informations .prix, #menus #desserts .desserts .menu .informations .prix {
   font-size: 20px;
   font-weight: bold;
-  margin-right: 5px;
-}
-#menus #entrees .entrees .fa-check-circle, #menus #entrees .plats .fa-check-circle, #menus #entrees .desserts .fa-check-circle, #menus #plats .entrees .fa-check-circle, #menus #plats .plats .fa-check-circle, #menus #plats .desserts .fa-check-circle, #menus #desserts .entrees .fa-check-circle, #menus #desserts .plats .fa-check-circle, #menus #desserts .desserts .fa-check-circle {
-  color: #ffffff;
+  margin-right: 20px;
 }
 
 body #loading_spinner {
@@ -823,9 +837,9 @@ body #loading_spinner {
   width: 100%;
   position: absolute;
   z-index: 2;
-  -moz-animation-duration: 2.5s;
-  -webkit-animation-duration: 2.5s;
-  animation-duration: 2.5s;
+  -moz-animation-duration: 3s;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
   -moz-animation-iteration-count: 1;
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
@@ -883,8 +897,8 @@ body #loading_spinner {
   z-index: 4;
   top: 0;
   left: 0;
-  width: 164px;
-  height: 164px;
+  width: 180px;
+  height: 180px;
   margin: 30%;
   border-radius: 50%;
 }
@@ -912,9 +926,9 @@ body #loading_spinner {
   -webkit-animation-timing-function: linear;
   -moz-animation-timing-function: linear;
   animation-timing-function: linear;
-  -webkit-animation-iteration-count: 4;
-  -moz-animation-iteration-count: 4;
-  animation-iteration-count: 4;
+  -webkit-animation-iteration-count: 5;
+  -moz-animation-iteration-count: 5;
+  animation-iteration-count: 5;
   -webkit-animation-direction: normal;
   -moz-animation-direction: normal;
   animation-direction: normal;
@@ -935,9 +949,9 @@ body #loading_spinner {
   -webkit-animation-timing-function: linear;
   -moz-animation-timing-function: linear;
   animation-timing-function: linear;
-  -webkit-animation-iteration-count: 4;
-  -moz-animation-iteration-count: 4;
-  animation-iteration-count: 4;
+  -webkit-animation-iteration-count: 5;
+  -moz-animation-iteration-count: 5;
+  animation-iteration-count: 5;
   -webkit-animation-direction: normal;
   -moz-animation-direction: normal;
   animation-direction: normal;
@@ -958,9 +972,9 @@ body #loading_spinner {
   -webkit-animation-timing-function: linear;
   -moz-animation-timing-function: linear;
   animation-timing-function: linear;
-  -webkit-animation-iteration-count: 4;
-  -moz-animation-iteration-count: 4;
-  animation-iteration-count: 4;
+  -webkit-animation-iteration-count: 5;
+  -moz-animation-iteration-count: 5;
+  animation-iteration-count: 5;
   -webkit-animation-direction: normal;
   -moz-animation-direction: normal;
   animation-direction: normal;
@@ -986,7 +1000,6 @@ body #loading_spinner {
   -moz-animation-delay: 0s;
   animation-delay: 0s;
 }
-
 @keyframes rotate1 {
   from {
     transform: rotateX(35deg) rotateY(-45deg) rotateZ(0);
@@ -1017,17 +1030,17 @@ body #loading_spinner {
     opacity: 0;
   }
 }
-.ohmyfood {
+#loading_spinner .ohmyfood {
   filter: invert(100%);
   position: absolute;
   z-index: 5;
-  top: 0;
-  left: 0;
   width: 50%;
-  margin: 40% 25%;
-  -moz-animation-duration: 0.3s;
-  -webkit-animation-duration: 0.3s;
-  animation-duration: 0.3s;
+  top: 200px;
+  left: 130px;
+  opacity: 0;
+  -moz-animation-duration: 0.5s;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
   -moz-animation-iteration-count: 1;
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
@@ -1037,726 +1050,139 @@ body #loading_spinner {
   -moz-animation-name: logo;
   -webkit-animation-name: logo;
   animation-name: logo;
-  -moz-transition-property: top, bottom;
-  -webkit-transition-property: top, bottom;
-  transition-property: top, bottom;
-  -moz-animation-timing-function: ease-in;
-  -webkit-animation-timing-function: ease-in;
-  animation-timing-function: ease-in;
+  -moz-animation-timing-function: ease-out;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
   -moz-animation-fill-mode: none;
   -webkit-animation-fill-mode: none;
   animation-fill-mode: none;
-  -webkit-animation-delay: 2.75s;
-  -moz-animation-delay: 2.75s;
-  animation-delay: 2.75s;
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  animation-delay: 2s;
 }
 @media (min-width: 767px) {
-  .ohmyfood {
+  #loading_spinner .ohmyfood {
     width: 40%;
-    margin: 25% 30%;
+    top: 210px;
+    left: 300px;
   }
 }
 @media screen and (min-width: 1000px) {
-  .ohmyfood {
+  #loading_spinner .ohmyfood {
     width: 25%;
-    margin: 15% 40%;
+    top: 260px;
+    left: 700px;
   }
 }
 @keyframes logo {
   0% {
-    margin-top: 0%;
     opacity: 0;
   }
   10% {
-    margin-top: 100%;
+    opacity: 0.3;
+  }
+  20% {
     opacity: 1;
   }
   90% {
-    margin-top: 100%;
-    opacity: 1;
+    opacity: 0.5;
   }
   100% {
-    margin-top: 0%;
     opacity: 0;
   }
 }
 
-#entrees {
-  -moz-animation-duration: 4s;
-  -webkit-animation-duration: 4s;
-  animation-duration: 4s;
+#entrees, .entrees, #plats, .plats, #desserts, .desserts {
+  -moz-animation-duration: 0.5s;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
   -moz-animation-iteration-count: 1;
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
   -moz-animation-direction: normal;
   -webkit-animation-direction: normal;
   animation-direction: normal;
-  -moz-animation-name: entrees;
-  -webkit-animation-name: entrees;
-  animation-name: entrees;
+  -moz-animation-name: menu;
+  -webkit-animation-name: menu;
+  animation-name: menu;
   -moz-transition-property: bottom, top;
   -webkit-transition-property: bottom, top;
   transition-property: bottom, top;
-  -moz-animation-timing-function: ease-in;
-  -webkit-animation-timing-function: ease-in;
-  animation-timing-function: ease-in;
+  -moz-animation-timing-function: ease-out;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
   -moz-animation-fill-mode: both;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
-@keyframes entrees {
+@keyframes menu {
   from {
-    margin-top: 100%;
+    margin-top: 10px;
     opacity: 0;
   }
   to {
-    margin-top: 0%;
+    margin-top: 0;
     opacity: 1;
   }
 }
 
-.entrees {
-  -moz-animation-duration: 4s;
-  -webkit-animation-duration: 4s;
-  animation-duration: 4s;
-  -moz-animation-iteration-count: 1;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
-  -moz-animation-direction: normal;
-  -webkit-animation-direction: normal;
-  animation-direction: normal;
-  -moz-animation-name: entrees_contenu;
-  -webkit-animation-name: entrees_contenu;
-  animation-name: entrees_contenu;
-  -moz-transition-property: bottom, top;
-  -webkit-transition-property: bottom, top;
-  transition-property: bottom, top;
-  -moz-animation-timing-function: ease-in;
-  -webkit-animation-timing-function: ease-in;
-  animation-timing-function: ease-in;
-  -moz-animation-fill-mode: both;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -moz-animation-delay: 1s;
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s;
-}
-@keyframes entrees_contenu {
-  from {
-    margin-top: 100%;
-    opacity: 0;
-  }
-  to {
-    margin-top: 0%;
-    opacity: 1;
-  }
+.entrees, #plats {
+  -moz-animation-delay: 0.2s;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
 }
 
-#plats {
-  -moz-animation-duration: 4s;
-  -webkit-animation-duration: 4s;
-  animation-duration: 4s;
-  -moz-animation-iteration-count: 1;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
-  -moz-animation-direction: normal;
-  -webkit-animation-direction: normal;
-  animation-direction: normal;
-  -moz-animation-name: plats;
-  -webkit-animation-name: plats;
-  animation-name: plats;
-  -moz-transition-property: bottom, top;
-  -webkit-transition-property: bottom, top;
-  transition-property: bottom, top;
-  -moz-animation-timing-function: ease-in;
-  -webkit-animation-timing-function: ease-in;
-  animation-timing-function: ease-in;
-  -moz-animation-fill-mode: both;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -moz-animation-delay: 4s;
-  -webkit-animation-delay: 4s;
-  animation-delay: 4s;
-}
-@keyframes plats {
-  from {
-    margin-top: 100%;
-    opacity: 0;
-  }
-  to {
-    margin-top: 0%;
-    opacity: 1;
-  }
-}
-
-.plats {
-  -moz-animation-duration: 4s;
-  -webkit-animation-duration: 4s;
-  animation-duration: 4s;
-  -moz-animation-iteration-count: 1;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
-  -moz-animation-direction: normal;
-  -webkit-animation-direction: normal;
-  animation-direction: normal;
-  -moz-animation-name: plats_contenu;
-  -webkit-animation-name: plats-contenu;
-  animation-name: plats_contenu;
-  -moz-transition-property: bottom, top;
-  -webkit-transition-property: bottom, top;
-  transition-property: bottom, top;
-  -moz-animation-timing-function: ease-in;
-  -webkit-animation-timing-function: ease-in;
-  animation-timing-function: ease-in;
-  -moz-animation-fill-mode: both;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -moz-animation-delay: 5s;
-  -webkit-animation-delay: 5s;
-  animation-delay: 5s;
-}
-@keyframes plats_contenu {
-  from {
-    margin-top: 100%;
-    opacity: 0;
-  }
-  to {
-    margin-top: 0%;
-    opacity: 1;
-  }
-}
-
-#desserts {
-  -moz-animation-duration: 4s;
-  -webkit-animation-duration: 4s;
-  animation-duration: 4s;
-  -moz-animation-iteration-count: 1;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
-  -moz-animation-direction: normal;
-  -webkit-animation-direction: normal;
-  animation-direction: normal;
-  -moz-animation-name: desserts;
-  -webkit-animation-name: desserts;
-  animation-name: desserts;
-  -moz-transition-property: bottom, top;
-  -webkit-transition-property: bottom, top;
-  transition-property: bottom, top;
-  -moz-animation-timing-function: ease-in;
-  -webkit-animation-timing-function: ease-in;
-  animation-timing-function: ease-in;
-  -moz-animation-fill-mode: both;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -moz-animation-delay: 8s;
-  -webkit-animation-delay: 8s;
-  animation-delay: 8s;
-}
-@keyframes desserts {
-  from {
-    margin-top: 100%;
-    opacity: 0;
-  }
-  to {
-    margin-top: 0%;
-    opacity: 1;
-  }
+.plats, #desserts {
+  -moz-animation-delay: 0.4s;
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
 }
 
 .desserts {
-  -moz-animation-duration: 4s;
-  -webkit-animation-duration: 4s;
-  animation-duration: 4s;
-  -moz-animation-iteration-count: 1;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
-  -moz-animation-direction: normal;
-  -webkit-animation-direction: normal;
-  animation-direction: normal;
-  -moz-animation-name: desserts_contenu;
-  -webkit-animation-name: desserts_contenu;
-  animation-name: desserts_contenu;
-  -moz-transition-property: bottom, top;
-  -webkit-transition-property: bottom, top;
-  transition-property: bottom, top;
-  -moz-animation-timing-function: ease-in;
-  -webkit-animation-timing-function: ease-in;
-  animation-timing-function: ease-in;
-  -moz-animation-fill-mode: both;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -moz-animation-delay: 9s;
-  -webkit-animation-delay: 9s;
-  animation-delay: 9s;
-}
-@keyframes desserts_contenu {
-  from {
-    margin-top: 100%;
-    opacity: 0;
-  }
-  to {
-    margin-top: 0%;
-    opacity: 1;
-  }
+  -moz-animation-delay: 0.8s;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
 }
 
-@media (min-width: 767px) {
-  #entrees {
-    -moz-animation-duration: 4s;
-    -webkit-animation-duration: 4s;
-    animation-duration: 4s;
-    -moz-animation-iteration-count: 1;
-    -webkit-animation-iteration-count: 1;
-    animation-iteration-count: 1;
-    -moz-animation-direction: normal;
-    -webkit-animation-direction: normal;
-    animation-direction: normal;
-    -moz-animation-name: entrees;
-    -webkit-animation-name: entrees;
-    animation-name: entrees;
-    -moz-transition-property: bottom, top;
-    -webkit-transition-property: bottom, top;
-    transition-property: bottom, top;
-    -moz-animation-timing-function: ease-in;
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-    -moz-animation-fill-mode: both;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-  }
-  @keyframes entrees {
-    from {
-      margin-top: 100%;
-      opacity: 0;
-    }
-    to {
-      margin-top: 0%;
-      opacity: 1;
-    }
-  }
-
-  .entrees {
-    -moz-animation-duration: 4s;
-    -webkit-animation-duration: 4s;
-    animation-duration: 4s;
-    -moz-animation-iteration-count: 1;
-    -webkit-animation-iteration-count: 1;
-    animation-iteration-count: 1;
-    -moz-animation-direction: normal;
-    -webkit-animation-direction: normal;
-    animation-direction: normal;
-    -moz-animation-name: entrees_contenu;
-    -webkit-animation-name: entrees_contenu;
-    animation-name: entrees_contenu;
-    -moz-transition-property: bottom, top;
-    -webkit-transition-property: bottom, top;
-    transition-property: bottom, top;
-    -moz-animation-timing-function: ease-in;
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-    -moz-animation-fill-mode: both;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    -moz-animation-delay: 1s;
-    -webkit-animation-delay: 1s;
-    animation-delay: 1s;
-  }
-  @keyframes entrees_contenu {
-    from {
-      margin-top: 100%;
-      opacity: 0;
-    }
-    to {
-      margin-top: 0%;
-      opacity: 1;
-    }
-  }
-
-  #plats {
-    -moz-animation-duration: 4s;
-    -webkit-animation-duration: 4s;
-    animation-duration: 4s;
-    -moz-animation-iteration-count: 1;
-    -webkit-animation-iteration-count: 1;
-    animation-iteration-count: 1;
-    -moz-animation-direction: normal;
-    -webkit-animation-direction: normal;
-    animation-direction: normal;
-    -moz-animation-name: plats;
-    -webkit-animation-name: plats;
-    animation-name: plats;
-    -moz-transition-property: bottom, top;
-    -webkit-transition-property: bottom, top;
-    transition-property: bottom, top;
-    -moz-animation-timing-function: ease-in;
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-    -moz-animation-fill-mode: both;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    -moz-animation-delay: 4s;
-    -webkit-animation-delay: 4s;
-    animation-delay: 4s;
-  }
-  @keyframes plats {
-    from {
-      margin-top: 100%;
-      opacity: 0;
-    }
-    to {
-      margin-top: 0%;
-      opacity: 1;
-    }
-  }
-
-  .plats {
-    -moz-animation-duration: 4s;
-    -webkit-animation-duration: 4s;
-    animation-duration: 4s;
-    -moz-animation-iteration-count: 1;
-    -webkit-animation-iteration-count: 1;
-    animation-iteration-count: 1;
-    -moz-animation-direction: normal;
-    -webkit-animation-direction: normal;
-    animation-direction: normal;
-    -moz-animation-name: plats_contenu;
-    -webkit-animation-name: plats-contenu;
-    animation-name: plats_contenu;
-    -moz-transition-property: bottom, top;
-    -webkit-transition-property: bottom, top;
-    transition-property: bottom, top;
-    -moz-animation-timing-function: ease-in;
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-    -moz-animation-fill-mode: both;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    -moz-animation-delay: 5s;
-    -webkit-animation-delay: 5s;
-    animation-delay: 5s;
-  }
-  @keyframes plats_contenu {
-    from {
-      margin-top: 100%;
-      opacity: 0;
-    }
-    to {
-      margin-top: 0%;
-      opacity: 1;
-    }
-  }
-
-  #desserts {
-    -moz-animation-duration: 4s;
-    -webkit-animation-duration: 4s;
-    animation-duration: 4s;
-    -moz-animation-iteration-count: 1;
-    -webkit-animation-iteration-count: 1;
-    animation-iteration-count: 1;
-    -moz-animation-direction: normal;
-    -webkit-animation-direction: normal;
-    animation-direction: normal;
-    -moz-animation-name: desserts;
-    -webkit-animation-name: desserts;
-    animation-name: desserts;
-    -moz-transition-property: bottom, top;
-    -webkit-transition-property: bottom, top;
-    transition-property: bottom, top;
-    -moz-animation-timing-function: ease-in;
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-    -moz-animation-fill-mode: both;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    -moz-animation-delay: 8s;
-    -webkit-animation-delay: 8s;
-    animation-delay: 8s;
-  }
-  @keyframes desserts {
-    from {
-      margin-top: 100%;
-      opacity: 0;
-    }
-    to {
-      margin-top: 0%;
-      opacity: 1;
-    }
-  }
-
-  .desserts {
-    -moz-animation-duration: 4s;
-    -webkit-animation-duration: 4s;
-    animation-duration: 4s;
-    -moz-animation-iteration-count: 1;
-    -webkit-animation-iteration-count: 1;
-    animation-iteration-count: 1;
-    -moz-animation-direction: normal;
-    -webkit-animation-direction: normal;
-    animation-direction: normal;
-    -moz-animation-name: desserts_contenu;
-    -webkit-animation-name: desserts_contenu;
-    animation-name: desserts_contenu;
-    -moz-transition-property: bottom, top;
-    -webkit-transition-property: bottom, top;
-    transition-property: bottom, top;
-    -moz-animation-timing-function: ease-in;
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-    -moz-animation-fill-mode: both;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    -moz-animation-delay: 9s;
-    -webkit-animation-delay: 9s;
-    animation-delay: 9s;
-  }
-  @keyframes desserts_contenu {
-    from {
-      margin-top: 100%;
-      opacity: 0;
-    }
-    to {
-      margin-top: 0%;
-      opacity: 1;
-    }
-  }
-}
-@media screen and (min-width: 1000px) {
-  #entrees {
-    -moz-animation-duration: 4s;
-    -webkit-animation-duration: 4s;
-    animation-duration: 4s;
-    -moz-animation-iteration-count: 1;
-    -webkit-animation-iteration-count: 1;
-    animation-iteration-count: 1;
-    -moz-animation-direction: normal;
-    -webkit-animation-direction: normal;
-    animation-direction: normal;
-    -moz-animation-name: entrees;
-    -webkit-animation-name: entrees;
-    animation-name: entrees;
-    -moz-transition-property: bottom, top;
-    -webkit-transition-property: bottom, top;
-    transition-property: bottom, top;
-    -moz-animation-timing-function: ease-in;
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-    -moz-animation-fill-mode: both;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-  }
-  @keyframes entrees {
-    from {
-      margin-top: 100%;
-      opacity: 0;
-    }
-    to {
-      margin-top: 0%;
-      opacity: 1;
-    }
-  }
-
-  .entrees {
-    -moz-animation-duration: 4s;
-    -webkit-animation-duration: 4s;
-    animation-duration: 4s;
-    -moz-animation-iteration-count: 1;
-    -webkit-animation-iteration-count: 1;
-    animation-iteration-count: 1;
-    -moz-animation-direction: normal;
-    -webkit-animation-direction: normal;
-    animation-direction: normal;
-    -moz-animation-name: entrees_contenu;
-    -webkit-animation-name: entrees_contenu;
-    animation-name: entrees_contenu;
-    -moz-transition-property: bottom, top;
-    -webkit-transition-property: bottom, top;
-    transition-property: bottom, top;
-    -moz-animation-timing-function: ease-in;
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-    -moz-animation-fill-mode: both;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    -moz-animation-delay: 1s;
-    -webkit-animation-delay: 1s;
-    animation-delay: 1s;
-  }
-  @keyframes entrees_contenu {
-    from {
-      margin-top: 100%;
-      opacity: 0;
-    }
-    to {
-      margin-top: 0%;
-      opacity: 1;
-    }
-  }
-
-  #plats {
-    -moz-animation-duration: 4s;
-    -webkit-animation-duration: 4s;
-    animation-duration: 4s;
-    -moz-animation-iteration-count: 1;
-    -webkit-animation-iteration-count: 1;
-    animation-iteration-count: 1;
-    -moz-animation-direction: normal;
-    -webkit-animation-direction: normal;
-    animation-direction: normal;
-    -moz-animation-name: plats;
-    -webkit-animation-name: plats;
-    animation-name: plats;
-    -moz-transition-property: bottom, top;
-    -webkit-transition-property: bottom, top;
-    transition-property: bottom, top;
-    -moz-animation-timing-function: ease-in;
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-    -moz-animation-fill-mode: both;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    -moz-animation-delay: 2s;
-    -webkit-animation-delay: 2s;
-    animation-delay: 2s;
-  }
-  @keyframes plats {
-    from {
-      margin-top: 100%;
-      opacity: 0;
-    }
-    to {
-      margin-top: 0%;
-      opacity: 1;
-    }
-  }
-
-  .plats {
-    -moz-animation-duration: 4s;
-    -webkit-animation-duration: 4s;
-    animation-duration: 4s;
-    -moz-animation-iteration-count: 1;
-    -webkit-animation-iteration-count: 1;
-    animation-iteration-count: 1;
-    -moz-animation-direction: normal;
-    -webkit-animation-direction: normal;
-    animation-direction: normal;
-    -moz-animation-name: plats_contenu;
-    -webkit-animation-name: plats-contenu;
-    animation-name: plats_contenu;
-    -moz-transition-property: bottom, top;
-    -webkit-transition-property: bottom, top;
-    transition-property: bottom, top;
-    -moz-animation-timing-function: ease-in;
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-    -moz-animation-fill-mode: both;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    -moz-animation-delay: 3s;
-    -webkit-animation-delay: 3s;
-    animation-delay: 3s;
-  }
-  @keyframes plats_contenu {
-    from {
-      margin-top: 100%;
-      opacity: 0;
-    }
-    to {
-      margin-top: 0%;
-      opacity: 1;
-    }
-  }
-
-  #desserts {
-    -moz-animation-duration: 4s;
-    -webkit-animation-duration: 4s;
-    animation-duration: 4s;
-    -moz-animation-iteration-count: 1;
-    -webkit-animation-iteration-count: 1;
-    animation-iteration-count: 1;
-    -moz-animation-direction: normal;
-    -webkit-animation-direction: normal;
-    animation-direction: normal;
-    -moz-animation-name: desserts;
-    -webkit-animation-name: desserts;
-    animation-name: desserts;
-    -moz-transition-property: bottom, top;
-    -webkit-transition-property: bottom, top;
-    transition-property: bottom, top;
-    -moz-animation-timing-function: ease-in;
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-    -moz-animation-fill-mode: both;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    -moz-animation-delay: 4s;
-    -webkit-animation-delay: 4s;
-    animation-delay: 4s;
-  }
-  @keyframes desserts {
-    from {
-      margin-top: 100%;
-      opacity: 0;
-    }
-    to {
-      margin-top: 0%;
-      opacity: 1;
-    }
-  }
-
-  .desserts {
-    -moz-animation-duration: 4s;
-    -webkit-animation-duration: 4s;
-    animation-duration: 4s;
-    -moz-animation-iteration-count: 1;
-    -webkit-animation-iteration-count: 1;
-    animation-iteration-count: 1;
-    -moz-animation-direction: normal;
-    -webkit-animation-direction: normal;
-    animation-direction: normal;
-    -moz-animation-name: desserts_contenu;
-    -webkit-animation-name: desserts_contenu;
-    animation-name: desserts_contenu;
-    -moz-transition-property: bottom, top;
-    -webkit-transition-property: bottom, top;
-    transition-property: bottom, top;
-    -moz-animation-timing-function: ease-in;
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-    -moz-animation-fill-mode: both;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    -moz-animation-delay: 5s;
-    -webkit-animation-delay: 5s;
-    animation-delay: 5s;
-  }
-  @keyframes desserts_contenu {
-    from {
-      margin-top: 100%;
-      opacity: 0;
-    }
-    to {
-      margin-top: 0%;
-      opacity: 1;
-    }
-  }
-}
 .entrees, .plats, .desserts {
-  -moz-transition: all 1s ease-in;
-  -webkit-transition: all 1s ease-in;
-  transition: all 1s ease-in;
+  overflow: hidden;
 }
 .entrees:hover, .plats:hover, .desserts:hover {
-  cursor: pointer;
+  padding-left: 2.5px;
 }
-.entrees:hover .fa-check-circle, .plats:hover .fa-check-circle, .desserts:hover .fa-check-circle {
-  visibility: visible;
+.entrees:hover .check-circle, .plats:hover .check-circle, .desserts:hover .check-circle {
+  cursor: pointer;
+  -moz-transform: translateX(-20px);
+  -webkit-transform: translateX(-20px);
+  transform: translateX(-20px);
+  -moz-transition: transform 0.2s ease-out;
+  -webkit-transition: transform 0.2s ease-out;
+  transition: transform 0.2s ease-out;
+  background-color: #99E2D0;
+  border-radius: 0px 10px 10px 0px;
+}
+.entrees:hover .check-circle .fa-check-circle, .plats:hover .check-circle .fa-check-circle, .desserts:hover .check-circle .fa-check-circle {
   font-size: 30px;
   padding: 15px;
-  border-radius: 0px 10px 10px 0px;
-  background-color: #99E2D0;
-  -moz-transform: rotate(360deg);
-  -webkit-transform: rotate(360deg);
-  transform: rotate(360deg);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -moz-transform: rotateZ(1turn);
+  -webkit-transform: rotateZ(1turn);
+  transform: rotateZ(1turn);
+  -moz-transition: transform 0.4s ease-out;
+  -webkit-transition: transform 0.4s ease-out;
+  transition: transform 0.4s ease-out;
+}
+
+.check-circle {
+  margin-right: -20px;
+}
+
+.fa-check-circle:before {
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=style.css.map */

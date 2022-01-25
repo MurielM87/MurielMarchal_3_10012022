@@ -1,0 +1,23 @@
+@import "sass/utils/mixin.scss" ; 
+@import "sass/utils/responsive.scss" ; 
+@import "sass/utils/variables.scss" ; 
+
+@import "sass/base/normalize.scss" ;
+@import "sass/base/font-family.scss" ;
+@import "sass/base/body.scss" ; 
+
+@import "sass/components/btn_explorer.scss" ; 
+@import "sass/components/animation_coeurs.scss" ; 
+@import "sass/components/btn_commander.scss" ;
+
+@import "sass/layout/header.scss" ; 
+@import "sass/layout/footer.scss" ;
+
+@import "sass/pages/fonctionnement.scss" ; 
+@import "sass/pages/accueil.scss" ;
+@import "sass/pages/main_restaurants.scss" ;
+@import "sass/pages/main_menu.scss" ;
+
+@import "sass/themes/loading_spinner.scss" ; 
+@import "sass/themes/animation_menu.scss" ; 
+@import "sass/themes/animation_check_circle.scss" ;

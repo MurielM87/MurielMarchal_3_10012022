@@ -6,7 +6,8 @@
   margin : 0 auto ; 
   padding-top : $padding-xl ; 
   @media (min-width: map-get($breakpoints, tablette)) {
-    @include flex-center-column ;
+    @include flex-center-row ;
+    flex-wrap : wrap ;
     padding-top : $padding-m ; 
   }
   @media screen and (min-width: map-get($breakpoints, desktop)) {
@@ -21,9 +22,8 @@
     justify-content: center ;
     margin : $margin-l ;
     @media (min-width: map-get($breakpoints, tablette)) {
-      width : 70% ; 
-      margin : 0 $padding-l ;
-      padding-top : $padding-m ; 
+      width : 45% ; 
+      margin : $margin-m ;
     }
     @media screen and (min-width: map-get($breakpoints, desktop)) {
       width : 30% ; 
@@ -51,11 +51,9 @@
       width : 90% ; 
       @media (min-width: map-get($breakpoints, tablette)) {
         margin : $margin-m auto ; 
-        width : 80% ; 
+        width : 100% ; 
       }
       @media screen and (min-width: map-get($breakpoints, desktop)) {
-        width : 100% ;
-        flex-direction : row ;
         justify-content : space-between ;
         box-shadow : 4px 3px 5px #635d5d ; 
       }
