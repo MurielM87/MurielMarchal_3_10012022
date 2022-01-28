@@ -1,0 +1,54 @@
+#accueil {
+  @include flex-center-column ;
+  background-color: $secondary_background ;
+  align-items : center ; 
+  width : 100% ;
+  margin : 0 auto ; 
+  padding-bottom : $padding-l ; 
+  border-top : solid 3px darken(#EAEAEA, 10%) ; 
+       
+  .localisation {
+    background-color: #EAEAEA;
+    font-size : $font-size3 ; 
+    font-weight : bold ;
+    width : 100% ; 
+    text-align : center ; 
+    padding : $padding-l ; 
+    
+    .fa-map-marker-alt {
+      color : $black_color ; 
+      margin-right : $padding-m ; 
+    }
+  }
+     
+  h1 {
+    font-size : $font-size1 ; 
+    font-weight : bold ; 
+    text-align : center ;
+    line-height : 30px ; 
+    width : 70% ;
+    padding : $padding-l ; 
+    @media (min-width: map-get($breakpoints, tablette)) {
+      line-height: 20px ;
+      width : 70% ;
+      padding-top : 2% ; 
+    }
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
+      padding : 0 ; 
+    }
+  }
+     
+  p {
+    font-size : $font-size2 ; 
+    width : 90% ; 
+    text-align: center;
+    line-height : 25px ; 
+    @media (min-width: map-get($breakpoints, tablette)) {
+      width : 70% ;
+    }  
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
+      width : 30% ;
+    }
+  }
+}  
+  

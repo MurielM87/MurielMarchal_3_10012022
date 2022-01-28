@@ -1,0 +1,36 @@
+.favori {
+  margin : 0% 15% 7% 0% ; 
+  .empty {
+    position : absolute ;
+    color : $black_color ; 
+    font-size : 40px ; 
+    transform : scale(1) ;
+    &:hover {
+      opacity : 0 ; 
+      color : transparent ; 
+      transform : scale(0.5) ; 
+      transition : transform 1s ease-in ; 
+    }    
+  }
+  .full {
+    position : absolute ;
+    opacity : 0 ; 
+    font-size : 40px ; 
+    &:hover {
+      cursor : pointer ; 
+      position : absolute ; 
+        background : -webkit-gradient(linear, left bottom, right top, from($secondary_color), to($primary_color));
+        background : -moz-gradient(linear, left bottom, right top, from($secondary_color), to($primary_color));
+      background : gradient(linear, left bottom, right top, from($secondary_color), to($primary_color));
+        -webkit-background-clip : text ; 
+        -moz-background-clip : text ;
+      background-clip : text ;
+        -webkit-text-fill-color : transparent ; 
+        -moz-text-fill-color : transparent ; 
+      color : transparent ;     
+      opacity : 1 ; 
+      transform-origin: bottom ;
+      transition : opacity 2s ease-in-out;
+    }  
+  }
+}

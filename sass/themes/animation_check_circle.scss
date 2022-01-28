@@ -1,0 +1,37 @@
+.entrees, .plats, .desserts {
+  overflow : hidden ; 
+  &:hover .check-circle {
+    cursor : pointer ;
+      -moz-transform : translateX(-15px) ; 
+      -webkit-transform : translateX(-15px) ;
+    transform : translateX(-15px) ;
+      -moz-transition : transform 0.2s ease-out ;
+      -webkit-transition : transform 0.2s ease-out ; 
+    transition : transform 0.2s ease-out ;
+    background-color: $third_color ;
+    border-radius : 0px 10px 10px 0px ; 
+    .fa-check-circle {
+      font-size : 30px ; 
+      padding : 15px ; 
+      -webkit-background-clip : text ; 
+      -moz-background-clip : text ;
+    background-clip : text ;
+      -moz-transform : rotateZ(1turn) ;
+      -webkit-transform : rotateZ(1turn) ;
+    transform : rotateZ(1turn) ;
+      -moz-transition : transform 0.4s ease-out ; 
+      -webkit-transition : transform 0.4s ease-out ;
+    transition : transform 0.4s ease-out ; 
+    }
+  }
+}
+
+.check-circle {
+  margin-right : -15px ; 
+}
+
+.fa-check-circle:before {
+  display : flex ; 
+  justify-content : center ; 
+  color : $white_color ; 
+}
