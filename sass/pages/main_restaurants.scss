@@ -29,6 +29,7 @@
     }
 
     .restaurant {
+      position : relative ; 
       background-color : $primary_background ;
       display : flex ;
       flex-wrap : nowrap ; 
@@ -76,16 +77,8 @@
         position : absolute ; 
         padding : 5px ; 
         z-index : 1 ;
-        margin-left : 70% ;
-        margin-top : 3% ; 
-        @media (min-width: map-get($breakpoints, tablette)) {
-          margin-left : 32% ; 
-          margin-top : 2% ; 
-        }
-        @media screen and (min-width: map-get($breakpoints, desktop)) {
-          margin-left : 12% ; 
-          margin-top : 1% ;
-        } 
+        right : 15px ;
+        top : 15px ; 
       }
              
       .description {
@@ -104,7 +97,7 @@
           h3, .lieu {
             margin : 5px ;
             font-family : 'Roboto', sans-serif ; 
-            color : $black_color ; 
+            color : #000000 ; 
           }
             
           h3 {

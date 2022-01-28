@@ -1,0 +1,115 @@
+#menus {
+  background-color: $secondary_background ;
+  @include flex-center-column ;
+  width : 100% ;
+  border-radius : 10px ; 
+  margin : 0 auto ; 
+  padding-top : $padding-xl ; 
+  @media (min-width: map-get($breakpoints, tablette)) {
+    @include flex-center-row ;
+    flex-wrap : wrap ;
+    padding-top : $padding-m ; 
+  }
+  @media screen and (min-width: map-get($breakpoints, desktop)) {
+    @include flex-center-row ; 
+    margin-top : $padding-xl ; 
+  }
+ 
+  #entrees, #plats, #desserts {
+    display : flex ; 
+    flex-direction : column ;
+    width : 90% ; 
+    justify-content: center ;
+    margin : $margin-l ;
+    @media (min-width: map-get($breakpoints, tablette)) {
+      width : 45% ; 
+      margin : $margin-m ;
+    }
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
+      width : 30% ; 
+      justify-content : flex-start ; 
+      margin : 0 auto ;
+      padding: 10px 15px ;  
+    }
+      
+    h2 {
+      margin-left : $margin-m ; 
+      font-size : $font-size1 ;  
+      width : 60px ; 
+      border-bottom : solid 3px $third_color ;
+      padding-bottom : $padding-m ; 
+      margin-bottom : $margin-l ; 
+    }
+      
+    .entrees, .plats, .desserts {
+      background-color: $primary_background;
+      display : flex ; 
+      @include flex-center-row ;
+      margin : $margin-m ; 
+      height : 60px ;
+      border-radius : 10px ; 
+      box-shadow : 4px 3px 5px #635d5d ; 
+      width : 90% ; 
+      @media (min-width: map-get($breakpoints, tablette)) {
+        margin : $margin-m auto ; 
+        width : 100% ; 
+      }
+      @media screen and (min-width: map-get($breakpoints, desktop)) {
+        justify-content : space-between ;
+      }
+        
+      .menu {
+        display : flex ; 
+        flex-direction : column ; 
+        justify-content : space-between ;
+        width : 100% ; 
+        height : 65px ; 
+        white-space: nowrap;
+        overflow: hidden;
+          -webkit-text-overflow : '....' ; 
+          -moz-text-overflow : '...' ; 
+        text-overflow: '...';
+        @media screen and (min-width: map-get($breakpoints, desktop)) {
+          padding-left : $padding-m ; 
+        }
+    
+        h3 {
+          font-size : $font-size3 ;
+          font-weight : bold ; 
+          margin : 10px 10px 0px 10px; 
+          overflow : hidden ; 
+            -webkit-text-overflow : '...' ; 
+            -moz-text-overflow : '...' ;
+          text-overflow : '...' ;
+          padding : 2px 0px 17px 0px ; 
+        }
+              
+        .informations {
+          display : flex ; 
+          flex-direction : row ;
+          justify-content : space-between ;
+          margin : $margin-m ; 
+            
+          .supplement {
+            font-size : $font-size3 ; 
+            padding : 2px 0px 4px 0px ; 
+            margin-bottom : 3px ;
+            font-weight : normal ; 
+            overflow : hidden ; 
+              -webkit-text-overflow : '...' ; 
+              -moz-text-overflow : '...' ;
+            text-overflow : '...' ;
+          }
+      
+          .prix {
+            font-size : $font-size2 ; 
+            font-weight : bold ; 
+            margin-right : $margin-l ;
+          }
+        }
+      }
+      
+    }
+  }
+}
+  

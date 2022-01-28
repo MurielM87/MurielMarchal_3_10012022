@@ -16,8 +16,19 @@
     padding : $padding-l ; 
     
     .fa-map-marker-alt {
-      color : $black_color ; 
+      color : #000000 ; 
       margin-right : $padding-m ; 
+      margin-left : 80px ; 
+    }
+
+    #search {
+      background-color: #EAEAEA ;
+      color : #000000 ; 
+      font-weight : bold ; 
+      border : none ; 
+      &:focus-visible {
+        outline : none ; 
+      }
     }
   }
      

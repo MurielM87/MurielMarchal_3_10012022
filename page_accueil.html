@@ -20,8 +20,7 @@
             src="https://kit.fontawesome.com/291707f091.js" 
             crossorigin="anonymous">
         </script>
-                
-		<title>Restaurants Ohmyfood Paris</title>
+		<title>Restaurants Ohmyfood à Paris</title>
 	</head>
 
     <body>
@@ -48,10 +47,15 @@
 
         <div class="container">
             <section id="accueil">
-                <div class="localisation">
+                <form class="localisation" method="post">
                     <i class="fas fa-map-marker-alt"></i>
-                    Paris, Belleville
-                </div>
+                    <input 
+                        type="search" 
+                        id="search" 
+                        name="search" 
+                        value="Paris, Belleville"
+                    >
+                </form>
                 <h1>Réservez le menu qui vous convient</h1>
                 <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
                 <button class="btn_explorer">

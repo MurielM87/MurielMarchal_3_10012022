@@ -1,5 +1,5 @@
 @import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -26,7 +26,7 @@ body {
 }
 
 .btn_explorer {
-  color: #ffffff;
+  color: #FFFFFF;
   text-align: center;
   -webkit-background: linear-gradient(to right bottom, #FF79DA, #9356DC);
   -moz-background: linear-gradient(to right bottom, #FF79DA, #9356DC);
@@ -96,46 +96,51 @@ body {
 }
 
 .favori {
-  font-size: 30px;
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  height: 30px;
+  width: 30px;
   transform: translateY(-50%);
-  margin: 0% 15% 7% 0%;
+}
+.favori .fa-heart {
+  color: transparent;
+  position: absolute;
+  inset: 0px;
+  font-size: 30px;
+  text-align: center;
+}
+.favori .fa-heart:hover {
+  cursor: pointer;
 }
 .favori .empty {
-  position: absolute;
-  color: #000000;
-  font-size: 40px;
-  transform: scale(1);
-}
-.favori .empty:hover {
-  opacity: 0;
-  color: transparent;
-  transform: scale(0.5);
-  transition: transform 1s ease-in;
+  transition: all 1.5s linear;
+  z-index: 2;
+  background: #000000;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .favori .full {
-  position: absolute;
-  opacity: 0;
-  font-size: 40px;
-}
-.favori .full:hover {
-  cursor: pointer;
-  position: absolute;
-  background: -webkit-gradient(linear, left bottom, right top, from(#FF79DA), to(#9356DC));
-  background: -moz-gradient(linear, left bottom, right top, from(#FF79DA), to(#9356DC));
-  background: gradient(linear, left bottom, right top, from(#FF79DA), to(#9356DC));
+  transition: 1s ease-in-out;
+  font-size: 30px;
+  background: linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
   -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  color: transparent;
-  opacity: 1;
   transform-origin: bottom;
-  transition: opacity 2s ease-in-out;
+  transform: scale(0);
+  z-index: 1;
+}
+.favori:hover .full {
+  transform: scale(1);
+}
+.favori:hover .empty {
+  background: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .btn_commander {
-  color: #ffffff;
+  color: #FFFFFF;
   text-align: center;
   -webkit-background: linear-gradient(to right bottom, #FF79DA, #9356DC);
   -moz-background: linear-gradient(to right bottom, #FF79DA, #9356DC);
@@ -296,10 +301,15 @@ header .restaurant_nom h1 {
     font-size: 30px;
   }
 }
+@media (min-width: 767px) {
+  header .restaurant_nom .favori {
+    margin-left: 80%;
+  }
+}
 
 footer {
   font-size: 18px;
-  color: #ffffff;
+  color: #cac8c8;
   background-color: #353535;
   padding: 10px 0;
 }
@@ -349,15 +359,15 @@ footer .container .footer_liste {
   font-weight: bold;
 }
 footer .container .footer_liste .fa-utensils {
-  color: #ffffff;
+  color: #FFFFFF;
   font-size: 15px;
 }
 footer .container .footer_liste .fa-hands-helping {
-  color: #ffffff;
+  color: #FFFFFF;
   font-size: 10px;
 }
 footer .container a {
-  color: #ffffff;
+  color: #FFFFFF;
   text-decoration: none;
 }
 
@@ -420,7 +430,7 @@ footer .container a {
 }
 #fonctionnement .categorie .nombre {
   background-color: #9356DC;
-  color: #ffffff;
+  color: #FFFFFF;
   clip-path: circle(40%);
   padding: 15px;
   position: absolute;
@@ -434,7 +444,7 @@ footer .container a {
 }
 @media screen and (min-width: 1000px) {
   #fonctionnement .categorie .nombre {
-    margin-left: -15%;
+    margin-left: -280px;
   }
 }
 #fonctionnement .categorie .fonctionnement_description {
@@ -448,7 +458,7 @@ footer .container a {
   border-radius: 25px;
   width: 80%;
   margin: 10px;
-  padding: 30px 90px;
+  padding: 30px 0px 30px 90px;
   z-index: 0;
 }
 @media (min-width: 767px) {
@@ -507,6 +517,16 @@ footer .container a {
 #accueil .localisation .fa-map-marker-alt {
   color: #000000;
   margin-right: 10px;
+  margin-left: 80px;
+}
+#accueil .localisation #search {
+  background-color: #EAEAEA;
+  color: #000000;
+  font-weight: bold;
+  border: none;
+}
+#accueil .localisation #search:focus-visible {
+  outline: none;
 }
 #accueil h1 {
   font-size: 25px;
@@ -585,6 +605,7 @@ footer .container a {
   }
 }
 #restaurants .liste_restaurants .restaurant {
+  position: relative;
   background-color: #ffffff;
   display: flex;
   flex-wrap: nowrap;
@@ -633,20 +654,8 @@ footer .container a {
   position: absolute;
   padding: 5px;
   z-index: 1;
-  margin-left: 70%;
-  margin-top: 3%;
-}
-@media (min-width: 767px) {
-  #restaurants .liste_restaurants .restaurant .nouveau {
-    margin-left: 32%;
-    margin-top: 2%;
-  }
-}
-@media screen and (min-width: 1000px) {
-  #restaurants .liste_restaurants .restaurant .nouveau {
-    margin-left: 12%;
-    margin-top: 1%;
-  }
+  right: 15px;
+  top: 15px;
 }
 #restaurants .liste_restaurants .restaurant .description {
   display: flex;
@@ -687,9 +696,10 @@ footer .container a {
 @media (min-width: 767px) {
   #menus {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    padding-top: 10px, 2;
+    flex-wrap: wrap;
+    padding-top: 10px;
   }
 }
 @media screen and (min-width: 1000px) {
@@ -709,10 +719,8 @@ footer .container a {
 }
 @media (min-width: 767px) {
   #menus #entrees, #menus #plats, #menus #desserts {
-    width: 70%;
-    justify-content: center;
-    margin: 0% 5%;
-    padding-top: 5%;
+    width: 45%;
+    margin: 10px;
   }
 }
 @media screen and (min-width: 1000px) {
@@ -729,7 +737,7 @@ footer .container a {
   width: 60px;
   border-bottom: solid 3px #99E2D0;
   padding-bottom: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 #menus #entrees .entrees, #menus #entrees .plats, #menus #entrees .desserts, #menus #plats .entrees, #menus #plats .plats, #menus #plats .desserts, #menus #desserts .entrees, #menus #desserts .plats, #menus #desserts .desserts {
   background-color: #ffffff;
@@ -740,14 +748,18 @@ footer .container a {
   margin: 10px;
   height: 60px;
   border-radius: 10px;
+  box-shadow: 4px 3px 5px #635d5d;
   width: 90%;
+}
+@media (min-width: 767px) {
+  #menus #entrees .entrees, #menus #entrees .plats, #menus #entrees .desserts, #menus #plats .entrees, #menus #plats .plats, #menus #plats .desserts, #menus #desserts .entrees, #menus #desserts .plats, #menus #desserts .desserts {
+    margin: 10px auto;
+    width: 100%;
+  }
 }
 @media screen and (min-width: 1000px) {
   #menus #entrees .entrees, #menus #entrees .plats, #menus #entrees .desserts, #menus #plats .entrees, #menus #plats .plats, #menus #plats .desserts, #menus #desserts .entrees, #menus #desserts .plats, #menus #desserts .desserts {
-    width: 100%;
-    flex-direction: row;
     justify-content: space-between;
-    box-shadow: 4px 3px 5px #635d5d;
   }
 }
 #menus #entrees .entrees .menu, #menus #entrees .plats .menu, #menus #entrees .desserts .menu, #menus #plats .entrees .menu, #menus #plats .plats .menu, #menus #plats .desserts .menu, #menus #desserts .entrees .menu, #menus #desserts .plats .menu, #menus #desserts .desserts .menu {
@@ -796,17 +808,18 @@ footer .container a {
 #menus #entrees .entrees .menu .informations .prix, #menus #entrees .plats .menu .informations .prix, #menus #entrees .desserts .menu .informations .prix, #menus #plats .entrees .menu .informations .prix, #menus #plats .plats .menu .informations .prix, #menus #plats .desserts .menu .informations .prix, #menus #desserts .entrees .menu .informations .prix, #menus #desserts .plats .menu .informations .prix, #menus #desserts .desserts .menu .informations .prix {
   font-size: 20px;
   font-weight: bold;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 body #loading_spinner {
   background-color: #000000;
   width: 100%;
+  height: 100%;
   position: absolute;
   z-index: 2;
-  -moz-animation-duration: 2.5s;
-  -webkit-animation-duration: 2.5s;
-  animation-duration: 2.5s;
+  -moz-animation-duration: 3s;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
   -moz-animation-iteration-count: 1;
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
@@ -864,8 +877,8 @@ body #loading_spinner {
   z-index: 4;
   top: 0;
   left: 0;
-  width: 164px;
-  height: 164px;
+  width: 180px;
+  height: 180px;
   margin: 30%;
   border-radius: 50%;
 }
@@ -893,9 +906,9 @@ body #loading_spinner {
   -webkit-animation-timing-function: linear;
   -moz-animation-timing-function: linear;
   animation-timing-function: linear;
-  -webkit-animation-iteration-count: 4;
-  -moz-animation-iteration-count: 4;
-  animation-iteration-count: 4;
+  -webkit-animation-iteration-count: 5;
+  -moz-animation-iteration-count: 5;
+  animation-iteration-count: 5;
   -webkit-animation-direction: normal;
   -moz-animation-direction: normal;
   animation-direction: normal;
@@ -916,9 +929,9 @@ body #loading_spinner {
   -webkit-animation-timing-function: linear;
   -moz-animation-timing-function: linear;
   animation-timing-function: linear;
-  -webkit-animation-iteration-count: 4;
-  -moz-animation-iteration-count: 4;
-  animation-iteration-count: 4;
+  -webkit-animation-iteration-count: 5;
+  -moz-animation-iteration-count: 5;
+  animation-iteration-count: 5;
   -webkit-animation-direction: normal;
   -moz-animation-direction: normal;
   animation-direction: normal;
@@ -939,9 +952,9 @@ body #loading_spinner {
   -webkit-animation-timing-function: linear;
   -moz-animation-timing-function: linear;
   animation-timing-function: linear;
-  -webkit-animation-iteration-count: 4;
-  -moz-animation-iteration-count: 4;
-  animation-iteration-count: 4;
+  -webkit-animation-iteration-count: 5;
+  -moz-animation-iteration-count: 5;
+  animation-iteration-count: 5;
   -webkit-animation-direction: normal;
   -moz-animation-direction: normal;
   animation-direction: normal;
@@ -967,7 +980,6 @@ body #loading_spinner {
   -moz-animation-delay: 0s;
   animation-delay: 0s;
 }
-
 @keyframes rotate1 {
   from {
     transform: rotateX(35deg) rotateY(-45deg) rotateZ(0);
@@ -998,17 +1010,17 @@ body #loading_spinner {
     opacity: 0;
   }
 }
-.ohmyfood {
+#loading_spinner .ohmyfood {
   filter: invert(100%);
   position: absolute;
   z-index: 5;
-  top: 0;
-  left: 0;
   width: 50%;
-  margin: 40% 25%;
-  -moz-animation-duration: 0.3s;
-  -webkit-animation-duration: 0.3s;
-  animation-duration: 0.3s;
+  top: 200px;
+  left: 130px;
+  opacity: 0;
+  -moz-animation-duration: 0.5s;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
   -moz-animation-iteration-count: 1;
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
@@ -1018,46 +1030,44 @@ body #loading_spinner {
   -moz-animation-name: logo;
   -webkit-animation-name: logo;
   animation-name: logo;
-  -moz-transition-property: top, bottom;
-  -webkit-transition-property: top, bottom;
-  transition-property: top, bottom;
-  -moz-animation-timing-function: ease-in;
-  -webkit-animation-timing-function: ease-in;
-  animation-timing-function: ease-in;
+  -moz-animation-timing-function: ease-out;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
   -moz-animation-fill-mode: none;
   -webkit-animation-fill-mode: none;
   animation-fill-mode: none;
-  -webkit-animation-delay: 2.75s;
-  -moz-animation-delay: 2.75s;
-  animation-delay: 2.75s;
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  animation-delay: 2s;
 }
 @media (min-width: 767px) {
-  .ohmyfood {
+  #loading_spinner .ohmyfood {
     width: 40%;
-    margin: 25% 30%;
+    top: 210px;
+    left: 300px;
   }
 }
 @media screen and (min-width: 1000px) {
-  .ohmyfood {
+  #loading_spinner .ohmyfood {
     width: 25%;
-    margin: 15% 40%;
+    top: 260px;
+    left: 700px;
   }
 }
 @keyframes logo {
   0% {
-    margin-top: 0%;
     opacity: 0;
   }
   10% {
-    margin-top: 100%;
+    opacity: 0.3;
+  }
+  20% {
     opacity: 1;
   }
   90% {
-    margin-top: 100%;
-    opacity: 1;
+    opacity: 0.5;
   }
   100% {
-    margin-top: 0%;
     opacity: 0;
   }
 }
@@ -1117,11 +1127,14 @@ body #loading_spinner {
 .entrees, .plats, .desserts {
   overflow: hidden;
 }
+.entrees:hover, .plats:hover, .desserts:hover {
+  padding-left: 2.5px;
+}
 .entrees:hover .check-circle, .plats:hover .check-circle, .desserts:hover .check-circle {
   cursor: pointer;
-  -moz-transform: translateX(-15px);
-  -webkit-transform: translateX(-15px);
-  transform: translateX(-15px);
+  -moz-transform: translateX(-20px);
+  -webkit-transform: translateX(-20px);
+  transform: translateX(-20px);
   -moz-transition: transform 0.2s ease-out;
   -webkit-transition: transform 0.2s ease-out;
   transition: transform 0.2s ease-out;
@@ -1143,7 +1156,7 @@ body #loading_spinner {
 }
 
 .check-circle {
-  margin-right: -15px;
+  margin-right: -20px;
 }
 
 .fa-check-circle:before {

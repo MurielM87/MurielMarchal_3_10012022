@@ -1,6 +1,6 @@
 footer {
   font-size : $font-size3 ; 
-  color : $white_color ; 
+  color : #cac8c8 ; 
   background-color : #353535 ;
   padding : $padding-m $padding_none ; 
   @media (min-width: map-get($breakpoints, tablette)) {
@@ -44,18 +44,18 @@ footer {
       font-weight : bold ; 
          
       .fa-utensils {
-        color : $white_color ; 
+        color : #FFFFFF ; 
         font-size : 15px ; 
       }
       .fa-hands-helping {
-        color : $white_color ; 
+        color : #FFFFFF ; 
         font-size : 10px ; 
       }
       
     }
         
     a {
-      color : $white_color ; 
+      color : #FFFFFF ; 
       text-decoration : none ; 
     }
   }

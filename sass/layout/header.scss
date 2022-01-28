@@ -84,7 +84,11 @@ header {
         font-size : 30px ; 
       }
     }
-    
+    .favori {
+      @media (min-width: map-get($breakpoints, tablette)) {
+        margin-left : 80% ; 
+      }
+    }
   }
 }
   
