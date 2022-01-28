@@ -41,7 +41,7 @@
   
     .nombre {
       background-color: $primary_color;
-      color : $white_color ; 
+      color : #FFFFFF ; 
       clip-path: circle(40%);
       padding : 15px ; 
       position : absolute ; 
@@ -78,7 +78,7 @@
       &:hover {
         cursor : pointer ;
         background-color: lighten($primary-color, 35%) ;
-        color : $black_color ; 
+        color : #000000 ; 
         .fa-mobile-alt, .fa-list-ul, .fa-store {
           color : darken($primary-color, 15%) ; 
         }

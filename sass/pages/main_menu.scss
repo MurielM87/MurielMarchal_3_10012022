@@ -48,6 +48,7 @@
       margin : $margin-m ; 
       height : 60px ;
       border-radius : 10px ; 
+      box-shadow : 4px 3px 5px #635d5d ; 
       width : 90% ; 
       @media (min-width: map-get($breakpoints, tablette)) {
         margin : $margin-m auto ; 
@@ -55,7 +56,6 @@
       }
       @media screen and (min-width: map-get($breakpoints, desktop)) {
         justify-content : space-between ;
-        box-shadow : 4px 3px 5px #635d5d ; 
       }
         
       .menu {

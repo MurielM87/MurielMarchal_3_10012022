@@ -25,8 +25,8 @@
 
   .empty {
     transition : all 1.5s linear ; 
-    z-index : 10 ; 
-    background : $black_color ; 
+    z-index : 2 ; 
+    background : #000000 ; 
     -webkit-background-clip : text ;
     -webkit-text-fill-color : transparent ; 
   }
