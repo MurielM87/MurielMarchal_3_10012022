@@ -788,7 +788,7 @@ footer .container a {
   -webkit-text-overflow: "...";
   -moz-text-overflow: "...";
   text-overflow: "...";
-  padding: 10px 0px;
+  padding: 10px 0;
 }
 #menus #entrees .entrees .menu .informations, #menus #entrees .plats .menu .informations, #menus #entrees .desserts .menu .informations, #menus #plats .entrees .menu .informations, #menus #plats .plats .menu .informations, #menus #plats .desserts .menu .informations, #menus #desserts .entrees .menu .informations, #menus #desserts .plats .menu .informations, #menus #desserts .desserts .menu .informations {
   display: flex;

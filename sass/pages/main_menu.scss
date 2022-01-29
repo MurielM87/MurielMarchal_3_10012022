@@ -75,7 +75,7 @@
             -webkit-text-overflow : '...' ; 
             -moz-text-overflow : '...' ;
           text-overflow : '...' ;
-          padding : 10px 0px ; 
+          padding : $padding-m $padding_none ; 
         }
               
         .informations {
