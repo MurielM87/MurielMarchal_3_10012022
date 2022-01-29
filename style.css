@@ -750,7 +750,7 @@ footer .container a {
   justify-content: center;
   margin: 20px 10px;
   border-radius: 20px;
-  box-shadow: 4px 3px 5px #635d5d;
+  box-shadow: 4px 3px 5px #979090;
   width: 90%;
 }
 @media (min-width: 767px) {
@@ -798,6 +798,7 @@ footer .container a {
 }
 #menus #entrees .entrees .menu .informations .supplement, #menus #entrees .plats .menu .informations .supplement, #menus #entrees .desserts .menu .informations .supplement, #menus #plats .entrees .menu .informations .supplement, #menus #plats .plats .menu .informations .supplement, #menus #plats .desserts .menu .informations .supplement, #menus #desserts .entrees .menu .informations .supplement, #menus #desserts .plats .menu .informations .supplement, #menus #desserts .desserts .menu .informations .supplement {
   font-size: 18px;
+  color: #262626;
   padding: 2px 0px 4px 0px;
   margin-bottom: 3px;
   font-weight: normal;
