@@ -1,7 +1,14 @@
 body #loading_spinner {
   background-color: #000000 ;
+  box-sizing: border-box;
   width : 100% ; 
-  height : 100% ; 
+  height : 2280px ; 
+  @media (min-width: map-get($breakpoints, tablette)) {
+    height : 1720px ; 
+  }
+  @media screen and (min-width: map-get($breakpoints, desktop)) {
+    height : 1240px ; 
+  }
   position: absolute ;
   z-index : 2 ;
     -moz-animation-duration : 3s ;
@@ -30,8 +37,11 @@ body #loading_spinner {
     0% {
       opacity : 1 ;
     }
+    90% {
+      opacity : 0.9 ;
+    }
     95% {
-      opacity : 1 ;
+      opacity : 0.7 ; 
     }
     100% {
       opacity : 0 ; 
@@ -172,9 +182,9 @@ body #loading_spinner {
       top : 260px ; 
       left : 700px ; 
     }
-      -moz-animation-duration : 0.5s ;
-      -webkit-animation-duration : 0.5s ;
-    animation-duration : 0.5s ;
+      -moz-animation-duration : 0.7s ;
+      -webkit-animation-duration : 0.7s ;
+    animation-duration : 0.7s ;
       -moz-animation-iteration-count : 1 ;
       -webkit-animation-iteration-count : 1 ;
     animation-iteration-count : 1 ;
@@ -203,9 +213,6 @@ body #loading_spinner {
       }
       20% {
         opacity : 1 ; 
-      }
-      90% {
-        opacity : 0.5 ;
       }
       100% {
         opacity : 0 ; 

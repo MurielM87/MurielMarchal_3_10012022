@@ -17,25 +17,26 @@
   @media screen and (min-width: map-get($breakpoints, desktop)) {
     margin : 3% 45% ; 
   }
+  transition : opacity 0.2s ease-out;
 
   &:hover {
     cursor : pointer ; 
     &::before {
       content: '';
       position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100% ;
+      top: 0 ;
+      left: 0 ;
+      width : 100% ; 
+      height : 100% ;
         -webkit-transform : scaleX(1) ; 
         -moz-transform : scaleX(1) ;
       transform : scaleX(1) ;
-        -webkit-transform-origin : left ; 
-        -moz-transform-origin : left ;
-      transform-origin : left ;
+        -webkit-transform-origin : top ; 
+        -moz-transform-origin : top ;
+      transform-origin : top ;
     }
   }
-  
+
   span {
     position : relative ; 
     z-index : 1 ; 
@@ -47,20 +48,20 @@
     top : 0 ; 
     left : 0 ; 
     width : 100% ; 
-    height : 100% ;
-    border-radius : 30px ; 
+    height : 100% ; 
+    border-radius : 30px ;   
       background : -webkit-gradient(linear, left bottom, right top,from(lighten($secondary_color, 10%)), to(lighten($primary_color, 10%)));
       background : -moz-gradient(linear, left bottom, right top, from(lighten($secondary_color, 10%)), to(lighten($primary_color, 10%)));
     background : gradient(linear, left bottom, right top, from(lighten($secondary_color, 10%)), to(lighten($primary_color, 10%)));
-    box-shadow : 3px 3px 3px darken(#e4dede, 35%) ;
+    box-shadow : 3px 3px 3px darken(#e4dede, 35%) ; 
       -webkit-transform : scaleX(0) ; 
       -moz-transform : scaleX(0) ;
     transform : scaleX(0) ;
-      -webkit-transform-origin : right ; 
-      -moz-transform-origin : right ;
-    transform-origin : right ;
-      -webkit-transition : transform, .01s ; 
-      -moz-transition : transform, .01s ; 
-    transition : transform .01s ; 
+      -webkit-transform-origin : bottom ; 
+      -moz-transform-origin : bottom ;
+    transform-origin : bottom ;
+      -webkit-transition : transform, .2s ; 
+      -moz-transition : transform, .2s ; 
+    transition : transform .2s ; 
   }
 }

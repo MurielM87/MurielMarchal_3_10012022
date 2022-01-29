@@ -42,7 +42,7 @@
     @media (min-width: map-get($breakpoints, tablette)) {
       line-height: 20px ;
       width : 70% ;
-      padding-top : 2% ; 
+      padding-top : $padding-l ; 
     }
     @media screen and (min-width: map-get($breakpoints, desktop)) {
       padding : 0 ; 
@@ -62,4 +62,3 @@
     }
   }
 }  
-  

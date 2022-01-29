@@ -17,7 +17,7 @@
     }
   }
 
-  .empty {
+  .far {
     transition : all 1.5s linear ; 
     z-index : 2 ; 
     background : #000000 ; 
@@ -25,7 +25,7 @@
     -webkit-text-fill-color : transparent ; 
   }
 
-  .full {
+  .fas {
     transition : 1s ease-in-out ; 
     font-size : 30px ;
     background : linear-gradient($primary_color, $secondary_color) ; 
@@ -36,11 +36,11 @@
     z-index : 1 ; 
   }
 
-  &:hover .full {
+  &:hover .fas {
     transform : scale(1) ; 
   }
 
-  &:hover .empty {
+  &:hover .far {
     background : transparent ; 
     -webkit-background-clip : text ; 
     -webkit-text-fill-color : transparent ; 

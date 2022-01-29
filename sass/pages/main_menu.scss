@@ -8,22 +8,17 @@
   @media (min-width: map-get($breakpoints, tablette)) {
     @include flex-center-row ;
     flex-wrap : wrap ;
-    padding-top : $padding-m ; 
   }
   @media screen and (min-width: map-get($breakpoints, desktop)) {
-    @include flex-center-row ; 
     margin-top : $padding-xl ; 
   }
  
   #entrees, #plats, #desserts {
-    display : flex ; 
-    flex-direction : column ;
+    @include flex-center-column ; 
     width : 90% ; 
-    justify-content: center ;
-    margin : $margin-l ;
+    margin : $margin-xl $margin-l ;
     @media (min-width: map-get($breakpoints, tablette)) {
       width : 45% ; 
-      margin : $margin-m ;
     }
     @media screen and (min-width: map-get($breakpoints, desktop)) {
       width : 30% ; 
@@ -34,8 +29,10 @@
       
     h2 {
       margin-left : $margin-m ; 
-      font-size : $font-size1 ;  
-      width : 60px ; 
+      font-size : $font-size2 ;  
+      font-weight : normal ; 
+      color : #665959 ; 
+      width : 50px ; 
       border-bottom : solid 3px $third_color ;
       padding-bottom : $padding-m ; 
       margin-bottom : $margin-l ; 
@@ -43,11 +40,9 @@
       
     .entrees, .plats, .desserts {
       background-color: $primary_background;
-      display : flex ; 
       @include flex-center-row ;
-      margin : $margin-m ; 
-      height : 60px ;
-      border-radius : 10px ; 
+      margin : $margin-l $margin-m ; 
+      border-radius : 20px ; 
       box-shadow : 4px 3px 5px #635d5d ; 
       width : 90% ; 
       @media (min-width: map-get($breakpoints, tablette)) {
@@ -63,7 +58,6 @@
         flex-direction : column ; 
         justify-content : space-between ;
         width : 100% ; 
-        height : 65px ; 
         white-space: nowrap;
         overflow: hidden;
           -webkit-text-overflow : '....' ; 
@@ -81,7 +75,7 @@
             -webkit-text-overflow : '...' ; 
             -moz-text-overflow : '...' ;
           text-overflow : '...' ;
-          padding : 2px 0px 17px 0px ; 
+          padding : 10px 0px ; 
         }
               
         .informations {
@@ -103,7 +97,6 @@
       
           .prix {
             font-size : $font-size2 ; 
-            font-weight : bold ; 
             margin-right : $margin-l ;
           }
         }
@@ -112,4 +105,3 @@
     }
   }
 }
-  

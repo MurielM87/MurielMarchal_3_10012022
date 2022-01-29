@@ -2,6 +2,9 @@
   overflow : hidden ; 
   &:hover {
     padding-left : 2.5px ; 
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
+      padding-left : 0 ; 
+    }
   }
   &:hover .check-circle {
     cursor : pointer ;
@@ -14,8 +17,8 @@
     background-color: $third_color ;
     border-radius : 0px 10px 10px 0px ; 
     .fa-check-circle {
-      font-size : 30px ; 
-      padding : 15px ; 
+      font-size : 25px ; 
+      padding : 27px ; 
       -webkit-background-clip : text ; 
       -moz-background-clip : text ;
     background-clip : text ;

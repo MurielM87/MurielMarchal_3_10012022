@@ -24,10 +24,10 @@ header {
   
   #logo_header {
     width : 40% ; 
-    margin : 3% 30% ;  
+    display : block ;
+    margin : 10px auto ; 
     @media screen and (min-width: map-get($breakpoints, desktop)) {
       width : 30% ;
-      margin : 0% 35% ;
     }
   }
       
@@ -50,27 +50,28 @@ header {
     flex-direction : row ;
     align-items : center ; 
     border-radius : 30px 30px 0px 0px ; 
-    position : relative ;
+    position : absolute ;
     padding-top : $padding-l ; 
     z-index : 2 ;
-    margin-left : 0px ; 
-    margin-top : -35px ; 
+    top : 250px ; 
+    @media (min-width: map-get($breakpoints, tablette)) {
+      top : 260px ; 
+    }
     @media screen and (min-width: map-get($breakpoints, desktop)) {
       background-color : $primary_background ; 
       border-radius : 30px ; 
       width : 40% ; 
-      margin-left : 30% ;
+      top : 350px ; 
+      left : 570px ; 
     }
   
     h1 {
       width : 80% ;
       padding-left : $padding-m ; 
       font-family: 'Shrikhand', 'cursive' ;
-      font-size : $font-size1 ; 
+      font-size : 30px ; 
       font-weight : bold ; 
-      letter-spacing : 1.5px ; 
       text-align : left ;
-      line-height : 0px ; 
       margin-left : $margin-m ; 
       @media (min-width: map-get($breakpoints, tablette)) {
         text-align: center ;
@@ -84,11 +85,11 @@ header {
         font-size : 30px ; 
       }
     }
+
     .favori {
-      @media (min-width: map-get($breakpoints, tablette)) {
-        margin-left : 80% ; 
-      }
+      position : absolute ; 
+      top : 45px ; 
+      right : 40px ; 
     }
   }
 }
-  
