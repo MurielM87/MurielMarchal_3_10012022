@@ -31,7 +31,7 @@
       margin-left : $margin-m ; 
       font-size : $font-size2 ;  
       font-weight : normal ; 
-      color : $dark_grey ; 
+      color : darken($dark_grey, 10%) ; 
       width : 50px ; 
       border-bottom : solid 3px $third_color ;
       padding-bottom : $padding-m ; 

@@ -455,6 +455,7 @@ footer .container a {
 }
 #fonctionnement .categorie .fonctionnement_description {
   position: relative;
+  font-size: 16px;
   font-weight: bold;
   background-color: #f6f6f6;
   display: flex;
@@ -736,7 +737,7 @@ footer .container a {
   margin-left: 10px;
   font-size: 20px;
   font-weight: normal;
-  color: #7d7d7d;
+  color: #646464;
   width: 50px;
   border-bottom: solid 3px #99E2D0;
   padding-bottom: 10px;
