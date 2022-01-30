@@ -1,10 +1,8 @@
 .entrees, .plats, .desserts {
   overflow : hidden ; 
-  &:hover {
-    padding-left : 2.5px ; 
-    @media screen and (min-width: map-get($breakpoints, desktop)) {
-      padding-left : 0 ; 
-    }
+  .check-circle {
+    margin-right : -20px ; 
+    margin-left : 10px ; 
   }
   &:hover .check-circle {
     cursor : pointer ;
@@ -30,10 +28,6 @@
     transition : transform 0.4s ease-out ; 
     }
   }
-}
-
-.check-circle {
-  margin-right : -20px ; 
 }
 
 .fa-check-circle:before {

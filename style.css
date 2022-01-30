@@ -1130,13 +1130,9 @@ body #loading_spinner {
 .entrees, .plats, .desserts {
   overflow: hidden;
 }
-.entrees:hover, .plats:hover, .desserts:hover {
-  padding-left: 2.5px;
-}
-@media screen and (min-width: 1000px) {
-  .entrees:hover, .plats:hover, .desserts:hover {
-    padding-left: 0;
-  }
+.entrees .check-circle, .plats .check-circle, .desserts .check-circle {
+  margin-right: -20px;
+  margin-left: 10px;
 }
 .entrees:hover .check-circle, .plats:hover .check-circle, .desserts:hover .check-circle {
   cursor: pointer;
@@ -1161,10 +1157,6 @@ body #loading_spinner {
   -moz-transition: transform 0.4s ease-out;
   -webkit-transition: transform 0.4s ease-out;
   transition: transform 0.4s ease-out;
-}
-
-.check-circle {
-  margin-right: -20px;
 }
 
 .fa-check-circle:before {
