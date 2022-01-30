@@ -1,15 +1,12 @@
 body #loading_spinner {
   background-color: #000000 ;
   box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   width : 100% ; 
-  height : 2280px ; 
-  @media (min-width: map-get($breakpoints, tablette)) {
-    height : 1720px ; 
-  }
-  @media screen and (min-width: map-get($breakpoints, desktop)) {
-    height : 1240px ; 
-  }
-  position: absolute ;
   z-index : 2 ;
     -moz-animation-duration : 3s ;
     -webkit-animation-duration : 3s ;
@@ -212,6 +209,9 @@ body #loading_spinner {
         opacity : 0.3 ; 
       }
       20% {
+        opacity : 1 ; 
+      }
+      95% {
         opacity : 1 ; 
       }
       100% {
