@@ -1,7 +1,7 @@
 footer {
   font-size : $font-size3 ; 
-  color : #D7D7D7 ; 
-  background-color : #353535 ;
+  color : $very_light_grey ; 
+  background-color : $very_dark_grey ;
   padding : $padding-m $padding_none ; 
   @media (min-width: map-get($breakpoints, tablette)) {
     font-size : $font-size2 ; 
@@ -13,7 +13,7 @@ footer {
     justify-content : center ; 
     width : 97% ;
     align-items : flex-start ; 
-    background-color : #353535;
+    background-color : $very_dark_grey;
     margin-left : $margin-m ; 
     line-height : 30px ; 
     @media (min-width: map-get($breakpoints, tablette)) {
@@ -44,11 +44,11 @@ footer {
       font-weight : bold ; 
          
       i.fa-utensils {
-        color : #D7D7D7 ; 
+        color : $very_light_grey ; 
         font-size : 15px ; 
       }
       i.fa-hands-helping {
-        color : #D7D7D7 ; 
+        color : $very_light_grey ; 
         font-size : 10px ; 
       }
       

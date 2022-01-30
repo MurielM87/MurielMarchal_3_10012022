@@ -5,10 +5,10 @@
   width : 100% ;
   margin : 0 auto ; 
   padding-bottom : $padding-l ; 
-  border-top : solid 3px darken(#EAEAEA, 10%) ; 
+  border-top : solid 3px darken($very_light_grey, 10%) ; 
        
   .localisation {
-    background-color: #EAEAEA;
+    background-color: $very_light_grey;
     font-size : $font-size3 ; 
     font-weight : bold ;
     width : 100% ; 
@@ -22,7 +22,7 @@
     }
 
     #search {
-      background-color: #EAEAEA ;
+      background-color: $very_light_grey ;
       color : #000000 ; 
       font-weight : bold ; 
       border : none ; 

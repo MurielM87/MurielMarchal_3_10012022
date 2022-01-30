@@ -31,7 +31,7 @@
       margin-left : $margin-m ; 
       font-size : $font-size2 ;  
       font-weight : normal ; 
-      color : #665959 ; 
+      color : $dark_grey ; 
       width : 50px ; 
       border-bottom : solid 3px $third_color ;
       padding-bottom : $padding-m ; 
@@ -43,7 +43,7 @@
       @include flex-center-row ;
       margin : $margin-l $margin-m ; 
       border-radius : 20px ; 
-      box-shadow : 4px 3px 5px #979090 ; 
+      box-shadow : 4px 3px 5px $dark_grey ; 
       width : 90% ; 
       @media (min-width: map-get($breakpoints, tablette)) {
         margin : $margin-m auto ; 

@@ -8,7 +8,7 @@
   width : 230px ; 
   font-weight : bold ; 
   border : none ;
-  box-shadow : 3px 3px 3px #e4dede ; 
+  box-shadow : 3px 3px 3px $very_light_grey ; 
   border-radius : 30px ; 
   padding : 17px 0px ; 
   margin : 4% 30% 8% ; 
@@ -55,7 +55,7 @@
       background : -webkit-gradient(linear, left bottom, right top,from(lighten($secondary_color, 10%)), to(lighten($primary_color, 10%)));
       background : -moz-gradient(linear, left bottom, right top, from(lighten($secondary_color, 10%)), to(lighten($primary_color, 10%)));
     background : gradient(linear, left bottom, right top, from(lighten($secondary_color, 10%)), to(lighten($primary_color, 10%)));
-    box-shadow : 3px 3px 3px darken(#e4dede, 35%) ; 
+    box-shadow : 3px 3px 3px darken($very_light_grey, 35%) ; 
       -webkit-transform : scaleX(0) ; 
       -moz-transform : scaleX(0) ;
     transform : scaleX(0) ;

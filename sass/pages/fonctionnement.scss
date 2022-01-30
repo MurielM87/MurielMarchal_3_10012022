@@ -32,6 +32,7 @@
   } 
     
   .categorie { 
+    position : relative ; 
     @include flex-center-row ; 
     align-items : center ; 
     width : 100% ; 
@@ -46,12 +47,12 @@
       padding : 15px ; 
       position : absolute ; 
       z-index : 1 ;
-      margin-left : -73% ; 
+      left : 25px ; 
       @media (min-width: map-get($breakpoints, tablette)) {
-        margin-left : -55% ; 
+        left : 120px ; 
       }
       @media screen and (min-width: map-get($breakpoints, desktop)) {
-        margin-left : -280px ;  
+        left : 75px ;  
       }
     }
   
@@ -62,7 +63,7 @@
       display : flex ;
       flex-direction: row ;
       justify-content : flex-start ; 
-      box-shadow: 2px 3px 7px #e0dede;
+      box-shadow: 2px 3px 7px $very_light_grey;
       border-radius : 25px ;
       width : 80% ;
       margin : $margin-m ;  
@@ -89,7 +90,7 @@
         font-size : $font-size2 ; 
         left : 45px ; 
         top : 25px ; 
-        color : #7d7d7d ;  
+        color : $dark_grey ;  
         @media screen and (min-width: map-get($breakpoints, desktop)) {
           left : 35px ; 
           top : 16px ; 
