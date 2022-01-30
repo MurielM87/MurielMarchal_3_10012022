@@ -94,23 +94,16 @@
           width : 80% ; 
               
           h3, .lieu {
-            margin : 5px ;
+            font-size : $font-size2 ; 
+            margin : 5px 5px 10px 5px ;
             font-family : 'Roboto', sans-serif ; 
             color : #000000 ; 
           }
             
           h3 {
-            font-size : 19px ; 
             font-weight : bold ; 
           }
-
-          .lieu {
-            font-size : 17px ;
-            font-weight : normal ;  
-          }
-
         }
-
       }
     }
   }  

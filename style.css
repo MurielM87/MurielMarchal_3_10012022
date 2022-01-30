@@ -677,17 +677,13 @@ footer .container a {
   width: 80%;
 }
 #restaurants .liste_restaurants .restaurant .description .informations h3, #restaurants .liste_restaurants .restaurant .description .informations .lieu {
-  margin: 5px;
+  font-size: 20px;
+  margin: 5px 5px 10px 5px;
   font-family: "Roboto", sans-serif;
   color: #000000;
 }
 #restaurants .liste_restaurants .restaurant .description .informations h3 {
-  font-size: 19px;
   font-weight: bold;
-}
-#restaurants .liste_restaurants .restaurant .description .informations .lieu {
-  font-size: 17px;
-  font-weight: normal;
 }
 
 #menus {
