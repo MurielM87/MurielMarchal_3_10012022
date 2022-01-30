@@ -363,11 +363,11 @@ footer .container .ohmyfood_footer {
 footer .container .footer_liste {
   font-weight: bold;
 }
-footer .container .footer_liste i.fa-utensils {
+footer .container .footer_liste .fa-utensils {
   color: #EAEAEA;
   font-size: 15px;
 }
-footer .container .footer_liste i.fa-hands-helping {
+footer .container .footer_liste .fa-hands-helping {
   color: #EAEAEA;
   font-size: 10px;
 }
@@ -797,7 +797,6 @@ footer .container a {
   color: #262626;
   padding: 2px 0px 4px 0px;
   margin-bottom: 3px;
-  font-weight: normal;
   overflow: hidden;
   -webkit-text-overflow: "...";
   -moz-text-overflow: "...";
@@ -1144,9 +1143,9 @@ body #loading_spinner {
   -moz-transform: translateX(-20px);
   -webkit-transform: translateX(-20px);
   transform: translateX(-20px);
-  -moz-transition: transform 0.5s linear;
-  -webkit-transition: transform 0.5s linear;
-  transition: transform 0.5s linear;
+  -moz-transition: transform 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
   background-color: #99E2D0;
   border-radius: 0px 10px 10px 0px;
 }

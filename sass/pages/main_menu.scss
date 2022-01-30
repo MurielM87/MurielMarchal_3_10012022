@@ -62,7 +62,7 @@
         overflow: hidden;
           -webkit-text-overflow : '....' ; 
           -moz-text-overflow : '...' ; 
-        text-overflow: '...';
+        text-overflow: '...' ;
         @media screen and (min-width: map-get($breakpoints, desktop)) {
           padding-left : $padding-m ; 
         }
@@ -89,7 +89,6 @@
             color : lighten(#000000, 15%) ; 
             padding : 2px 0px 4px 0px ; 
             margin-bottom : 3px ;
-            font-weight : normal ; 
             overflow : hidden ; 
               -webkit-text-overflow : '...' ; 
               -moz-text-overflow : '...' ;
