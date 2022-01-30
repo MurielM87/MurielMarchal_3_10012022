@@ -43,7 +43,7 @@
       @include flex-center-row ;
       margin : $margin-l $margin-m ; 
       border-radius : 20px ; 
-      box-shadow : 4px 3px 5px $dark_grey ; 
+      box-shadow : 4px 3px 5px $light_grey ; 
       width : 90% ; 
       @media (min-width: map-get($breakpoints, tablette)) {
         margin : $margin-m auto ; 
