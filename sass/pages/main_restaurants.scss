@@ -48,16 +48,14 @@
         margin : $margin-m ; 
         width : 30% ; 
       }
-       
+      &:hover {
+        box-shadow : 2px 2px 3px darken($very_light_grey, 30%) ;
+        border-radius : 20px ; 
+        padding-bottom : $padding-m ; 
+      }   
+      
       a {
         text-decoration : none ;
-        @media screen and (min-width: map-get($breakpoints, tablette)) {
-          &:hover {
-            box-shadow : 2px 2px 5px darken(#f6f6f6, 30%) ;
-            border-radius : 20px ; 
-            padding-bottom : $padding-m ; 
-          }
-        }
       }
      
       .restaurant_photo {  

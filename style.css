@@ -635,15 +635,13 @@ footer .container a {
     width: 30%;
   }
 }
+#restaurants .liste_restaurants .restaurant:hover {
+  box-shadow: 2px 2px 3px #9e9e9e;
+  border-radius: 20px;
+  padding-bottom: 10px;
+}
 #restaurants .liste_restaurants .restaurant a {
   text-decoration: none;
-}
-@media screen and (min-width: 767px) {
-  #restaurants .liste_restaurants .restaurant a:hover {
-    box-shadow: 2px 2px 5px #aaaaaa;
-    border-radius: 20px;
-    padding-bottom: 10px;
-  }
 }
 #restaurants .liste_restaurants .restaurant .restaurant_photo {
   object-fit: cover;
