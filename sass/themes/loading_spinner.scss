@@ -1,5 +1,5 @@
 body #loading_spinner {
-  background-color: #000000 ;
+  background-color: #F6F6F6;
   box-sizing: border-box;
   position: fixed;
   top: 0;
@@ -34,11 +34,14 @@ body #loading_spinner {
     0% {
       opacity : 1 ;
     }
-    90% {
-      opacity : 0.9 ;
-    }
     95% {
-      opacity : 0.5 ; 
+      opacity : 0.9 ; 
+    }
+    97% {
+      opacity : 0.7 ; 
+    }
+    98% {
+      opacity : 0.4 ; 
     }
     100% {
       opacity : 0 ; 
@@ -162,7 +165,6 @@ body #loading_spinner {
   }
   
   .ohmyfood {
-    filter: invert(100%); 
     position : absolute ;
     z-index : 5 ;
     width : 50% ; 
@@ -197,9 +199,9 @@ body #loading_spinner {
       -moz-animation-fill-mode : none ;
       -webkit-animation-fill-mode : none ;
     animation-fill-mode : none ;
-      -webkit-animation-delay : 2s ; 
-      -moz-animation-delay : 2s ; 
-    animation-delay : 2s ;
+      -webkit-animation-delay : 1.5s ; 
+      -moz-animation-delay : 1.5s ; 
+    animation-delay : 1.5s ;
     
     @keyframes logo {
       0% {
