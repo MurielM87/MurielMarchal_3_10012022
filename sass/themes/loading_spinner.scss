@@ -1,5 +1,5 @@
 body #loading_spinner {
-  background-color: #F6F6F6;
+  background-color: lighten($very_light_grey, 5%);
   box-sizing: border-box;
   position: fixed;
   top: 0;
@@ -34,11 +34,14 @@ body #loading_spinner {
     0% {
       opacity : 1 ;
     }
-    95% {
-      opacity : 0.9 ; 
+    85% {
+      opacity : 1 ; 
+    }
+    90% {
+      opacity : 0.7 ; 
     }
     97% {
-      opacity : 0.7 ; 
+      opacity : 0.5 ; 
     }
     98% {
       opacity : 0.4 ; 
