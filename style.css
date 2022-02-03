@@ -81,9 +81,9 @@ body {
   width: 100%;
   height: 100%;
   border-radius: 30px;
-  background: -webkit-gradient(linear, left bottom, right top, from(#fface8), to(#ae80e5));
-  background: -moz-gradient(linear, left bottom, right top, from(#fface8), to(#ae80e5));
-  background: gradient(linear, left bottom, right top, from(#fface8), to(#ae80e5));
+  background: -webkit-linear-gradient(to left bottom, #fface8, #ae80e5);
+  background: -moz-linear-gradient(to left bottom, #fface8, #ae80e5);
+  background: linear-gradient(to left bottom, #fface8, #ae80e5);
   box-shadow: 3px 3px 3px #919191;
   -webkit-transform: scaleX(0);
   -moz-transform: scaleX(0);
@@ -194,9 +194,9 @@ body {
   width: 100%;
   height: 100%;
   border-radius: 30px;
-  background: -webkit-gradient(linear, left bottom, right top, from(#fface8), to(#ae80e5));
-  background: -moz-gradient(linear, left bottom, right top, from(#fface8), to(#ae80e5));
-  background: gradient(linear, left bottom, right top, from(#fface8), to(#ae80e5));
+  background: -webkit-linear-gradient(to left bottom, #fface8, #ae80e5);
+  background: -moz-linear-gradient(to left bottom, #fface8, #ae80e5);
+  background: linear-gradient(to left bottom, #fface8, #ae80e5);
   box-shadow: 3px 3px 3px #919191;
   -webkit-transform: scaleX(0);
   -moz-transform: scaleX(0);
@@ -767,9 +767,9 @@ footer .container a {
   width: 100%;
   white-space: nowrap;
   overflow: hidden;
-  -webkit-text-overflow: "....";
-  -moz-text-overflow: "...";
-  text-overflow: "...";
+  -webkit-text-overflow: ellipsis;
+  -moz-text-overflow: ellipsis;
+  text-overflow: ellipsis;
 }
 @media screen and (min-width: 1000px) {
   #menus #entrees .entrees .menu, #menus #entrees .plats .menu, #menus #entrees .desserts .menu, #menus #plats .entrees .menu, #menus #plats .plats .menu, #menus #plats .desserts .menu, #menus #desserts .entrees .menu, #menus #desserts .plats .menu, #menus #desserts .desserts .menu {
@@ -781,9 +781,9 @@ footer .container a {
   font-weight: bold;
   margin: 10px 10px 0px 10px;
   overflow: hidden;
-  -webkit-text-overflow: "...";
-  -moz-text-overflow: "...";
-  text-overflow: "...";
+  -webkit-text-overflow: ellipsis;
+  -moz-text-overflow: ellipsis;
+  text-overflow: ellipsis;
   padding: 10px 0;
 }
 #menus #entrees .entrees .menu .informations, #menus #entrees .plats .menu .informations, #menus #entrees .desserts .menu .informations, #menus #plats .entrees .menu .informations, #menus #plats .plats .menu .informations, #menus #plats .desserts .menu .informations, #menus #desserts .entrees .menu .informations, #menus #desserts .plats .menu .informations, #menus #desserts .desserts .menu .informations {
@@ -798,9 +798,9 @@ footer .container a {
   padding: 2px 0px 4px 0px;
   margin-bottom: 3px;
   overflow: hidden;
-  -webkit-text-overflow: "...";
-  -moz-text-overflow: "...";
-  text-overflow: "...";
+  -webkit-text-overflow: ellipsis;
+  -moz-text-overflow: ellipsis;
+  text-overflow: ellipsis;
 }
 #menus #entrees .entrees .menu .informations .prix, #menus #entrees .plats .menu .informations .prix, #menus #entrees .desserts .menu .informations .prix, #menus #plats .entrees .menu .informations .prix, #menus #plats .plats .menu .informations .prix, #menus #plats .desserts .menu .informations .prix, #menus #desserts .entrees .menu .informations .prix, #menus #desserts .plats .menu .informations .prix, #menus #desserts .desserts .menu .informations .prix {
   font-size: 20px;

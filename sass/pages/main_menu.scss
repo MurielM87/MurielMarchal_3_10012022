@@ -60,9 +60,9 @@
         width : 100% ; 
         white-space: nowrap;
         overflow: hidden;
-          -webkit-text-overflow : '....' ; 
-          -moz-text-overflow : '...' ; 
-        text-overflow: '...' ;
+          -webkit-text-overflow : ellipsis ; 
+          -moz-text-overflow : ellipsis ; 
+        text-overflow: ellipsis ;
         @media screen and (min-width: map-get($breakpoints, desktop)) {
           padding-left : $padding-m ; 
         }
@@ -72,9 +72,9 @@
           font-weight : bold ; 
           margin : 10px 10px 0px 10px; 
           overflow : hidden ; 
-            -webkit-text-overflow : '...' ; 
-            -moz-text-overflow : '...' ;
-          text-overflow : '...' ;
+            -webkit-text-overflow : ellipsis ; 
+            -moz-text-overflow : ellipsis ;
+          text-overflow : ellipsis ;
           padding : $padding-m $padding_none ; 
         }
               
@@ -90,9 +90,9 @@
             padding : 2px 0px 4px 0px ; 
             margin-bottom : 3px ;
             overflow : hidden ; 
-              -webkit-text-overflow : '...' ; 
-              -moz-text-overflow : '...' ;
-            text-overflow : '...' ;
+              -webkit-text-overflow : ellipsis ; 
+              -moz-text-overflow : ellipsis ;
+              text-overflow: ellipsis;
           }
       
           .prix {
