@@ -771,9 +771,15 @@ footer .container a {
   -moz-text-overflow: ellipsis;
   text-overflow: ellipsis;
 }
+#menus #entrees .entrees .menu:hover, #menus #entrees .plats .menu:hover, #menus #entrees .desserts .menu:hover, #menus #plats .entrees .menu:hover, #menus #plats .plats .menu:hover, #menus #plats .desserts .menu:hover, #menus #desserts .entrees .menu:hover, #menus #desserts .plats .menu:hover, #menus #desserts .desserts .menu:hover {
+  margin-left: 3px;
+}
 @media screen and (min-width: 1000px) {
   #menus #entrees .entrees .menu, #menus #entrees .plats .menu, #menus #entrees .desserts .menu, #menus #plats .entrees .menu, #menus #plats .plats .menu, #menus #plats .desserts .menu, #menus #desserts .entrees .menu, #menus #desserts .plats .menu, #menus #desserts .desserts .menu {
     padding-left: 10px;
+  }
+  #menus #entrees .entrees .menu:hover, #menus #entrees .plats .menu:hover, #menus #entrees .desserts .menu:hover, #menus #plats .entrees .menu:hover, #menus #plats .plats .menu:hover, #menus #plats .desserts .menu:hover, #menus #desserts .entrees .menu:hover, #menus #desserts .plats .menu:hover, #menus #desserts .desserts .menu:hover {
+    margin-left: 0;
   }
 }
 #menus #entrees .entrees .menu h3, #menus #entrees .plats .menu h3, #menus #entrees .desserts .menu h3, #menus #plats .entrees .menu h3, #menus #plats .plats .menu h3, #menus #plats .desserts .menu h3, #menus #desserts .entrees .menu h3, #menus #desserts .plats .menu h3, #menus #desserts .desserts .menu h3 {
