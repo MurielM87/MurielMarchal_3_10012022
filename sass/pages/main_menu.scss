@@ -76,12 +76,12 @@
         h3 {
           font-size : $font-size3 ;
           font-weight : bold ; 
-          margin : 10px 10px 0px 10px; 
+          margin : 10px 10px 0px 10px ; 
           overflow : hidden ; 
             -webkit-text-overflow : ellipsis ; 
             -moz-text-overflow : ellipsis ;
           text-overflow : ellipsis ;
-          padding : $padding-m $padding_none ; 
+          padding : $padding-m $padding-m $padding-m $padding_none; 
         }
               
         .informations {
