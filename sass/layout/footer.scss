@@ -1,62 +1,61 @@
 footer {
-  font-size : $font-size3 ; 
-  color : $very_light_grey ; 
-  background-color : $very_dark_grey ;
-  padding : $padding-m $padding_none ; 
+  font-size: $font-size3;
+  color: $very_light_grey;
+  background-color: $very_dark_grey;
+  padding: $padding-m $padding_none;
   @media (min-width: map-get($breakpoints, tablette)) {
-    font-size : $font-size2 ; 
+    font-size: $font-size2;
   }
 
   .container {
-    display : flex ; 
-    flex-direction : column ; 
-    justify-content : center ; 
-    width : 97% ;
-    align-items : flex-start ; 
-    background-color : $very_dark_grey;
-    margin-left : $margin-m ; 
-    line-height : 30px ; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 97%;
+    align-items: flex-start;
+    background-color: $very_dark_grey;
+    margin-left: $margin-m;
+    line-height: 30px;
     @media (min-width: map-get($breakpoints, tablette)) {
-      width : 100% ; 
-      align-items : center ; 
-      line-height : 35px ; 
-      margin-left : $margin_none ; 
+      width: 100%;
+      align-items: center;
+      line-height: 35px;
+      margin-left: $margin_none;
     }
-      
+
     div {
-      margin-left : $margin-m ; 
+      margin-left: $margin-m;
       @media screen and (min-width: map-get($breakpoints, desktop)) {
-        margin : $margin_none ; 
+        margin: $margin_none;
       }
     }
-  
+
     .ohmyfood_footer {
-      filter: invert(100%); 
-      width : 30% ;
-      margin : $margin-m ; 
+      filter: invert(100%);
+      width: 30%;
+      margin: $margin-m;
       @media screen and (min-width: map-get($breakpoints, desktop)) {
-        width : 15% ;
-        margin : 1%  auto ;
+        width: 15%;
+        margin: 1% auto;
       }
     }
-  
+
     .footer_liste {
-      font-weight : bold ; 
-         
+      font-weight: bold;
+
       .fa-utensils {
-        color : $very_light_grey ; 
-        font-size : 15px ; 
+        color: $very_light_grey;
+        font-size: 15px;
       }
       .fa-hands-helping {
-        color : $very_light_grey ; 
-        font-size : 10px ; 
+        color: $very_light_grey;
+        font-size: 10px;
       }
-      
     }
-        
+
     a {
-      color : #D7D7D7 ; 
-      text-decoration : none ; 
+      color: #d7d7d7;
+      text-decoration: none;
     }
   }
 }

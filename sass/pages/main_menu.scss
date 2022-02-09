@@ -1,113 +1,116 @@
 #menus {
-  background-color: $secondary_background ;
-  @include flex-center-column ;
-  width : 100% ;
-  border-radius : 10px ; 
-  margin : 0 auto ; 
-  padding-top : $padding-xl ; 
+  background-color: $secondary_background;
+  @include flex-center-column;
+  width: 100%;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding-top: $padding-xl;
   @media (min-width: map-get($breakpoints, tablette)) {
-    @include flex-center-row ;
-    flex-wrap : wrap ;
+    @include flex-center-row;
+    flex-wrap: wrap;
   }
   @media screen and (min-width: map-get($breakpoints, desktop)) {
-    margin-top : $padding-xl ; 
+    margin-top: $padding-xl;
   }
- 
-  #entrees, #plats, #desserts {
-    @include flex-center-column ; 
-    width : 90% ; 
-    margin : $margin-xl $margin-l ;
+
+  #entrees,
+  #plats,
+  #desserts {
+    @include flex-center-column;
+    width: 90%;
+    margin: $margin-xl $margin-l;
     @media (min-width: map-get($breakpoints, tablette)) {
-      width : 45% ; 
+      width: 45%;
     }
     @media screen and (min-width: map-get($breakpoints, desktop)) {
-      width : 30% ; 
-      justify-content : flex-start ; 
-      margin : 0 auto ;
-      padding: 10px 15px ;  
+      width: 30%;
+      justify-content: flex-start;
+      margin: 0 auto;
+      padding: 10px 15px;
     }
-      
+
     h2 {
-      margin-left : $margin-m ; 
-      font-size : $font-size2 ;  
-      font-weight : normal ; 
-      color : darken($dark_grey, 10%) ; 
-      width : 50px ; 
-      border-bottom : solid 3px $third_color ;
-      padding-bottom : $padding-m ; 
-      margin-bottom : $margin-l ; 
+      margin-left: $margin-m;
+      font-size: $font-size2;
+      font-weight: normal;
+      color: darken($dark_grey, 10%);
+      width: 50px;
+      border-bottom: solid 3px $third_color;
+      padding-bottom: $padding-m;
+      margin-bottom: $margin-l;
     }
-      
-    .entrees, .plats, .desserts {
+
+    .entrees,
+    .plats,
+    .desserts {
       background-color: $primary_background;
-      @include flex-center-row ;
-      margin : $margin-l $margin-m ; 
-      border-radius : 20px ; 
-      box-shadow : 4px 3px 5px $light_grey ; 
-      width : 90% ; 
+      @include flex-center-row;
+      margin: $margin-l $margin-m;
+      border-radius: 20px;
+      box-shadow: 4px 3px 5px $light_grey;
+      width: 90%;
       @media (min-width: map-get($breakpoints, tablette)) {
-        margin : $margin-m auto ; 
-        width : 100% ; 
+        margin: $margin-m auto;
+        width: 100%;
       }
       @media screen and (min-width: map-get($breakpoints, desktop)) {
-        justify-content : space-between ;
+        justify-content: space-between;
       }
-        
+
       .menu {
-        display : flex ; 
-        flex-direction : column ; 
-        justify-content : space-between ;
-        width : 100% ; 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
         white-space: nowrap;
         overflow: hidden;
-          -webkit-text-overflow : ellipsis ; 
-          -moz-text-overflow : ellipsis ; 
-        text-overflow: ellipsis ;
+        -webkit-text-overflow: ellipsis;
+        -moz-text-overflow: ellipsis;
+        text-overflow: ellipsis;
         &:hover {
-          margin-left : 3px ; 
+          margin-left: 3px;
         }
         @media screen and (min-width: map-get($breakpoints, desktop)) {
-          padding-left : $padding-m ; 
+          padding-left: $padding-m;
           &:hover {
-            margin-left : $margin_none ; 
+            margin-left: $margin_none;
           }
         }
-    
+
         h3 {
-          font-size : $font-size3 ;
-          font-weight : bold ; 
-          margin : 10px 10px 0px 10px ; 
-          overflow : hidden ; 
-            -webkit-text-overflow : ellipsis ; 
-            -moz-text-overflow : ellipsis ;
-          text-overflow : ellipsis ;
-          padding : $padding-m $padding-m $padding-m $padding_none; 
+          font-size: $font-size3;
+          font-weight: bold;
+          margin: 10px 10px 0px 10px;
+          overflow: hidden;
+          -webkit-text-overflow: ellipsis;
+          -moz-text-overflow: ellipsis;
+          text-overflow: ellipsis;
+          padding: $padding-m $padding-m $padding-m $padding_none;
         }
-              
+
         .informations {
-          display : flex ; 
-          flex-direction : row ;
-          justify-content : space-between ;
-          margin : $margin-m ; 
-            
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          margin: $margin-m;
+
           .supplement {
-            font-size : $font-size3 ; 
-            color : lighten(#000000, 15%) ; 
-            padding : 2px 0px 4px 0px ; 
-            margin-bottom : 3px ;
-            overflow : hidden ; 
-              -webkit-text-overflow : ellipsis ; 
-              -moz-text-overflow : ellipsis ;
-              text-overflow: ellipsis;
+            font-size: $font-size3;
+            color: lighten(#000000, 15%);
+            padding: 2px 0px 4px 0px;
+            margin-bottom: 3px;
+            overflow: hidden;
+            -webkit-text-overflow: ellipsis;
+            -moz-text-overflow: ellipsis;
+            text-overflow: ellipsis;
           }
-      
+
           .prix {
-            font-size : $font-size2 ; 
-            margin-right : $margin-l ;
+            font-size: $font-size2;
+            margin-right: $margin-l;
           }
         }
       }
-      
     }
   }
 }

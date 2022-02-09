@@ -26,16 +26,16 @@ body {
 }
 
 .btn_explorer {
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
-  -webkit-background: linear-gradient(to right bottom, #FF79DA, #9356DC);
-  -moz-background: linear-gradient(to right bottom, #FF79DA, #9356DC);
-  background: linear-gradient(to right bottom, #FF79DA, #9356DC);
+  -webkit-background: linear-gradient(to right bottom, #ff79da, #9356dc);
+  -moz-background: linear-gradient(to right bottom, #ff79da, #9356dc);
+  background: linear-gradient(to right bottom, #ff79da, #9356dc);
   font-size: 18px;
   width: 230px;
   font-weight: bold;
   border: none;
-  box-shadow: 3px 3px 3px #EAEAEA;
+  box-shadow: 3px 3px 3px #eaeaea;
   border-radius: 30px;
   padding: 17px 0px;
   margin: 4% 30% 8%;
@@ -124,7 +124,7 @@ body {
 .favori .fas {
   transition: 1s ease-in-out;
   font-size: 30px;
-  background: linear-gradient(#9356DC, #FF79DA);
+  background: linear-gradient(#9356dc, #ff79da);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transform-origin: bottom;
@@ -141,15 +141,15 @@ body {
 }
 
 .btn_commander {
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
-  -webkit-background: linear-gradient(to right bottom, #FF79DA, #9356DC);
-  -moz-background: linear-gradient(to right bottom, #FF79DA, #9356DC);
-  background: linear-gradient(to right bottom, #FF79DA, #9356DC);
+  -webkit-background: linear-gradient(to right bottom, #ff79da, #9356dc);
+  -moz-background: linear-gradient(to right bottom, #ff79da, #9356dc);
+  background: linear-gradient(to right bottom, #ff79da, #9356dc);
   font-size: 18px;
   font-weight: bold;
   border-radius: 30px;
-  box-shadow: 3px 3px 3px #EAEAEA;
+  box-shadow: 3px 3px 3px #eaeaea;
   margin: 1% 26% 20% 26%;
   padding: 15px 50px;
   position: relative;
@@ -314,7 +314,7 @@ header .restaurant_nom .favori {
 
 footer {
   font-size: 18px;
-  color: #EAEAEA;
+  color: #eaeaea;
   background-color: #353535;
   padding: 10px 0;
 }
@@ -364,15 +364,15 @@ footer .container .footer_liste {
   font-weight: bold;
 }
 footer .container .footer_liste .fa-utensils {
-  color: #EAEAEA;
+  color: #eaeaea;
   font-size: 15px;
 }
 footer .container .footer_liste .fa-hands-helping {
-  color: #EAEAEA;
+  color: #eaeaea;
   font-size: 10px;
 }
 footer .container a {
-  color: #D7D7D7;
+  color: #d7d7d7;
   text-decoration: none;
 }
 
@@ -435,8 +435,8 @@ footer .container a {
   }
 }
 #fonctionnement .categorie .nombre {
-  background-color: #9356DC;
-  color: #FFFFFF;
+  background-color: #9356dc;
+  color: #ffffff;
   clip-path: circle(40%);
   padding: 15px;
   position: absolute;
@@ -461,7 +461,7 @@ footer .container a {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  box-shadow: 2px 3px 7px #EAEAEA;
+  box-shadow: 2px 3px 7px #eaeaea;
   border-radius: 25px;
   width: 80%;
   margin: 10px;
@@ -484,10 +484,14 @@ footer .container a {
   background-color: #f2eafb;
   color: #000000;
 }
-#fonctionnement .categorie .fonctionnement_description:hover .fa-mobile-alt, #fonctionnement .categorie .fonctionnement_description:hover .fa-list-ul, #fonctionnement .categorie .fonctionnement_description:hover .fa-store {
+#fonctionnement .categorie .fonctionnement_description:hover .fa-mobile-alt,
+#fonctionnement .categorie .fonctionnement_description:hover .fa-list-ul,
+#fonctionnement .categorie .fonctionnement_description:hover .fa-store {
   color: #6c27be;
 }
-#fonctionnement .categorie .fonctionnement_description .fa-mobile-alt, #fonctionnement .categorie .fonctionnement_description .fa-list-ul, #fonctionnement .categorie .fonctionnement_description .fa-store {
+#fonctionnement .categorie .fonctionnement_description .fa-mobile-alt,
+#fonctionnement .categorie .fonctionnement_description .fa-list-ul,
+#fonctionnement .categorie .fonctionnement_description .fa-store {
   position: absolute;
   z-index: 1;
   font-size: 20px;
@@ -496,7 +500,9 @@ footer .container a {
   color: #7d7d7d;
 }
 @media screen and (min-width: 1000px) {
-  #fonctionnement .categorie .fonctionnement_description .fa-mobile-alt, #fonctionnement .categorie .fonctionnement_description .fa-list-ul, #fonctionnement .categorie .fonctionnement_description .fa-store {
+  #fonctionnement .categorie .fonctionnement_description .fa-mobile-alt,
+#fonctionnement .categorie .fonctionnement_description .fa-list-ul,
+#fonctionnement .categorie .fonctionnement_description .fa-store {
     left: 35px;
     top: 16px;
   }
@@ -514,7 +520,7 @@ footer .container a {
   border-top: solid 3px #d1d1d1;
 }
 #accueil .localisation {
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
   font-size: 18px;
   font-weight: bold;
   width: 100%;
@@ -527,7 +533,7 @@ footer .container a {
   margin-left: 80px;
 }
 #accueil .localisation #search {
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
   color: #000000;
   font-weight: bold;
   border: none;
@@ -622,7 +628,7 @@ footer .container a {
   margin: 10px auto;
   width: 100%;
   height: 270px;
-  box-shadow: 2px 2px 3px #EAEAEA;
+  box-shadow: 2px 2px 3px #eaeaea;
 }
 @media (min-width: 767px) {
   #restaurants .liste_restaurants .restaurant {
@@ -654,7 +660,7 @@ footer .container a {
 }
 #restaurants .liste_restaurants .restaurant .nouveau {
   color: #278870;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   font-weight: bold;
   text-align: center;
   position: absolute;
@@ -676,7 +682,8 @@ footer .container a {
   margin: 10px;
   width: 80%;
 }
-#restaurants .liste_restaurants .restaurant .description .informations h3, #restaurants .liste_restaurants .restaurant .description .informations .lieu {
+#restaurants .liste_restaurants .restaurant .description .informations h3,
+#restaurants .liste_restaurants .restaurant .description .informations .lieu {
   font-size: 20px;
   margin: 5px 5px 10px 5px;
   font-family: "Roboto", sans-serif;
@@ -709,7 +716,9 @@ footer .container a {
     margin-top: 40px;
   }
 }
-#menus #entrees, #menus #plats, #menus #desserts {
+#menus #entrees,
+#menus #plats,
+#menus #desserts {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -717,29 +726,43 @@ footer .container a {
   margin: 40px 20px;
 }
 @media (min-width: 767px) {
-  #menus #entrees, #menus #plats, #menus #desserts {
+  #menus #entrees,
+#menus #plats,
+#menus #desserts {
     width: 45%;
   }
 }
 @media screen and (min-width: 1000px) {
-  #menus #entrees, #menus #plats, #menus #desserts {
+  #menus #entrees,
+#menus #plats,
+#menus #desserts {
     width: 30%;
     justify-content: flex-start;
     margin: 0 auto;
     padding: 10px 15px;
   }
 }
-#menus #entrees h2, #menus #plats h2, #menus #desserts h2 {
+#menus #entrees h2,
+#menus #plats h2,
+#menus #desserts h2 {
   margin-left: 10px;
   font-size: 20px;
   font-weight: normal;
   color: #646464;
   width: 50px;
-  border-bottom: solid 3px #99E2D0;
+  border-bottom: solid 3px #99e2d0;
   padding-bottom: 10px;
   margin-bottom: 20px;
 }
-#menus #entrees .entrees, #menus #entrees .plats, #menus #entrees .desserts, #menus #plats .entrees, #menus #plats .plats, #menus #plats .desserts, #menus #desserts .entrees, #menus #desserts .plats, #menus #desserts .desserts {
+#menus #entrees .entrees,
+#menus #entrees .plats,
+#menus #entrees .desserts,
+#menus #plats .entrees,
+#menus #plats .plats,
+#menus #plats .desserts,
+#menus #desserts .entrees,
+#menus #desserts .plats,
+#menus #desserts .desserts {
   background-color: #ffffff;
   display: flex;
   flex-direction: row;
@@ -750,17 +773,41 @@ footer .container a {
   width: 90%;
 }
 @media (min-width: 767px) {
-  #menus #entrees .entrees, #menus #entrees .plats, #menus #entrees .desserts, #menus #plats .entrees, #menus #plats .plats, #menus #plats .desserts, #menus #desserts .entrees, #menus #desserts .plats, #menus #desserts .desserts {
+  #menus #entrees .entrees,
+#menus #entrees .plats,
+#menus #entrees .desserts,
+#menus #plats .entrees,
+#menus #plats .plats,
+#menus #plats .desserts,
+#menus #desserts .entrees,
+#menus #desserts .plats,
+#menus #desserts .desserts {
     margin: 10px auto;
     width: 100%;
   }
 }
 @media screen and (min-width: 1000px) {
-  #menus #entrees .entrees, #menus #entrees .plats, #menus #entrees .desserts, #menus #plats .entrees, #menus #plats .plats, #menus #plats .desserts, #menus #desserts .entrees, #menus #desserts .plats, #menus #desserts .desserts {
+  #menus #entrees .entrees,
+#menus #entrees .plats,
+#menus #entrees .desserts,
+#menus #plats .entrees,
+#menus #plats .plats,
+#menus #plats .desserts,
+#menus #desserts .entrees,
+#menus #desserts .plats,
+#menus #desserts .desserts {
     justify-content: space-between;
   }
 }
-#menus #entrees .entrees .menu, #menus #entrees .plats .menu, #menus #entrees .desserts .menu, #menus #plats .entrees .menu, #menus #plats .plats .menu, #menus #plats .desserts .menu, #menus #desserts .entrees .menu, #menus #desserts .plats .menu, #menus #desserts .desserts .menu {
+#menus #entrees .entrees .menu,
+#menus #entrees .plats .menu,
+#menus #entrees .desserts .menu,
+#menus #plats .entrees .menu,
+#menus #plats .plats .menu,
+#menus #plats .desserts .menu,
+#menus #desserts .entrees .menu,
+#menus #desserts .plats .menu,
+#menus #desserts .desserts .menu {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -771,18 +818,50 @@ footer .container a {
   -moz-text-overflow: ellipsis;
   text-overflow: ellipsis;
 }
-#menus #entrees .entrees .menu:hover, #menus #entrees .plats .menu:hover, #menus #entrees .desserts .menu:hover, #menus #plats .entrees .menu:hover, #menus #plats .plats .menu:hover, #menus #plats .desserts .menu:hover, #menus #desserts .entrees .menu:hover, #menus #desserts .plats .menu:hover, #menus #desserts .desserts .menu:hover {
+#menus #entrees .entrees .menu:hover,
+#menus #entrees .plats .menu:hover,
+#menus #entrees .desserts .menu:hover,
+#menus #plats .entrees .menu:hover,
+#menus #plats .plats .menu:hover,
+#menus #plats .desserts .menu:hover,
+#menus #desserts .entrees .menu:hover,
+#menus #desserts .plats .menu:hover,
+#menus #desserts .desserts .menu:hover {
   margin-left: 3px;
 }
 @media screen and (min-width: 1000px) {
-  #menus #entrees .entrees .menu, #menus #entrees .plats .menu, #menus #entrees .desserts .menu, #menus #plats .entrees .menu, #menus #plats .plats .menu, #menus #plats .desserts .menu, #menus #desserts .entrees .menu, #menus #desserts .plats .menu, #menus #desserts .desserts .menu {
+  #menus #entrees .entrees .menu,
+#menus #entrees .plats .menu,
+#menus #entrees .desserts .menu,
+#menus #plats .entrees .menu,
+#menus #plats .plats .menu,
+#menus #plats .desserts .menu,
+#menus #desserts .entrees .menu,
+#menus #desserts .plats .menu,
+#menus #desserts .desserts .menu {
     padding-left: 10px;
   }
-  #menus #entrees .entrees .menu:hover, #menus #entrees .plats .menu:hover, #menus #entrees .desserts .menu:hover, #menus #plats .entrees .menu:hover, #menus #plats .plats .menu:hover, #menus #plats .desserts .menu:hover, #menus #desserts .entrees .menu:hover, #menus #desserts .plats .menu:hover, #menus #desserts .desserts .menu:hover {
+  #menus #entrees .entrees .menu:hover,
+#menus #entrees .plats .menu:hover,
+#menus #entrees .desserts .menu:hover,
+#menus #plats .entrees .menu:hover,
+#menus #plats .plats .menu:hover,
+#menus #plats .desserts .menu:hover,
+#menus #desserts .entrees .menu:hover,
+#menus #desserts .plats .menu:hover,
+#menus #desserts .desserts .menu:hover {
     margin-left: 0;
   }
 }
-#menus #entrees .entrees .menu h3, #menus #entrees .plats .menu h3, #menus #entrees .desserts .menu h3, #menus #plats .entrees .menu h3, #menus #plats .plats .menu h3, #menus #plats .desserts .menu h3, #menus #desserts .entrees .menu h3, #menus #desserts .plats .menu h3, #menus #desserts .desserts .menu h3 {
+#menus #entrees .entrees .menu h3,
+#menus #entrees .plats .menu h3,
+#menus #entrees .desserts .menu h3,
+#menus #plats .entrees .menu h3,
+#menus #plats .plats .menu h3,
+#menus #plats .desserts .menu h3,
+#menus #desserts .entrees .menu h3,
+#menus #desserts .plats .menu h3,
+#menus #desserts .desserts .menu h3 {
   font-size: 18px;
   font-weight: bold;
   margin: 10px 10px 0px 10px;
@@ -792,13 +871,29 @@ footer .container a {
   text-overflow: ellipsis;
   padding: 10px 10px 10px 0;
 }
-#menus #entrees .entrees .menu .informations, #menus #entrees .plats .menu .informations, #menus #entrees .desserts .menu .informations, #menus #plats .entrees .menu .informations, #menus #plats .plats .menu .informations, #menus #plats .desserts .menu .informations, #menus #desserts .entrees .menu .informations, #menus #desserts .plats .menu .informations, #menus #desserts .desserts .menu .informations {
+#menus #entrees .entrees .menu .informations,
+#menus #entrees .plats .menu .informations,
+#menus #entrees .desserts .menu .informations,
+#menus #plats .entrees .menu .informations,
+#menus #plats .plats .menu .informations,
+#menus #plats .desserts .menu .informations,
+#menus #desserts .entrees .menu .informations,
+#menus #desserts .plats .menu .informations,
+#menus #desserts .desserts .menu .informations {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin: 10px;
 }
-#menus #entrees .entrees .menu .informations .supplement, #menus #entrees .plats .menu .informations .supplement, #menus #entrees .desserts .menu .informations .supplement, #menus #plats .entrees .menu .informations .supplement, #menus #plats .plats .menu .informations .supplement, #menus #plats .desserts .menu .informations .supplement, #menus #desserts .entrees .menu .informations .supplement, #menus #desserts .plats .menu .informations .supplement, #menus #desserts .desserts .menu .informations .supplement {
+#menus #entrees .entrees .menu .informations .supplement,
+#menus #entrees .plats .menu .informations .supplement,
+#menus #entrees .desserts .menu .informations .supplement,
+#menus #plats .entrees .menu .informations .supplement,
+#menus #plats .plats .menu .informations .supplement,
+#menus #plats .desserts .menu .informations .supplement,
+#menus #desserts .entrees .menu .informations .supplement,
+#menus #desserts .plats .menu .informations .supplement,
+#menus #desserts .desserts .menu .informations .supplement {
   font-size: 18px;
   color: #262626;
   padding: 2px 0px 4px 0px;
@@ -808,7 +903,15 @@ footer .container a {
   -moz-text-overflow: ellipsis;
   text-overflow: ellipsis;
 }
-#menus #entrees .entrees .menu .informations .prix, #menus #entrees .plats .menu .informations .prix, #menus #entrees .desserts .menu .informations .prix, #menus #plats .entrees .menu .informations .prix, #menus #plats .plats .menu .informations .prix, #menus #plats .desserts .menu .informations .prix, #menus #desserts .entrees .menu .informations .prix, #menus #desserts .plats .menu .informations .prix, #menus #desserts .desserts .menu .informations .prix {
+#menus #entrees .entrees .menu .informations .prix,
+#menus #entrees .plats .menu .informations .prix,
+#menus #entrees .desserts .menu .informations .prix,
+#menus #plats .entrees .menu .informations .prix,
+#menus #plats .plats .menu .informations .prix,
+#menus #plats .desserts .menu .informations .prix,
+#menus #desserts .entrees .menu .informations .prix,
+#menus #desserts .plats .menu .informations .prix,
+#menus #desserts .desserts .menu .informations .prix {
   font-size: 20px;
   margin-right: 20px;
 }
@@ -879,13 +982,13 @@ body #loading_spinner {
   pointer-events: none;
 }
 #loading_spinner .primary {
-  border-bottom: 7px solid #9356DC;
+  border-bottom: 7px solid #9356dc;
 }
 #loading_spinner .secondary {
-  border-bottom: 7px solid #FF79DA;
+  border-bottom: 7px solid #ff79da;
 }
 #loading_spinner .third {
-  border-bottom: 7px solid #99E2D0;
+  border-bottom: 7px solid #99e2d0;
 }
 #loading_spinner .arc {
   position: absolute;
@@ -1086,7 +1189,12 @@ body #loading_spinner {
   }
 }
 
-#entrees, .entrees, #plats, .plats, #desserts, .desserts {
+#entrees,
+.entrees,
+#plats,
+.plats,
+#desserts,
+.desserts {
   -moz-animation-duration: 0.7s;
   -webkit-animation-duration: 0.7s;
   animation-duration: 0.7s;
@@ -1120,13 +1228,15 @@ body #loading_spinner {
   }
 }
 
-.entrees, #plats {
+.entrees,
+#plats {
   -moz-animation-delay: 0.2s;
   -webkit-animation-delay: 0.2s;
   animation-delay: 0.2s;
 }
 
-.plats, #desserts {
+.plats,
+#desserts {
   -moz-animation-delay: 0.4s;
   -webkit-animation-delay: 0.4s;
   animation-delay: 0.4s;
@@ -1138,14 +1248,20 @@ body #loading_spinner {
   animation-delay: 0.8s;
 }
 
-.entrees, .plats, .desserts {
+.entrees,
+.plats,
+.desserts {
   overflow: hidden;
 }
-.entrees .check-circle, .plats .check-circle, .desserts .check-circle {
+.entrees .check-circle,
+.plats .check-circle,
+.desserts .check-circle {
   margin-right: -30px;
   margin-left: 10px;
 }
-.entrees:hover .check-circle, .plats:hover .check-circle, .desserts:hover .check-circle {
+.entrees:hover .check-circle,
+.plats:hover .check-circle,
+.desserts:hover .check-circle {
   cursor: pointer;
   -moz-transform: translateX(-30px);
   -webkit-transform: translateX(-30px);
@@ -1153,10 +1269,12 @@ body #loading_spinner {
   -moz-transition: transform 0.3s ease-in-out;
   -webkit-transition: transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   border-radius: 0px 10px 10px 0px;
 }
-.entrees:hover .check-circle .fa-check-circle, .plats:hover .check-circle .fa-check-circle, .desserts:hover .check-circle .fa-check-circle {
+.entrees:hover .check-circle .fa-check-circle,
+.plats:hover .check-circle .fa-check-circle,
+.desserts:hover .check-circle .fa-check-circle {
   font-size: 25px;
   padding: 27px;
   -webkit-background-clip: text;

@@ -1,37 +1,39 @@
-.entrees, .plats, .desserts {
-  overflow : hidden ; 
+.entrees,
+.plats,
+.desserts {
+  overflow: hidden;
   .check-circle {
-    margin-right : -30px ; 
-    margin-left : 10px ; 
+    margin-right: -30px;
+    margin-left: 10px;
   }
   &:hover .check-circle {
-    cursor : pointer ;
-      -moz-transform : translateX(-30px) ; 
-      -webkit-transform : translateX(-30px) ;
-    transform : translateX(-30px) ;
-      -moz-transition : transform 0.3s ease-in-out ;
-      -webkit-transition : transform 0.3s ease-in-out ; 
-    transition : transform 0.3s ease-in-out ;
-    background-color: $third_color ;
-    border-radius : 0px 10px 10px 0px ; 
+    cursor: pointer;
+    -moz-transform: translateX(-30px);
+    -webkit-transform: translateX(-30px);
+    transform: translateX(-30px);
+    -moz-transition: transform 0.3s ease-in-out;
+    -webkit-transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    background-color: $third_color;
+    border-radius: 0px 10px 10px 0px;
     .fa-check-circle {
-      font-size : 25px ; 
-      padding : 27px ; 
-      -webkit-background-clip : text ; 
-      -moz-background-clip : text ;
-    background-clip : text ;
-      -moz-transform : rotateZ(1turn) ;
-      -webkit-transform : rotateZ(1turn) ;
-    transform : rotateZ(1turn) ;
-      -moz-transition : transform 0.4s ease-out ; 
-      -webkit-transition : transform 0.4s ease-out ;
-    transition : transform 0.4s ease-out ; 
+      font-size: 25px;
+      padding: 27px;
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      background-clip: text;
+      -moz-transform: rotateZ(1turn);
+      -webkit-transform: rotateZ(1turn);
+      transform: rotateZ(1turn);
+      -moz-transition: transform 0.4s ease-out;
+      -webkit-transition: transform 0.4s ease-out;
+      transition: transform 0.4s ease-out;
     }
   }
 }
 
 .fa-check-circle:before {
-  display : flex ; 
-  justify-content : center ; 
-  color : #ffffff ; 
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
 }

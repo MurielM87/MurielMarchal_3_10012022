@@ -1,48 +1,48 @@
 .favori {
-  position : absolute ; 
-  bottom : 10px ;
-  right : 20px ; 
-  height : 30px ; 
-  width : 30px ; 
-  transform : translateY(-50%) ; 
-  
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  height: 30px;
+  width: 30px;
+  transform: translateY(-50%);
+
   .fa-heart {
-    color : transparent ; 
-    position : absolute ; 
-    inset : 0px ; 
-    font-size : 30px ; 
-    text-align : center ; 
+    color: transparent;
+    position: absolute;
+    inset: 0px;
+    font-size: 30px;
+    text-align: center;
     &:hover {
-      cursor : pointer ; 
+      cursor: pointer;
     }
   }
 
   .far {
-    transition : all 1.5s linear ; 
-    z-index : 2 ; 
-    background : #000000 ; 
-    -webkit-background-clip : text ;
-    -webkit-text-fill-color : transparent ; 
+    transition: all 1.5s linear;
+    z-index: 2;
+    background: #000000;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   .fas {
-    transition : 1s ease-in-out ; 
-    font-size : 30px ;
-    background : linear-gradient($primary_color, $secondary_color) ; 
-    -webkit-background-clip : text ; 
-    -webkit-text-fill-color : transparent ; 
-    transform-origin : bottom ; 
-    transform : scale(0) ; 
-    z-index : 1 ; 
+    transition: 1s ease-in-out;
+    font-size: 30px;
+    background: linear-gradient($primary_color, $secondary_color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform-origin: bottom;
+    transform: scale(0);
+    z-index: 1;
   }
 
   &:hover .fas {
-    transform : scale(1) ; 
+    transform: scale(1);
   }
 
   &:hover .far {
-    background : transparent ; 
-    -webkit-background-clip : text ; 
-    -webkit-text-fill-color : transparent ; 
+    background: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }

@@ -1,64 +1,64 @@
 #accueil {
-  @include flex-center-column ;
-  background-color: $secondary_background ;
-  align-items : center ; 
-  width : 100% ;
-  margin : 0 auto ; 
-  padding-bottom : $padding-l ; 
-  border-top : solid 3px darken($very_light_grey, 10%) ; 
-       
+  @include flex-center-column;
+  background-color: $secondary_background;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: $padding-l;
+  border-top: solid 3px darken($very_light_grey, 10%);
+
   .localisation {
     background-color: $very_light_grey;
-    font-size : $font-size3 ; 
-    font-weight : bold ;
-    width : 100% ; 
-    text-align : center ; 
-    padding : $padding-l ; 
-    
+    font-size: $font-size3;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    padding: $padding-l;
+
     .fa-map-marker-alt {
-      color : #000000 ; 
-      margin-right : $padding-m ; 
-      margin-left : 80px ; 
+      color: #000000;
+      margin-right: $padding-m;
+      margin-left: 80px;
     }
 
     #search {
-      background-color: $very_light_grey ;
-      color : #000000 ; 
-      font-weight : bold ; 
-      border : none ; 
+      background-color: $very_light_grey;
+      color: #000000;
+      font-weight: bold;
+      border: none;
       &:focus-visible {
-        outline : none ; 
+        outline: none;
       }
     }
   }
-     
+
   h1 {
-    font-size : $font-size1 ; 
-    font-weight : bold ; 
-    text-align : center ;
-    line-height : 30px ; 
-    width : 70% ;
-    padding : $padding-l ; 
-    @media (min-width: map-get($breakpoints, tablette)) {
-      line-height: 20px ;
-      width : 70% ;
-      padding-top : $padding-l ; 
-    }
-    @media screen and (min-width: map-get($breakpoints, desktop)) {
-      padding : 0 ; 
-    }
-  }
-     
-  p {
-    font-size : $font-size2 ; 
-    width : 90% ; 
+    font-size: $font-size1;
+    font-weight: bold;
     text-align: center;
-    line-height : 25px ; 
+    line-height: 30px;
+    width: 70%;
+    padding: $padding-l;
     @media (min-width: map-get($breakpoints, tablette)) {
-      width : 70% ;
-    }  
+      line-height: 20px;
+      width: 70%;
+      padding-top: $padding-l;
+    }
     @media screen and (min-width: map-get($breakpoints, desktop)) {
-      width : 30% ;
+      padding: 0;
     }
   }
-}  
+
+  p {
+    font-size: $font-size2;
+    width: 90%;
+    text-align: center;
+    line-height: 25px;
+    @media (min-width: map-get($breakpoints, tablette)) {
+      width: 70%;
+    }
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
+      width: 30%;
+    }
+  }
+}
