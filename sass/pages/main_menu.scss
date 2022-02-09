@@ -67,9 +67,6 @@
         -webkit-text-overflow: ellipsis;
         -moz-text-overflow: ellipsis;
         text-overflow: ellipsis;
-        &:hover {
-          margin-left: 3px;
-        }
         @media screen and (min-width: map-get($breakpoints, desktop)) {
           padding-left: $padding-m;
           &:hover {

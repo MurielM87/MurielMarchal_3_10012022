@@ -818,17 +818,6 @@ footer .container a {
   -moz-text-overflow: ellipsis;
   text-overflow: ellipsis;
 }
-#menus #entrees .entrees .menu:hover,
-#menus #entrees .plats .menu:hover,
-#menus #entrees .desserts .menu:hover,
-#menus #plats .entrees .menu:hover,
-#menus #plats .plats .menu:hover,
-#menus #plats .desserts .menu:hover,
-#menus #desserts .entrees .menu:hover,
-#menus #desserts .plats .menu:hover,
-#menus #desserts .desserts .menu:hover {
-  margin-left: 3px;
-}
 @media screen and (min-width: 1000px) {
   #menus #entrees .entrees .menu,
 #menus #entrees .plats .menu,
@@ -1252,6 +1241,18 @@ body #loading_spinner {
 .plats,
 .desserts {
   overflow: hidden;
+}
+.entrees:hover,
+.plats:hover,
+.desserts:hover {
+  padding-left: 2.5px;
+}
+@media screen and (min-width: 1000px) {
+  .entrees:hover,
+.plats:hover,
+.desserts:hover {
+    padding-left: 0;
+  }
 }
 .entrees .check-circle,
 .plats .check-circle,

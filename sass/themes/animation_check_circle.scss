@@ -2,6 +2,12 @@
 .plats,
 .desserts {
   overflow: hidden;
+  &:hover {
+    padding-left: 2.5px;
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
+      padding-left: $padding_none;
+    }
+  }
   .check-circle {
     margin-right: -30px;
     margin-left: 10px;
