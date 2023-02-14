@@ -5,7 +5,7 @@
   border-radius: 10px;
   margin: 0 auto;
   padding-top: $padding-xl;
-  @media (min-width: map-get($breakpoints, tablette)) {
+  @media (min-width: map-get($breakpoints, tablette)) and (max-width: map-get($breakpoints, desktop)) {
     @include flex-center-row;
     flex-wrap: wrap;
   }
@@ -19,7 +19,7 @@
     @include flex-center-column;
     width: 90%;
     margin: $margin-xl $margin-l;
-    @media (min-width: map-get($breakpoints, tablette)) {
+    @media (min-width: map-get($breakpoints, tablette)) and (max-width: map-get($breakpoints, desktop)) {
       width: 45%;
     }
     @media screen and (min-width: map-get($breakpoints, desktop)) {
@@ -49,7 +49,7 @@
       border-radius: 20px;
       box-shadow: 4px 3px 5px $light_grey;
       width: 90%;
-      @media (min-width: map-get($breakpoints, tablette)) {
+      @media (min-width: map-get($breakpoints, tablette)) and (max-width: map-get($breakpoints, desktop)) {
         margin: $margin-m auto;
         width: 100%;
       }

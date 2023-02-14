@@ -82,7 +82,7 @@ body #loading_spinner {
     height: 180px;
     margin: 30%;
     border-radius: 50%;
-    @media (min-width: map-get($breakpoints, tablette)) {
+    @media (min-width: map-get($breakpoints, tablette)) and (max-width: map-get($breakpoints, desktop)) {
       width: 200px;
       height: 200px;
       margin: 20% 40%;
@@ -174,7 +174,7 @@ body #loading_spinner {
     top: 200px;
     left: 130px;
     opacity: 0;
-    @media (min-width: map-get($breakpoints, tablette)) {
+    @media (min-width: map-get($breakpoints, tablette)) and (max-width: map-get($breakpoints, desktop)) {
       width: 40%;
       top: 210px;
       left: 300px;

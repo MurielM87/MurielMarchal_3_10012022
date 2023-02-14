@@ -4,7 +4,7 @@
   background-color: $primary_background;
   align-items: flex-start;
   margin: 30px 0px;
-  @media (min-width: map-get($breakpoints, tablette)) {
+  @media (min-width: map-get($breakpoints, tablette)) and (max-width: map-get($breakpoints, desktop)) {
     margin: $margin_none $margin_none $margin-l;
   }
   @media screen and (min-width: map-get($breakpoints, desktop)) {
@@ -48,7 +48,7 @@
       position: absolute;
       z-index: 1;
       left: 25px;
-      @media (min-width: map-get($breakpoints, tablette)) {
+      @media (min-width: map-get($breakpoints, tablette)) and (max-width: map-get($breakpoints, desktop)) {
         left: 120px;
       }
       @media screen and (min-width: map-get($breakpoints, desktop)) {
@@ -70,7 +70,7 @@
       margin: $margin-m;
       padding: 30px 0px 30px 90px;
       z-index: 0;
-      @media (min-width: map-get($breakpoints, tablette)) {
+      @media (min-width: map-get($breakpoints, tablette)) and (max-width: map-get($breakpoints, desktop)) {
         width: 60%;
         margin: $margin-m $margin-l;
       }

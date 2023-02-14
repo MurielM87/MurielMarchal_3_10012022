@@ -42,7 +42,7 @@ body {
   position: relative;
   transition: opacity 0.2s ease-out;
 }
-@media (min-width: 767px) {
+@media (min-width: 767px) and (max-width: 1000px) {
   .btn_explorer {
     margin: 4% 45%;
   }
@@ -155,7 +155,7 @@ body {
   position: relative;
   transition: opacity 0.2s ease-out;
 }
-@media (min-width: 767px) {
+@media (min-width: 767px) and (max-width: 1000px) {
   .btn_commander {
     margin: 1% 40% 10% 40%;
   }
@@ -268,7 +268,7 @@ header .restaurant_nom {
   z-index: 2;
   top: 250px;
 }
-@media (min-width: 767px) {
+@media (min-width: 767px) and (max-width: 1000px) {
   header .restaurant_nom {
     top: 260px;
   }
@@ -291,7 +291,7 @@ header .restaurant_nom h1 {
   text-align: left;
   margin-left: 10px;
 }
-@media (min-width: 767px) {
+@media (min-width: 767px) and (max-width: 1000px) {
   header .restaurant_nom h1 {
     text-align: center;
     line-height: 20px;
@@ -385,7 +385,7 @@ footer .container a {
   align-items: flex-start;
   margin: 30px 0px;
 }
-@media (min-width: 767px) {
+@media (min-width: 767px) and (max-width: 1000px) {
   #fonctionnement {
     margin: 0 0 20px;
   }
@@ -443,7 +443,7 @@ footer .container a {
   z-index: 1;
   left: 25px;
 }
-@media (min-width: 767px) {
+@media (min-width: 767px) and (max-width: 1000px) {
   #fonctionnement .categorie .nombre {
     left: 120px;
   }
@@ -468,7 +468,7 @@ footer .container a {
   padding: 30px 0px 30px 90px;
   z-index: 0;
 }
-@media (min-width: 767px) {
+@media (min-width: 767px) and (max-width: 1000px) {
   #fonctionnement .categorie .fonctionnement_description {
     width: 60%;
     margin: 10px 20px;
@@ -549,7 +549,7 @@ footer .container a {
   width: 70%;
   padding: 20px;
 }
-@media (min-width: 767px) {
+@media (min-width: 767px) and (max-width: 1000px) {
   #accueil h1 {
     line-height: 20px;
     width: 70%;
@@ -567,7 +567,7 @@ footer .container a {
   text-align: center;
   line-height: 25px;
 }
-@media (min-width: 767px) {
+@media (min-width: 767px) and (max-width: 1000px) {
   #accueil p {
     width: 70%;
   }
@@ -605,7 +605,7 @@ footer .container a {
   margin: auto;
   width: 100%;
 }
-@media (min-width: 767px) {
+@media (min-width: 767px) and (max-width: 1000px) {
   #restaurants .liste_restaurants {
     flex-direction: row;
     justify-content: space-around;
@@ -630,7 +630,7 @@ footer .container a {
   height: 270px;
   box-shadow: 2px 2px 3px #eaeaea;
 }
-@media (min-width: 767px) {
+@media (min-width: 767px) and (max-width: 1000px) {
   #restaurants .liste_restaurants .restaurant {
     margin: 10px auto;
     width: 45%;
@@ -703,7 +703,7 @@ footer .container a {
   margin: 0 auto;
   padding-top: 40px;
 }
-@media (min-width: 767px) {
+@media (min-width: 767px) and (max-width: 1000px) {
   #menus {
     display: flex;
     flex-direction: row;
@@ -725,7 +725,7 @@ footer .container a {
   width: 90%;
   margin: 40px 20px;
 }
-@media (min-width: 767px) {
+@media (min-width: 767px) and (max-width: 1000px) {
   #menus #entrees,
 #menus #plats,
 #menus #desserts {
@@ -772,7 +772,7 @@ footer .container a {
   box-shadow: 4px 3px 5px #a09c9c;
   width: 90%;
 }
-@media (min-width: 767px) {
+@media (min-width: 767px) and (max-width: 1000px) {
   #menus #entrees .entrees,
 #menus #entrees .plats,
 #menus #entrees .desserts,
@@ -989,7 +989,7 @@ body #loading_spinner {
   margin: 30%;
   border-radius: 50%;
 }
-@media (min-width: 767px) {
+@media (min-width: 767px) and (max-width: 1000px) {
   #loading_spinner .arc {
     width: 200px;
     height: 200px;
@@ -1146,7 +1146,7 @@ body #loading_spinner {
   -moz-animation-delay: 1.5s;
   animation-delay: 1.5s;
 }
-@media (min-width: 767px) {
+@media (min-width: 767px) and (max-width: 1000px) {
   #loading_spinner .ohmyfood {
     width: 40%;
     top: 210px;

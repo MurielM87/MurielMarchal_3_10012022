@@ -25,7 +25,7 @@ footer {
 
     div {
       margin-left: $margin-m;
-      @media screen and (min-width: map-get($breakpoints, desktop)) {
+      @media screen and (min-width: 1000px) {
         margin: $margin_none;
       }
     }

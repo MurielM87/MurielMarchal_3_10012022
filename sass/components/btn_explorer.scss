@@ -13,7 +13,7 @@
   padding: 17px 0px;
   margin: 4% 30% 8%;
   position: relative;
-  @media (min-width: map-get($breakpoints, tablette)) {
+  @media (min-width: map-get($breakpoints, tablette)) and (max-width: map-get($breakpoints, desktop)) {
     margin: 4% 45%;
   }
   @media screen and (min-width: map-get($breakpoints, desktop)) {
